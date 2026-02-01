@@ -1998,5 +1998,780 @@
         }
       ]
     }
+  },
+  {
+    "id": "insights",
+    "term": "Insights",
+    "definition": "AirOps' analytics pillar that provides visibility into your AI search performance, competitive positioning, and content opportunities. Insights helps you understand where you stand in AI-powered search and what to prioritize.",
+    "metaphor": "Insights is like having a scout who reports back on the AI search battlefield—showing you where you're winning, where competitors are gaining ground, and where the best opportunities lie for content investment.",
+    "category": "Core Concepts",
+    "relatedTerms": ["aeo", "analytics", "opportunities", "pages", "citations"],
+    "example": "Using Insights to discover that competitors are being cited 3x more often for 'best CRM software' queries, revealing a content gap.",
+    "article": {
+      "marketerUseCases": [
+        "Tracking brand visibility across ChatGPT, Perplexity, and Google AI Overviews",
+        "Identifying which competitors dominate AI search for your target queries",
+        "Discovering content refresh opportunities based on declining AI visibility",
+        "Monitoring citation patterns to understand what content drives AI recommendations"
+      ],
+      "keyConcepts": [
+        {
+          "title": "AI Search Visibility",
+          "description": "Track how often your brand appears in AI-generated answers across major platforms."
+        },
+        {
+          "title": "Competitive Analysis",
+          "description": "Compare your AI visibility against competitors to identify gaps and opportunities."
+        },
+        {
+          "title": "Performance Trends",
+          "description": "Monitor visibility changes over time to measure the impact of content optimizations."
+        },
+        {
+          "title": "Topic Coverage",
+          "description": "Understand which topics and queries drive your AI visibility and where you're underrepresented."
+        }
+      ],
+      "benefits": [
+        "Data-driven AEO strategy based on actual AI search performance",
+        "Early identification of competitive threats in AI search",
+        "Prioritized content investments based on opportunity size",
+        "Measurable ROI for AI search optimization efforts"
+      ],
+      "faq": [
+        {
+          "question": "How often is Insights data updated?",
+          "answer": "Data refresh frequency varies by metric—some update daily, others weekly. Check your dashboard for specific refresh schedules."
+        },
+        {
+          "question": "Can I track custom queries?",
+          "answer": "Yes, you can add specific queries to track that matter to your business beyond the default monitored set."
+        }
+      ]
+    }
+  },
+  {
+    "id": "opportunities",
+    "term": "Opportunities",
+    "definition": "AirOps feature that surfaces content gaps and recommendations based on AI search performance data. Opportunities identifies where new content could capture AI visibility or where existing content needs refreshing.",
+    "metaphor": "Opportunities is like a treasure map for content—it shows you exactly where to dig (create content) or where to polish what you already have (refresh content) to find AI search gold.",
+    "category": "Core Concepts",
+    "relatedTerms": ["insights", "aeo", "content-engineering", "pages"],
+    "example": "Opportunities flagging that 'how to implement SSO' is a high-volume query where you have no content but competitors are being cited.",
+    "article": {
+      "marketerUseCases": [
+        "Building a content calendar prioritized by AI search opportunity size",
+        "Identifying underperforming content that needs refreshing to regain visibility",
+        "Discovering questions your audience asks that you haven't addressed",
+        "Finding partnership or outreach opportunities based on frequently cited domains"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Content Creation Opportunities",
+          "description": "Net-new content suggestions for queries where you're absent but demand exists."
+        },
+        {
+          "title": "Content Refresh Opportunities",
+          "description": "Existing content that could perform better with updates, expansion, or restructuring."
+        },
+        {
+          "title": "Outreach Opportunities",
+          "description": "Domains frequently cited in your space that could be partnership or link-building targets."
+        },
+        {
+          "title": "Opportunity Scoring",
+          "description": "Prioritization based on search volume, competitive difficulty, and potential impact."
+        }
+      ],
+      "benefits": [
+        "Eliminate guesswork in content prioritization",
+        "Focus resources on highest-impact content investments",
+        "Stay ahead of competitors by addressing gaps first",
+        "Systematic approach to growing AI visibility"
+      ],
+      "faq": [
+        {
+          "question": "How are opportunities prioritized?",
+          "answer": "Opportunities are scored based on factors like query volume, competitive landscape, your current visibility, and relevance to your topics."
+        }
+      ]
+    }
+  },
+  {
+    "id": "pages",
+    "term": "Pages",
+    "definition": "AirOps feature providing a unified inventory view of your content, combining traditional SEO metrics with AI search visibility data. Pages helps you see how each piece of content performs across both traditional and AI-powered search.",
+    "metaphor": "Pages is like a dashboard for your content fleet—you can see the health, performance, and status of every piece of content you have, whether it's winning in Google, AI search, or both.",
+    "category": "Core Concepts",
+    "relatedTerms": ["insights", "aeo", "opportunities", "analytics"],
+    "example": "Using Pages to discover that your pricing page ranks #1 in Google but is never cited by AI assistants, revealing an optimization opportunity.",
+    "article": {
+      "marketerUseCases": [
+        "Auditing content library for AI search optimization gaps",
+        "Identifying pages that perform well in SEO but poorly in AI search",
+        "Tracking performance changes after content updates",
+        "Prioritizing pages for refresh based on combined SEO and AI metrics"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Unified Metrics",
+          "description": "See SEO rankings, traffic, and AI visibility metrics side-by-side for each page."
+        },
+        {
+          "title": "Content Inventory",
+          "description": "Complete view of all indexed content with performance data."
+        },
+        {
+          "title": "Performance Gaps",
+          "description": "Identify pages with mismatched performance between SEO and AI search."
+        },
+        {
+          "title": "Historical Tracking",
+          "description": "Monitor how page performance changes over time across metrics."
+        }
+      ],
+      "benefits": [
+        "Holistic view of content performance across search types",
+        "Data-driven prioritization for content optimization",
+        "Track ROI of content investments across channels",
+        "Identify underperforming assets for improvement or removal"
+      ],
+      "faq": [
+        {
+          "question": "How does Pages differ from Google Search Console?",
+          "answer": "Pages combines GSC data with AI search visibility metrics, giving you a complete picture that GSC alone can't provide."
+        }
+      ]
+    }
+  },
+  {
+    "id": "citations",
+    "term": "Citations",
+    "definition": "References to your content or brand when AI assistants answer queries. In AirOps, the Citations feature monitors which domains and pages AI platforms cite, helping you understand the competitive landscape and track your own citation performance.",
+    "metaphor": "Citations are like academic references in research papers—when AI cites you, it's saying 'this source is trustworthy enough to quote.' The more citations you get, the more AI treats you as an authority.",
+    "category": "Core Concepts",
+    "relatedTerms": ["aeo", "ai-overviews", "insights", "ai-visibility-index"],
+    "example": "Monitoring that your competitor's blog is cited 5x more often than yours for 'best practices' queries in your industry.",
+    "article": {
+      "marketerUseCases": [
+        "Tracking which of your pages get cited most often by AI assistants",
+        "Identifying competitors who dominate AI citations in your space",
+        "Discovering new domains being cited that could be partnership targets",
+        "Measuring citation growth as a KPI for AEO efforts"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Citation Discovery",
+          "description": "Finding which URLs AI platforms cite when answering queries in your industry."
+        },
+        {
+          "title": "Citation Frequency",
+          "description": "How often a domain or page is cited across monitored queries."
+        },
+        {
+          "title": "Citation Context",
+          "description": "Understanding whether citations are positive recommendations, neutral references, or comparisons."
+        },
+        {
+          "title": "Competitive Citations",
+          "description": "Tracking which competitors get cited and for which queries."
+        }
+      ],
+      "benefits": [
+        "Understand what content AI considers authoritative",
+        "Benchmark your citation performance against competitors",
+        "Identify high-citation content patterns to replicate",
+        "Track AEO success with concrete citation metrics"
+      ],
+      "faq": [
+        {
+          "question": "Do all AI platforms provide citations?",
+          "answer": "Most AI search tools cite sources, though formats vary. Perplexity and Google AI Overviews consistently show citations; ChatGPT's citation behavior varies by query type."
+        }
+      ]
+    }
+  },
+  {
+    "id": "power-agents",
+    "term": "Power Agents",
+    "definition": "Pre-built, customizable AI agents in AirOps that handle routine content tasks autonomously. Power Agents combine workflows, AI models, and integrations into ready-to-use solutions that can be deployed without building from scratch.",
+    "metaphor": "Power Agents are like hiring a skilled contractor who already knows the job—instead of training someone from scratch, you bring in an expert who can start working immediately, with just a bit of customization for your specific needs.",
+    "category": "Core Concepts",
+    "relatedTerms": ["agent", "workflow", "airops-studio", "content-engineering"],
+    "example": "Deploying a Power Agent that automatically monitors industry news and drafts content briefs for trending topics.",
+    "article": {
+      "marketerUseCases": [
+        "Deploying a content refresh agent that updates outdated blog posts automatically",
+        "Using a competitive monitoring agent that tracks and summarizes competitor content",
+        "Running a social media agent that repurposes long-form content into platform-specific posts",
+        "Implementing a research agent that gathers information for content briefs"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Pre-Built Templates",
+          "description": "Ready-to-use agent configurations for common content and marketing tasks."
+        },
+        {
+          "title": "Customization",
+          "description": "Adjust agent behavior, outputs, and integrations to match your specific requirements."
+        },
+        {
+          "title": "Autonomous Operation",
+          "description": "Agents run independently on schedules or triggers, handling tasks without manual intervention."
+        },
+        {
+          "title": "Human-in-the-Loop",
+          "description": "Configure review steps where humans approve agent outputs before final actions."
+        }
+      ],
+      "benefits": [
+        "Deploy sophisticated AI workflows without building from scratch",
+        "Reduce time-to-value with proven agent templates",
+        "Scale content operations with autonomous task handling",
+        "Maintain quality control with configurable review steps"
+      ],
+      "faq": [
+        {
+          "question": "Can I modify Power Agents?",
+          "answer": "Yes, Power Agents are fully customizable. Use them as-is or as starting points for your own agent configurations."
+        },
+        {
+          "question": "What's the difference between Power Agents and regular Workflows?",
+          "answer": "Power Agents are more autonomous and goal-oriented, making decisions dynamically. Workflows follow fixed sequences of steps."
+        }
+      ]
+    }
+  },
+  {
+    "id": "human-review",
+    "term": "Human Review",
+    "definition": "A workflow step that pauses execution for human approval before continuing. Human review enables quality control, compliance checks, and oversight in AI-powered workflows, ensuring humans stay in the loop for important decisions.",
+    "metaphor": "Human Review is like the 'send to manager for approval' step in an expense report—the automated system does the work, but a human makes the final call before anything goes out the door.",
+    "category": "Workflows & Actions",
+    "relatedTerms": ["workflow", "action", "airops-studio", "power-agents"],
+    "example": "A content generation workflow that creates blog drafts automatically but requires editor approval before publishing.",
+    "article": {
+      "marketerUseCases": [
+        "Requiring approval before AI-generated content is published to your CMS",
+        "Reviewing AI-drafted customer communications before sending",
+        "Approving AI-suggested content updates before they go live",
+        "Quality-checking AI outputs for brand voice compliance"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Approval Queues",
+          "description": "Pending items waiting for human review, organized for efficient processing."
+        },
+        {
+          "title": "Reviewer Assignment",
+          "description": "Route reviews to specific team members based on content type, topic, or priority."
+        },
+        {
+          "title": "Review Interface",
+          "description": "UI for reviewing AI outputs, providing feedback, and approving/rejecting with comments."
+        },
+        {
+          "title": "SLA Tracking",
+          "description": "Monitor review times to ensure content isn't bottlenecked waiting for approval."
+        }
+      ],
+      "benefits": [
+        "Maintain quality control over AI-generated content",
+        "Ensure compliance and brand consistency",
+        "Build trust in AI workflows with human oversight",
+        "Capture feedback to improve AI outputs over time"
+      ],
+      "faq": [
+        {
+          "question": "Does human review slow down automation?",
+          "answer": "It adds time but provides essential quality control. Design workflows to batch reviews efficiently and prioritize high-stakes content for review."
+        },
+        {
+          "question": "Can I skip human review for some content?",
+          "answer": "Yes, use conditional logic to route low-risk content directly to publication while flagging high-risk content for review."
+        }
+      ]
+    }
+  },
+  {
+    "id": "conditional-logic",
+    "term": "Conditional Logic",
+    "definition": "Branching rules in workflows that route execution down different paths based on data values or conditions. Conditional logic enables dynamic, intelligent workflows that adapt their behavior based on inputs and intermediate results.",
+    "metaphor": "Conditional logic is like a 'choose your own adventure' book for workflows—based on the data at hand, the workflow automatically takes the right path, whether that's sending to review, publishing directly, or escalating an issue.",
+    "category": "Workflows & Actions",
+    "relatedTerms": ["workflow", "action", "loop", "variable"],
+    "example": "If sentiment score > 0.8, publish automatically; else if sentiment score > 0.5, send to review; else discard.",
+    "article": {
+      "marketerUseCases": [
+        "Routing leads to different nurture sequences based on score or industry",
+        "Sending high-quality AI outputs directly to publish while flagging others for review",
+        "Applying different content templates based on topic category",
+        "Escalating urgent customer inquiries to human agents automatically"
+      ],
+      "keyConcepts": [
+        {
+          "title": "If/Then/Else",
+          "description": "Basic branching that takes different actions based on whether a condition is true or false."
+        },
+        {
+          "title": "Multiple Conditions",
+          "description": "Chain conditions to handle many scenarios with different branches for each."
+        },
+        {
+          "title": "Data-Driven Branching",
+          "description": "Use variable values, AI outputs, or API responses to determine which path to take."
+        },
+        {
+          "title": "Default Paths",
+          "description": "Define fallback behavior when no conditions match."
+        }
+      ],
+      "benefits": [
+        "Build intelligent workflows that adapt to different scenarios",
+        "Handle exceptions and edge cases gracefully",
+        "Reduce manual intervention with automated routing",
+        "Create sophisticated logic without code"
+      ],
+      "faq": [
+        {
+          "question": "How complex can conditional logic get?",
+          "answer": "You can nest conditions and combine multiple criteria. However, extremely complex logic may be better handled with custom code blocks."
+        }
+      ]
+    }
+  },
+  {
+    "id": "loop",
+    "term": "Loop",
+    "definition": "A workflow construct that repeats a set of actions for each item in a list or until a condition is met. Loops enable processing multiple items—like a list of products or leads—through the same workflow steps.",
+    "metaphor": "A loop is like a stamping machine on an assembly line—each item comes through, gets the same treatment, and moves on. One workflow, many items processed identically.",
+    "category": "Workflows & Actions",
+    "relatedTerms": ["workflow", "batch-processing", "conditional-logic", "variable"],
+    "example": "Looping through a list of 100 blog titles to generate meta descriptions for each one.",
+    "article": {
+      "marketerUseCases": [
+        "Generating descriptions for each product in a catalog",
+        "Processing each row of a CSV with AI enrichment",
+        "Sending personalized emails to each contact in a list",
+        "Creating social posts for each item in a content batch"
+      ],
+      "keyConcepts": [
+        {
+          "title": "For Each",
+          "description": "Execute actions once for every item in a list or array."
+        },
+        {
+          "title": "Loop Variable",
+          "description": "Access the current item's data within loop actions using a loop variable."
+        },
+        {
+          "title": "Parallel vs Sequential",
+          "description": "Run loop iterations simultaneously for speed or one-at-a-time for order-dependent operations."
+        },
+        {
+          "title": "Aggregating Results",
+          "description": "Collect outputs from all loop iterations into a combined result."
+        }
+      ],
+      "benefits": [
+        "Process bulk data without duplicating workflow steps",
+        "Scale operations across any number of items",
+        "Consistent treatment for each item in a batch",
+        "Efficient use of workflow design—build once, run many"
+      ],
+      "faq": [
+        {
+          "question": "How many items can I loop through?",
+          "answer": "Platform limits vary, but most support thousands of items. For very large datasets, consider batching or using Grid."
+        },
+        {
+          "question": "What if one loop iteration fails?",
+          "answer": "Configure error handling per loop—continue processing others, stop entirely, or collect failures for review."
+        }
+      ]
+    }
+  },
+  {
+    "id": "web-scraping",
+    "term": "Web Scraping",
+    "definition": "Extracting content and data from web pages programmatically. In AirOps workflows, web scraping actions fetch page content for AI processing, competitive research, data enrichment, or knowledge base population.",
+    "metaphor": "Web scraping is like sending a research assistant to read a website and take notes—they visit the page, extract the important information, and bring it back structured and ready to use.",
+    "category": "Workflows & Actions",
+    "relatedTerms": ["workflow", "action", "knowledge-base", "integration"],
+    "example": "Scraping competitor pricing pages to monitor changes and feed into a competitive intelligence workflow.",
+    "article": {
+      "marketerUseCases": [
+        "Gathering competitor content for analysis and gap identification",
+        "Extracting product data from e-commerce sites for comparison",
+        "Populating knowledge bases with content from your own website",
+        "Monitoring industry news sites for trending topics"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Content Extraction",
+          "description": "Pull text, images, links, and structured data from web pages."
+        },
+        {
+          "title": "Selectors",
+          "description": "Specify which page elements to extract using CSS selectors or XPath."
+        },
+        {
+          "title": "JavaScript Rendering",
+          "description": "Handle dynamic pages that load content via JavaScript rather than static HTML."
+        },
+        {
+          "title": "Rate Limiting",
+          "description": "Respectful scraping that doesn't overwhelm target sites with requests."
+        }
+      ],
+      "benefits": [
+        "Access web data for AI processing without manual copy-paste",
+        "Automate competitive intelligence gathering",
+        "Keep knowledge bases current with fresh web content",
+        "Enable data-driven workflows with external information"
+      ],
+      "challenges": [
+        {
+          "challenge": "Pages block scraping",
+          "solution": "Use proper request headers, respect robots.txt, consider official APIs where available"
+        },
+        {
+          "challenge": "Page structure changes",
+          "solution": "Build resilient selectors, monitor for failures, update configurations when needed"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is web scraping legal?",
+          "answer": "Generally yes for public data, but respect robots.txt, terms of service, and rate limits. Avoid scraping personal data or copyrighted content for redistribution."
+        }
+      ]
+    }
+  },
+  {
+    "id": "copilot",
+    "term": "Copilot",
+    "definition": "AI-powered assistance within AirOps that helps users build, edit, and debug workflows. Copilot provides suggestions, answers questions about platform features, and helps troubleshoot issues in natural language.",
+    "metaphor": "Copilot is like having an experienced colleague sitting next to you—when you're stuck or unsure, you can ask them questions and they'll help you figure out the best approach without you having to read all the documentation.",
+    "category": "Core Concepts",
+    "relatedTerms": ["airops-studio", "workflow", "prompt"],
+    "example": "Asking Copilot 'How do I add a conditional branch based on sentiment score?' and getting step-by-step guidance.",
+    "article": {
+      "marketerUseCases": [
+        "Getting help building complex workflow logic without technical expertise",
+        "Debugging why a workflow isn't producing expected outputs",
+        "Learning new platform features through conversational questions",
+        "Quickly finding the right action or integration for your use case"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Natural Language Interface",
+          "description": "Ask questions and get help in plain English rather than searching documentation."
+        },
+        {
+          "title": "Context-Aware Assistance",
+          "description": "Copilot understands what you're working on and provides relevant suggestions."
+        },
+        {
+          "title": "Code Generation",
+          "description": "Generate code snippets for custom actions or transformations."
+        },
+        {
+          "title": "Debugging Support",
+          "description": "Help identify and fix issues in workflow logic or configurations."
+        }
+      ],
+      "benefits": [
+        "Faster workflow development with AI guidance",
+        "Reduced learning curve for new users",
+        "Less time searching documentation",
+        "More confident experimentation with platform features"
+      ],
+      "faq": [
+        {
+          "question": "Can Copilot build entire workflows for me?",
+          "answer": "Copilot can help design and build workflows through guidance and suggestions, but you remain in control of the final configuration."
+        }
+      ]
+    }
+  },
+  {
+    "id": "liquid",
+    "term": "Liquid",
+    "definition": "A templating language used in AirOps for dynamic text generation, variable interpolation, and data transformation. Liquid enables creating flexible templates that insert data, apply filters, and handle conditional content.",
+    "metaphor": "Liquid is like a smart mail merge—beyond just inserting names into 'Dear {{name}},' it can transform data, make decisions, and format outputs all within your templates.",
+    "category": "Data & Variables",
+    "relatedTerms": ["variable", "prompt", "workflow", "output"],
+    "example": "{{ product.name | upcase }} - ${{ product.price | money }} transforms 'Widget' and 19.99 into 'WIDGET - $19.99'",
+    "article": {
+      "marketerUseCases": [
+        "Creating dynamic prompts that adapt based on input data",
+        "Formatting AI outputs with consistent styling and structure",
+        "Building email templates with conditional content blocks",
+        "Transforming data between workflow steps without code"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Variable Output",
+          "description": "Insert variable values using {{ variable }} syntax."
+        },
+        {
+          "title": "Filters",
+          "description": "Transform values with filters: {{ text | upcase }}, {{ number | round }}, {{ date | date: '%B %d' }}."
+        },
+        {
+          "title": "Control Flow",
+          "description": "Use {% if %}, {% for %}, and other tags for conditional and repeating content."
+        },
+        {
+          "title": "Objects and Arrays",
+          "description": "Access nested data with dot notation: {{ user.address.city }} or iterate with {% for item in items %}."
+        }
+      ],
+      "benefits": [
+        "Powerful templating without writing code",
+        "Consistent data transformation across workflows",
+        "Dynamic content generation based on data",
+        "Industry-standard syntax used across many platforms"
+      ],
+      "faq": [
+        {
+          "question": "Do I need to learn Liquid?",
+          "answer": "Basic variable insertion ({{ name }}) works without learning much. More complex transformations benefit from learning filters and control flow."
+        },
+        {
+          "question": "Where else is Liquid used?",
+          "answer": "Liquid was created by Shopify and is used across many platforms including Jekyll, Shopify themes, and various automation tools."
+        }
+      ]
+    }
+  },
+  {
+    "id": "semantic-search",
+    "term": "Semantic Search",
+    "definition": "Search that understands meaning rather than just matching keywords. Semantic search uses embeddings to find content that's conceptually related to the query, even when different words are used.",
+    "metaphor": "Semantic search is like asking a librarian for 'books about courage' and getting results about bravery, heroism, and overcoming fear—not just books with 'courage' in the title. It understands what you mean, not just what you typed.",
+    "category": "AI & Models",
+    "relatedTerms": ["embedding", "rag", "knowledge-base", "context"],
+    "example": "Searching for 'reduce customer churn' and finding articles about 'retention strategies' and 'preventing cancellations.'",
+    "article": {
+      "marketerUseCases": [
+        "Finding all past content related to a topic, regardless of exact wording",
+        "Retrieving relevant knowledge base articles for AI context",
+        "Discovering similar campaigns or assets for inspiration",
+        "Matching customer questions to relevant help documentation"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Meaning Over Keywords",
+          "description": "Find content based on conceptual similarity, not exact word matches."
+        },
+        {
+          "title": "Embedding-Based",
+          "description": "Convert queries and documents to vectors, then find nearest neighbors in vector space."
+        },
+        {
+          "title": "Relevance Ranking",
+          "description": "Results ranked by semantic similarity scores rather than keyword frequency."
+        },
+        {
+          "title": "Hybrid Search",
+          "description": "Combine semantic search with keyword search for best of both approaches."
+        }
+      ],
+      "benefits": [
+        "Find relevant content even with vocabulary mismatches",
+        "Better retrieval for RAG and knowledge base queries",
+        "More intuitive search experience for users",
+        "Discover related content you might miss with keywords"
+      ],
+      "comparison": {
+        "term": "Keyword Search",
+        "description": "Keyword search matches exact terms and requires knowing the right words. Semantic search understands meaning, finding relevant results regardless of specific terminology used."
+      },
+      "faq": [
+        {
+          "question": "Is semantic search always better than keyword search?",
+          "answer": "Not always. Keyword search is better for exact matches (product IDs, names). Many systems use hybrid approaches combining both."
+        }
+      ]
+    }
+  },
+  {
+    "id": "cms-integration",
+    "term": "CMS Integration",
+    "definition": "Connections between AirOps and content management systems like WordPress, Webflow, Contentful, and others. CMS integrations enable workflows to read existing content, publish new content, and update pages directly.",
+    "metaphor": "CMS integration is like giving your AI workflows the keys to your website—they can read what's there, add new content, and make updates, all without you having to copy-paste between systems.",
+    "category": "Integrations",
+    "relatedTerms": ["integration", "workflow", "content-engineering", "api"],
+    "example": "A workflow that generates blog posts and publishes them directly to WordPress as drafts for review.",
+    "article": {
+      "marketerUseCases": [
+        "Publishing AI-generated content directly to your blog",
+        "Pulling existing content into workflows for refresh and optimization",
+        "Updating meta descriptions across hundreds of pages automatically",
+        "Syncing content between multiple CMS platforms"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Read Access",
+          "description": "Pull existing content from your CMS for analysis, refresh, or repurposing."
+        },
+        {
+          "title": "Write/Publish",
+          "description": "Create new content or update existing pages directly from workflows."
+        },
+        {
+          "title": "Draft vs Published",
+          "description": "Control whether content goes live immediately or saves as draft for review."
+        },
+        {
+          "title": "Field Mapping",
+          "description": "Map workflow outputs to CMS fields like title, body, meta description, and custom fields."
+        }
+      ],
+      "benefits": [
+        "Eliminate manual copy-paste between AI tools and your CMS",
+        "Scale content operations with direct publishing",
+        "Keep content in sync across platforms",
+        "Enable end-to-end automated content workflows"
+      ],
+      "tools": [
+        {
+          "name": "WordPress",
+          "description": "World's most popular CMS, supported via API integration"
+        },
+        {
+          "name": "Webflow",
+          "description": "Visual web builder with CMS capabilities"
+        },
+        {
+          "name": "Contentful",
+          "description": "Headless CMS for structured content"
+        },
+        {
+          "name": "Sanity",
+          "description": "Real-time collaborative content platform"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Can I publish to multiple CMS platforms?",
+          "answer": "Yes, workflows can connect to multiple CMS integrations, enabling multi-platform publishing from a single workflow."
+        }
+      ]
+    }
+  },
+  {
+    "id": "content-refresh",
+    "term": "Content Refresh",
+    "definition": "The process of updating existing content to improve accuracy, relevance, and search performance. Content refresh workflows analyze outdated content and apply AI-powered updates to keep your content library current and competitive.",
+    "metaphor": "Content refresh is like renovating a house—the foundation is still good, but updating the fixtures, paint, and appliances makes it feel new again and increases its value. Same content, modernized.",
+    "category": "Workflows & Actions",
+    "relatedTerms": ["content-engineering", "opportunities", "pages", "aeo"],
+    "example": "A workflow that identifies blog posts over 12 months old, checks for outdated statistics, and drafts updated versions.",
+    "article": {
+      "marketerUseCases": [
+        "Updating statistics and data in older blog posts automatically",
+        "Refreshing product content when features or pricing change",
+        "Adding new sections to existing content based on search trends",
+        "Improving underperforming pages identified through analytics"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Content Audit",
+          "description": "Identify which content needs refreshing based on age, performance, or accuracy."
+        },
+        {
+          "title": "Gap Analysis",
+          "description": "Compare existing content against competitors or search trends to find missing elements."
+        },
+        {
+          "title": "AI-Powered Updates",
+          "description": "Use AI to draft improvements, update facts, and enhance existing content."
+        },
+        {
+          "title": "Version Tracking",
+          "description": "Maintain history of content changes and their impact on performance."
+        }
+      ],
+      "benefits": [
+        "Maintain content accuracy without starting from scratch",
+        "Improve search performance of existing assets",
+        "Extract more value from your content investment",
+        "Scale content maintenance across large libraries"
+      ],
+      "faq": [
+        {
+          "question": "How often should content be refreshed?",
+          "answer": "Depends on your industry and content type. Fast-moving topics may need quarterly updates; evergreen content might be fine annually. Let performance data guide prioritization."
+        },
+        {
+          "question": "Does refreshed content perform better?",
+          "answer": "Often yes—search engines favor fresh content, and updated accuracy improves user experience. Track before/after metrics to measure impact."
+        }
+      ]
+    }
+  },
+  {
+    "id": "prompt-engineering",
+    "term": "Prompt Engineering",
+    "definition": "The practice of designing and refining prompts to get optimal outputs from AI models. Prompt engineering involves crafting instructions, providing context, using examples, and iterating to improve AI response quality and consistency.",
+    "metaphor": "Prompt engineering is like learning to communicate with a brilliant but literal assistant—you need to be clear, specific, and sometimes creative in how you phrase requests to get exactly what you need.",
+    "category": "AI & Models",
+    "relatedTerms": ["prompt", "model", "context", "completion"],
+    "example": "Refining a prompt from 'Write about our product' to 'Write a 200-word product description for [product] targeting [audience], emphasizing [benefits], in a [tone] voice.'",
+    "article": {
+      "marketerUseCases": [
+        "Developing reusable prompt templates for consistent content generation",
+        "Optimizing prompts to reduce AI hallucinations and improve accuracy",
+        "Creating prompts that maintain brand voice across different content types",
+        "Iterating on prompts to improve output quality based on feedback"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Clear Instructions",
+          "description": "Explicit directions about what the AI should do, avoiding ambiguity."
+        },
+        {
+          "title": "Context Setting",
+          "description": "Background information that helps the AI understand the situation and constraints."
+        },
+        {
+          "title": "Few-Shot Examples",
+          "description": "Sample inputs and outputs that demonstrate the desired pattern or format."
+        },
+        {
+          "title": "Output Formatting",
+          "description": "Specify desired format, length, structure, and style of the response."
+        }
+      ],
+      "benefits": [
+        "Dramatically improved AI output quality",
+        "More consistent results across runs",
+        "Reduced need for manual editing",
+        "Reusable prompts that scale across use cases"
+      ],
+      "challenges": [
+        {
+          "challenge": "Outputs are inconsistent",
+          "solution": "Add more specific constraints, include examples, reduce temperature, or use structured output formats"
+        },
+        {
+          "challenge": "AI doesn't follow instructions",
+          "solution": "Rephrase more explicitly, put critical instructions at the start and end, or break complex prompts into steps"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is prompt engineering a real skill?",
+          "answer": "Yes—effective prompt engineering can dramatically improve AI output quality. It's a learnable skill that combines clear communication, domain knowledge, and understanding of AI behavior."
+        },
+        {
+          "question": "Do different models need different prompts?",
+          "answer": "Often yes. Models have different strengths and instruction-following patterns. Prompts that work well with GPT-4 may need adjustment for Claude or other models."
+        }
+      ]
+    }
   }
 ]
