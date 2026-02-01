@@ -95,9 +95,9 @@
     "example": "A lead enrichment workflow that takes a company name and returns detailed firmographic data.",
     "article": {
       "marketerUseCases": [
-        "Automated blog publishing workflow: draft → AI enhancement → SEO optimization → CMS upload → social scheduling",
-        "Lead scoring workflow that pulls data from forms, enriches with firmographics, scores fit, and routes to appropriate sales rep",
-        "Campaign reporting workflow that aggregates data from ads, email, and web analytics into a unified dashboard"
+        "Automated blog publishing workflow: brief → AI draft → SEO optimization → human review → CMS publish via Webflow or WordPress",
+        "Content enrichment workflow that takes a topic, researches via web scraping, generates a structured outline, and creates a full article",
+        "Product description workflow that pulls data from Shopify, generates optimized descriptions, and publishes back to your store"
       ],
       "keyConcepts": [
         {
@@ -245,9 +245,9 @@
     "example": "A webhook trigger that runs a workflow whenever a new form submission is received.",
     "article": {
       "marketerUseCases": [
-        "Form submission trigger that kicks off a lead nurture sequence the moment someone downloads a whitepaper",
-        "Scheduled trigger that generates weekly performance reports every Monday morning",
-        "CRM trigger that sends personalized onboarding emails when a deal moves to 'Closed Won'"
+        "Form submission trigger that starts content personalization when someone downloads a whitepaper",
+        "Scheduled trigger that generates weekly content performance summaries every Monday morning",
+        "Webhook trigger that drafts personalized content when notified of a deal close"
       ],
       "keyConcepts": [
         {
@@ -657,9 +657,9 @@
     "example": "A Salesforce integration that allows workflows to create and update leads.",
     "article": {
       "marketerUseCases": [
-        "Syncing leads from Facebook Lead Ads directly into HubSpot with AI-powered enrichment",
-        "Automatically posting AI-generated content to social platforms on a schedule",
-        "Pulling campaign performance data from Google Ads, Meta, and LinkedIn into a unified reporting workflow"
+        "Publishing AI-generated blog posts directly to WordPress or Webflow CMS",
+        "Connecting to Slack to send notifications when content is ready for review",
+        "Pulling product data from Shopify to generate and publish optimized descriptions"
       ],
       "keyConcepts": [
         {
@@ -775,9 +775,9 @@
     "example": "A Stripe webhook that triggers a customer onboarding workflow when a payment succeeds.",
     "article": {
       "marketerUseCases": [
-        "Triggering a welcome email sequence the instant someone subscribes via a form",
-        "Kicking off a lead scoring workflow when a new contact is added to your CRM",
-        "Automatically generating a case study draft when a deal closes in Salesforce"
+        "Triggering content generation when a form is submitted on your website",
+        "Starting an AI research workflow when a new contact is added via webhook",
+        "Automatically generating a case study draft when notified of a deal close"
       ],
       "keyConcepts": [
         {
@@ -1452,13 +1452,13 @@
     "metaphor": "AirOps Studio is like a recording studio for automation—you're the producer, arranging different tracks (AI actions, data sources, logic) into a finished song (workflow). No instruments required, just drag, drop, and create.",
     "category": "Core Concepts",
     "relatedTerms": ["workflow", "action", "airops-grid"],
-    "example": "Building a lead enrichment workflow in Studio by connecting a CRM trigger to AI research actions and email outputs.",
+    "example": "Building a content generation workflow in Studio by connecting a brief input to AI research actions and CMS publishing.",
     "article": {
       "marketerUseCases": [
         "Building a content generation workflow that creates blog drafts from briefs",
-        "Creating an automated lead scoring system that combines AI analysis with CRM updates",
-        "Designing a social media workflow that repurposes content across platforms",
-        "Setting up competitive monitoring that alerts you to market changes"
+        "Creating a product description workflow that pulls from Shopify and publishes optimized copy",
+        "Designing a content repurposing workflow that transforms blogs into multiple format variations",
+        "Setting up competitive monitoring that scrapes competitor sites and summarizes changes"
       ],
       "keyConcepts": [
         {
@@ -2005,7 +2005,7 @@
     "definition": "AirOps' analytics pillar that provides visibility into your AI search performance, competitive positioning, and content opportunities. Insights helps you understand where you stand in AI-powered search and what to prioritize.",
     "metaphor": "Insights is like having a scout who reports back on the AI search battlefield—showing you where you're winning, where competitors are gaining ground, and where the best opportunities lie for content investment.",
     "category": "Core Concepts",
-    "relatedTerms": ["aeo", "analytics", "opportunities", "pages", "citations"],
+    "relatedTerms": ["aeo", "analytics", "opportunities", "page360", "citations"],
     "example": "Using Insights to discover that competitors are being cited 3x more often for 'best CRM software' queries, revealing a content gap.",
     "article": {
       "marketerUseCases": [
@@ -2056,7 +2056,7 @@
     "definition": "AirOps feature that surfaces content gaps and recommendations based on AI search performance data. Opportunities identifies where new content could capture AI visibility or where existing content needs refreshing.",
     "metaphor": "Opportunities is like a treasure map for content—it shows you exactly where to dig (create content) or where to polish what you already have (refresh content) to find AI search gold.",
     "category": "Core Concepts",
-    "relatedTerms": ["insights", "aeo", "content-engineering", "pages"],
+    "relatedTerms": ["insights", "aeo", "content-engineering", "page360"],
     "example": "Opportunities flagging that 'how to implement SSO' is a high-volume query where you have no content but competitors are being cited.",
     "article": {
       "marketerUseCases": [
@@ -2098,48 +2098,64 @@
     }
   },
   {
-    "id": "pages",
-    "term": "Pages",
-    "definition": "AirOps feature providing a unified inventory view of your content, combining traditional SEO metrics with AI search visibility data. Pages helps you see how each piece of content performs across both traditional and AI-powered search.",
-    "metaphor": "Pages is like a dashboard for your content fleet—you can see the health, performance, and status of every piece of content you have, whether it's winning in Google, AI search, or both.",
+    "id": "page360",
+    "term": "Page360",
+    "definition": "AirOps' unified content performance layer that combines SEO metrics, GA4 analytics, and AI search signals in one view. Page360 treats pages as living assets, surfacing the highest-impact refresh opportunities by showing which content is being cited by AI, where SEO performance is softening, and what's driving real business outcomes.",
+    "metaphor": "Page360 is like a health dashboard for every page on your site—instead of checking multiple doctor's offices (GSC, GA4, AI tools), you get one complete checkup showing vital signs across all channels and exactly what needs attention.",
     "category": "Core Concepts",
-    "relatedTerms": ["insights", "aeo", "opportunities", "analytics"],
-    "example": "Using Pages to discover that your pricing page ranks #1 in Google but is never cited by AI assistants, revealing an optimization opportunity.",
+    "relatedTerms": ["insights", "aeo", "opportunities", "citations", "content-refresh"],
+    "example": "Page360 revealing that your product comparison page gets strong SEO traffic but isn't being cited by ChatGPT—a clear signal to optimize its structure for AI readability.",
     "article": {
       "marketerUseCases": [
-        "Auditing content library for AI search optimization gaps",
-        "Identifying pages that perform well in SEO but poorly in AI search",
-        "Tracking performance changes after content updates",
-        "Prioritizing pages for refresh based on combined SEO and AI metrics"
+        "Identifying high-traffic pages that aren't being cited by AI assistants",
+        "Prioritizing content refresh based on content decay trends and publish dates",
+        "Understanding which AI prompts your pages are being cited for across ChatGPT, Gemini, and Claude",
+        "Tracking session depth and bounce rates to connect content performance to business outcomes"
       ],
       "keyConcepts": [
         {
-          "title": "Unified Metrics",
-          "description": "See SEO rankings, traffic, and AI visibility metrics side-by-side for each page."
+          "title": "AI Search Signals",
+          "description": "See the prompts your pages are being cited or mentioned for in AI answers. Understand what models like ChatGPT are reading your content for."
         },
         {
-          "title": "Content Inventory",
-          "description": "Complete view of all indexed content with performance data."
+          "title": "SEO Performance",
+          "description": "Consolidates clicks, impressions, rankings, and CTR from Google Search Console to surface where demand exists and where performance is softening."
         },
         {
-          "title": "Performance Gaps",
-          "description": "Identify pages with mismatched performance between SEO and AI search."
+          "title": "Engagement Metrics",
+          "description": "Measures session depth, bounce rate, and downstream impact to prioritize refresh efforts based on real business outcomes."
         },
         {
-          "title": "Historical Tracking",
-          "description": "Monitor how page performance changes over time across metrics."
+          "title": "Content Decay Tracking",
+          "description": "Tracks publish dates and content aging trends to identify valuable pages losing visibility before performance drops significantly."
+        },
+        {
+          "title": "AI Personas",
+          "description": "Collects AI search data by auto-prompting different AI chatbots (ChatGPT, Gemini, Claude) with common questions about your brand."
         }
       ],
       "benefits": [
-        "Holistic view of content performance across search types",
-        "Data-driven prioritization for content optimization",
-        "Track ROI of content investments across channels",
-        "Identify underperforming assets for improvement or removal"
+        "Content less than 3 months old is 3x more likely to be cited in AI answers—Page360 helps you keep content fresh",
+        "Targeted refresh programs have delivered 40%+ lifts in traffic for AirOps customers",
+        "Single view eliminates switching between GSC, GA4, and AI monitoring tools",
+        "Surfaces highest-impact refresh opportunities based on combined signals"
       ],
+      "comparison": {
+        "term": "Google Search Console",
+        "description": "GSC shows SEO performance only. Page360 unifies SEO data with GA4 engagement metrics and AI search citation data, revealing the complete picture of content performance across all search experiences."
+      },
       "faq": [
         {
-          "question": "How does Pages differ from Google Search Console?",
-          "answer": "Pages combines GSC data with AI search visibility metrics, giving you a complete picture that GSC alone can't provide."
+          "question": "What data sources does Page360 combine?",
+          "answer": "Page360 unifies Google Search Console (SEO metrics), GA4 (engagement and traffic), and AI search signals (citations across ChatGPT, Gemini, Claude, and others)."
+        },
+        {
+          "question": "Who should use Page360?",
+          "answer": "Content engineers, SEO/AEO leads, and growth marketers use it for day-to-day prioritization. CMOs and content leaders use it for visibility into what's driving results."
+        },
+        {
+          "question": "Why does content freshness matter for AI search?",
+          "answer": "AirOps research shows content less than 3 months old is 3x more likely to be cited in AI answers. Page360 helps identify which valuable pages are aging out before visibility drops."
         }
       ]
     }
@@ -2201,9 +2217,9 @@
     "example": "Deploying a Power Agent that automatically monitors industry news and drafts content briefs for trending topics.",
     "article": {
       "marketerUseCases": [
-        "Deploying a content refresh agent that updates outdated blog posts automatically",
+        "Deploying a content refresh agent that updates outdated blog posts and publishes to CMS",
         "Using a competitive monitoring agent that tracks and summarizes competitor content",
-        "Running a social media agent that repurposes long-form content into platform-specific posts",
+        "Running a content repurposing agent that transforms blogs into multiple format variations",
         "Implementing a research agent that gathers information for content briefs"
       ],
       "keyConcepts": [
@@ -2352,8 +2368,8 @@
       "marketerUseCases": [
         "Generating descriptions for each product in a catalog",
         "Processing each row of a CSV with AI enrichment",
-        "Sending personalized emails to each contact in a list",
-        "Creating social posts for each item in a content batch"
+        "Creating personalized content drafts for each contact in a list",
+        "Generating social copy variations for each item in a content batch"
       ],
       "keyConcepts": [
         {
@@ -2668,7 +2684,7 @@
     "definition": "The process of updating existing content to improve accuracy, relevance, and search performance. Content refresh workflows analyze outdated content and apply AI-powered updates to keep your content library current and competitive.",
     "metaphor": "Content refresh is like renovating a house—the foundation is still good, but updating the fixtures, paint, and appliances makes it feel new again and increases its value. Same content, modernized.",
     "category": "Workflows & Actions",
-    "relatedTerms": ["content-engineering", "opportunities", "pages", "aeo"],
+    "relatedTerms": ["content-engineering", "opportunities", "page360", "aeo"],
     "example": "A workflow that identifies blog posts over 12 months old, checks for outdated statistics, and drafts updated versions.",
     "article": {
       "marketerUseCases": [
