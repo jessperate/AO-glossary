@@ -21,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="https://hypothes.is/embed.js" async></script>
       </head>
       <body className="min-h-screen antialiased">
         <header className="border-b border-[var(--border)] bg-[var(--background)] sticky top-0 z-20">
