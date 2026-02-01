@@ -1,57 +1,94 @@
+'use client'
+
+import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import glossaryData from '../../data/glossary.json'
-import { GlossaryTerm, CATEGORIES } from '@/lib/types'
+import { GlossaryTerm } from '@/lib/types'
 
 const terms = glossaryData as GlossaryTerm[]
 
 export default function Home() {
-  const termsByCategory = CATEGORIES.map((category) => ({
-    category,
-    terms: terms.filter((t) => t.category === category).sort((a, b) => a.term.localeCompare(b.term)),
-  }))
+  const [searchQuery, setSearchQuery] = useState('')
+
+  const filteredTerms = useMemo(() => {
+    const sorted = [...terms].sort((a, b) => a.term.localeCompare(b.term))
+    if (!searchQuery.trim()) return sorted
+    return sorted.filter(
+      (term) =>
+        term.term.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        term.definition.toLowerCase().includes(searchQuery.toLowerCase())
+    )
+  }, [searchQuery])
 
   return (
-    <div className="max-w-3xl">
-      <div className="mb-12">
-        <h1 className="text-4xl font-bold mb-4">AirOps Glossary</h1>
-        <p className="text-xl text-[var(--muted-foreground)]">
-          Your guide to understanding AirOps terminology, AI concepts, and workflow automation.
+    <div className="max-w-4xl">
+      {/* Header */}
+      <div className="mb-8">
+        <h1 className="text-5xl font-bold mb-4">Glossary</h1>
+        <p className="text-lg text-[var(--muted-foreground)]">
+          A comprehensive glossary of all things AirOps, AI, and workflow automation.
         </p>
       </div>
 
-      <div className="space-y-8">
-        {termsByCategory.map(({ category, terms: categoryTerms }) => (
-          <section key={category}>
-            <h2 className="text-lg font-semibold mb-3 text-[var(--primary)]">
-              {category}
-            </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-              {categoryTerms.map((term) => (
-                <Link
-                  key={term.id}
-                  href={`/glossary/${term.id}`}
-                  className="px-3 py-2 text-sm bg-[var(--muted)] text-[var(--foreground)] rounded-md hover:bg-[var(--border)] transition-colors"
-                >
-                  {term.term}
-                </Link>
-              ))}
+      {/* Search and Count */}
+      <div className="flex items-center justify-between mb-6">
+        <div className="relative">
+          <input
+            type="text"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            placeholder="Search"
+            className="w-64 px-4 py-3 pr-10 rounded-lg border border-[var(--border)] bg-[var(--background)] text-[var(--foreground)] placeholder:text-[var(--muted-foreground)] focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent"
+          />
+          <svg
+            className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-[var(--muted-foreground)]"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            />
+          </svg>
+        </div>
+        <span className="text-[var(--foreground)] font-medium">
+          {filteredTerms.length} items
+        </span>
+      </div>
+
+      {/* Divider */}
+      <div className="border-t border-[var(--border)] mb-8"></div>
+
+      {/* Terms List */}
+      <div className="space-y-4">
+        {filteredTerms.map((term) => (
+          <Link
+            key={term.id}
+            href={`/glossary/${term.id}`}
+            className="block group"
+          >
+            <div className="border border-[var(--border)] rounded-lg p-6 transition-all hover:border-[var(--primary)] hover:border-l-4 hover:border-l-[var(--primary)] bg-white hover:bg-[#fafafa]">
+              <h2 className="text-xl font-semibold mb-2 group-hover:text-[var(--primary)] transition-colors">
+                {term.term}
+              </h2>
+              <p className="text-[var(--muted-foreground)] leading-relaxed">
+                {term.definition.length > 200
+                  ? term.definition.substring(0, 200) + '...'
+                  : term.definition}
+              </p>
             </div>
-          </section>
+          </Link>
         ))}
       </div>
 
-      <div className="mt-12 p-6 bg-[var(--muted)] rounded-lg">
-        <h2 className="text-lg font-semibold mb-2">Missing a term?</h2>
-        <p className="text-[var(--muted-foreground)] mb-4">
-          Help us improve the glossary by suggesting new terms.
-        </p>
-        <Link
-          href="/contribute"
-          className="inline-block px-4 py-2 bg-[var(--primary)] text-black font-medium rounded-md hover:opacity-90 transition-opacity"
-        >
-          Suggest a Term
-        </Link>
-      </div>
+      {filteredTerms.length === 0 && (
+        <div className="text-center py-12 text-[var(--muted-foreground)]">
+          No terms found matching "{searchQuery}"
+        </div>
+      )}
     </div>
   )
 }
