@@ -23,22 +23,22 @@ export default function Home() {
   return (
     <div className="max-w-4xl">
       {/* Header */}
-      <div className="mb-8">
-        <h1 className="text-5xl mb-4 font-[family-name:var(--font-serif)]">Glossary</h1>
-        <p className="text-lg text-[var(--muted-foreground)]">
+      <div className="mb-6 sm:mb-8">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl mb-3 sm:mb-4 font-[family-name:var(--font-serif)]">Glossary</h1>
+        <p className="text-base sm:text-lg text-[var(--muted-foreground)]">
           A comprehensive glossary of all things AirOps, AI, and workflow automation.
         </p>
       </div>
 
       {/* Search and Count */}
-      <div className="flex items-center justify-between mb-6">
-        <div className="relative">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 mb-6">
+        <div className="relative flex-1 sm:flex-none">
           <input
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search"
-            className="w-64 px-4 py-3 pr-10 rounded-lg border border-[var(--border)] bg-[var(--background)] text-[var(--foreground)] placeholder:text-[var(--muted-foreground)] focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent"
+            className="w-full sm:w-64 px-4 py-3 pr-10 rounded-lg border border-[var(--border)] bg-[var(--background)] text-[var(--foreground)] placeholder:text-[var(--muted-foreground)] focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:border-transparent"
           />
           <svg
             className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-[var(--muted-foreground)]"
@@ -54,29 +54,29 @@ export default function Home() {
             />
           </svg>
         </div>
-        <span className="text-[var(--foreground)] font-medium">
+        <span className="text-[var(--foreground)] font-medium text-sm sm:text-base">
           {filteredTerms.length} items
         </span>
       </div>
 
       {/* Divider */}
-      <div className="border-t border-[var(--border)] mb-8"></div>
+      <div className="border-t border-[var(--border)] mb-6 sm:mb-8"></div>
 
       {/* Terms List */}
-      <div className="space-y-4">
+      <div className="space-y-3 sm:space-y-4">
         {filteredTerms.map((term) => (
           <Link
             key={term.id}
             href={`/glossary/${term.id}`}
             className="block group"
           >
-            <div className="border border-[var(--border)] rounded-lg p-6 transition-all hover:border-[var(--primary)] hover:border-l-4 hover:border-l-[var(--primary)] bg-white hover:bg-[#fafafa]">
-              <h2 className="text-xl font-semibold mb-2 group-hover:text-[var(--primary)] transition-colors">
+            <div className="border border-[var(--border)] rounded-lg p-4 sm:p-6 transition-all hover:border-[var(--primary)] hover:border-l-4 hover:border-l-[var(--primary)] bg-white hover:bg-[#fafafa]">
+              <h2 className="text-lg sm:text-xl font-semibold mb-2 group-hover:text-[var(--primary)] transition-colors">
                 {term.term}
               </h2>
-              <p className="text-[var(--muted-foreground)] leading-relaxed">
-                {term.definition.length > 200
-                  ? term.definition.substring(0, 200) + '...'
+              <p className="text-sm sm:text-base text-[var(--muted-foreground)] leading-relaxed">
+                {term.definition.length > 150
+                  ? term.definition.substring(0, 150) + '...'
                   : term.definition}
               </p>
             </div>
@@ -86,7 +86,7 @@ export default function Home() {
 
       {filteredTerms.length === 0 && (
         <div className="text-center py-12 text-[var(--muted-foreground)]">
-          No terms found matching "{searchQuery}"
+          No terms found matching &quot;{searchQuery}&quot;
         </div>
       )}
     </div>

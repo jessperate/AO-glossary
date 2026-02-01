@@ -19,17 +19,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
       <body className="min-h-screen antialiased">
         <header className="border-b border-[var(--border)] bg-[var(--background)] sticky top-0 z-20">
-          <div className="px-6 py-4 flex items-center gap-2">
+          <div className="px-4 sm:px-6 py-4 flex items-center gap-2">
             <Link href="/" className="flex items-center gap-2">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={`${process.env.NODE_ENV === 'production' ? '/AO-glossary' : ''}/logo-airops.svg`}
                 alt="AirOps"
-                className="h-6"
+                className="h-5 sm:h-6"
               />
-              <span className="text-xl font-bold text-[var(--foreground)]">
+              <span className="text-lg sm:text-xl font-bold text-[var(--foreground)]">
                 Glossary
               </span>
             </Link>
@@ -37,7 +40,9 @@ export default function RootLayout({
         </header>
         <div className="flex">
           <Sidebar terms={terms} />
-          <main className="flex-1 p-8 overflow-auto">{children}</main>
+          <main className="flex-1 p-4 sm:p-6 lg:p-8 overflow-auto min-h-[calc(100vh-73px)]">
+            {children}
+          </main>
         </div>
       </body>
     </html>
