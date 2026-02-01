@@ -1,5 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
 @import "tailwindcss";
+
+@font-face {
+  font-family: 'Saans';
+  src: url('/AO-glossary/fonts/Saans-Regular.woff2') format('woff2'),
+       url('/AO-glossary/fonts/Saans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Saans';
+  src: url('/AO-glossary/fonts/Saans-Medium.woff2') format('woff2'),
+       url('/AO-glossary/fonts/Saans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Saans';
+  src: url('/AO-glossary/fonts/Saans-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Saans';
+  src: url('/AO-glossary/fonts/Saans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --background: #ffffff;
@@ -10,7 +44,7 @@
   --muted-foreground: #333333;
   --border: #e5e5e5;
 
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-sans: 'Saans', system-ui, -apple-system, sans-serif;
   --font-serif: 'Merriweather', Georgia, serif;
 }
 
