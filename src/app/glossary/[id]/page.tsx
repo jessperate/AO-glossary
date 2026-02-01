@@ -49,11 +49,36 @@ export default async function TermPage({ params }: { params: Promise<{ id: strin
         </p>
       </div>
 
+      {/* Metaphor */}
+      {term.metaphor && (
+        <section className="mb-10 p-5 bg-[#f0fff4] rounded-lg border border-[var(--primary)]">
+          <p className="text-sm font-medium text-[var(--primary)] mb-2 font-[family-name:var(--font-mono)]">Think of it this way</p>
+          <p className="text-[var(--foreground)] italic">"{term.metaphor}"</p>
+        </section>
+      )}
+
       {/* Example */}
       {term.example && (
         <section className="mb-10 p-4 bg-[var(--muted)] rounded-lg border-l-4 border-[var(--primary)]">
           <p className="text-sm font-medium text-[var(--muted-foreground)] mb-1">Example</p>
           <p className="text-[var(--foreground)]">{term.example}</p>
+        </section>
+      )}
+
+      {/* Marketer Use Cases */}
+      {article?.marketerUseCases && article.marketerUseCases.length > 0 && (
+        <section className="mb-10">
+          <h2 className="text-2xl font-semibold mb-4">Marketer Use Cases</h2>
+          <div className="space-y-3">
+            {article.marketerUseCases.map((useCase, index) => (
+              <div key={index} className="flex gap-3 items-start">
+                <div className="w-6 h-6 rounded-full bg-[var(--primary)] text-black flex items-center justify-center text-sm font-medium shrink-0">
+                  {index + 1}
+                </div>
+                <p className="text-[var(--muted-foreground)]">{useCase}</p>
+              </div>
+            ))}
+          </div>
         </section>
       )}
 

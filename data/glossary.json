@@ -3,10 +3,16 @@
     "id": "agent",
     "term": "Agent",
     "definition": "An AI-powered autonomous workflow that can make decisions and take actions based on context and goals. Unlike traditional automation that follows rigid rules, agents dynamically adapt their behavior, breaking down complex tasks into steps and using various tools to achieve objectives.",
+    "metaphor": "Think of an agent like a skilled executive assistant who doesn't just follow a checklist—they understand your goals, make judgment calls, research when needed, and figure out the best way to get things done without you micromanaging every step.",
     "category": "Core Concepts",
     "relatedTerms": ["workflow", "action", "tool"],
     "example": "A content research agent that gathers information from multiple sources and synthesizes it into a report.",
     "article": {
+      "marketerUseCases": [
+        "Competitive research agent that monitors competitor websites, social media, and press releases, then summarizes key insights weekly",
+        "Lead qualification agent that researches prospects, scores them based on fit criteria, and drafts personalized outreach",
+        "Content repurposing agent that takes a blog post and automatically creates social snippets, email copy, and ad variations"
+      ],
       "keyConcepts": [
         {
           "title": "Autonomy",
@@ -83,10 +89,16 @@
     "id": "workflow",
     "term": "Workflow",
     "definition": "A sequence of connected steps that automate a process. Workflows in AirOps can include AI actions, data transformations, conditional logic, and integrations with external services, enabling complex automation without code.",
+    "metaphor": "A workflow is like a recipe in a cookbook—it lists each step in order, tells you what ingredients (data) to use, and guides you from raw inputs to a finished dish. Follow the recipe, get consistent results every time.",
     "category": "Workflows & Actions",
     "relatedTerms": ["agent", "action", "trigger"],
     "example": "A lead enrichment workflow that takes a company name and returns detailed firmographic data.",
     "article": {
+      "marketerUseCases": [
+        "Automated blog publishing workflow: draft → AI enhancement → SEO optimization → CMS upload → social scheduling",
+        "Lead scoring workflow that pulls data from forms, enriches with firmographics, scores fit, and routes to appropriate sales rep",
+        "Campaign reporting workflow that aggregates data from ads, email, and web analytics into a unified dashboard"
+      ],
       "keyConcepts": [
         {
           "title": "Sequential Execution",
@@ -163,10 +175,16 @@
     "id": "action",
     "term": "Action",
     "definition": "A single step within a workflow that performs a specific task. Actions can be AI-powered (like text generation, classification, or extraction) or utility-based (like data transformation, API calls, or conditional logic).",
+    "metaphor": "If a workflow is a recipe, an action is a single instruction like 'chop the onions' or 'simmer for 10 minutes.' Each action does one thing well, and you combine them to create the full dish.",
     "category": "Workflows & Actions",
     "relatedTerms": ["workflow", "tool"],
     "example": "A 'Generate Text' action that creates product descriptions based on input specifications.",
     "article": {
+      "marketerUseCases": [
+        "Text generation action to create dozens of ad copy variations from a single brief",
+        "Classification action to automatically categorize incoming customer feedback by sentiment and topic",
+        "Extraction action to pull key details (company, role, pain points) from sales call transcripts"
+      ],
       "keyConcepts": [
         {
           "title": "Input/Output",
@@ -221,10 +239,16 @@
     "id": "trigger",
     "term": "Trigger",
     "definition": "An event that initiates a workflow execution. Triggers can be manual (API call, button click) or automated (schedule, webhook, data change), allowing workflows to run in response to real-world events.",
+    "metaphor": "A trigger is like a doorbell—when someone presses it (an event happens), it sets off a chain reaction inside the house (your workflow starts running). No press, no action.",
     "category": "Workflows & Actions",
     "relatedTerms": ["workflow", "webhook"],
     "example": "A webhook trigger that runs a workflow whenever a new form submission is received.",
     "article": {
+      "marketerUseCases": [
+        "Form submission trigger that kicks off a lead nurture sequence the moment someone downloads a whitepaper",
+        "Scheduled trigger that generates weekly performance reports every Monday morning",
+        "CRM trigger that sends personalized onboarding emails when a deal moves to 'Closed Won'"
+      ],
       "keyConcepts": [
         {
           "title": "Event-Driven Execution",
@@ -269,10 +293,16 @@
     "id": "prompt",
     "term": "Prompt",
     "definition": "The input text or instructions given to an AI model to generate a response. Effective prompts clearly communicate the desired task, context, and output format, enabling AI models to produce accurate, useful results.",
+    "metaphor": "A prompt is like a creative brief you'd give to a freelance writer—the clearer and more specific your instructions, the closer the output will be to what you actually want. Vague briefs get vague results.",
     "category": "AI & Models",
     "relatedTerms": ["model", "completion", "variable"],
     "example": "Write a professional email to {{contact_name}} about {{product_name}} highlighting its key benefits.",
     "article": {
+      "marketerUseCases": [
+        "Crafting prompts that generate on-brand social media posts with consistent voice and tone",
+        "Building email sequence prompts that personalize messaging based on industry, role, and pain points",
+        "Creating product description prompts that highlight different benefits for different audience segments"
+      ],
       "keyConcepts": [
         {
           "title": "Instructions",
@@ -331,10 +361,16 @@
     "id": "model",
     "term": "Model",
     "definition": "The AI language model used to process prompts and generate responses. Different models have varying capabilities, speeds, and costs—choosing the right model for each task optimizes both quality and efficiency.",
+    "metaphor": "Think of models like different employees with different skill sets and pay grades. A senior strategist (GPT-4) handles complex problems but costs more. A junior assistant (GPT-3.5) handles routine tasks quickly and cheaply. Match the talent to the task.",
     "category": "AI & Models",
     "relatedTerms": ["prompt", "completion"],
     "example": "Using GPT-4 for complex reasoning tasks or Claude for nuanced content generation.",
     "article": {
+      "marketerUseCases": [
+        "Using faster, cheaper models for high-volume tasks like categorizing thousands of survey responses",
+        "Reserving premium models for high-stakes content like press releases or executive communications",
+        "A/B testing different models to find the best quality-to-cost ratio for your specific use cases"
+      ],
       "keyConcepts": [
         {
           "title": "Model Capabilities",
@@ -393,6 +429,7 @@
     "id": "completion",
     "term": "Completion",
     "definition": "The output generated by an AI model in response to a prompt. Completions can be free-form text, structured data (like JSON), code, or other formats depending on the model and prompt configuration.",
+    "metaphor": "A completion is like the finished essay a student turns in after receiving an assignment (the prompt). The quality depends on both how clear the assignment was and how capable the student is.",
     "category": "AI & Models",
     "relatedTerms": ["prompt", "model"],
     "example": "The generated product description returned after sending a prompt to the AI model.",
@@ -437,10 +474,16 @@
     "id": "variable",
     "term": "Variable",
     "definition": "A dynamic placeholder in workflows that stores and passes data between actions. Variables enable workflows to work with dynamic data rather than hardcoded values, making them reusable and adaptable.",
+    "metaphor": "Variables are like blank spaces in a Mad Libs game—the structure stays the same, but you fill in different words each time to create unique results. 'Dear {{name}}' becomes 'Dear Sarah' or 'Dear Mike' depending on the data.",
     "category": "Data & Variables",
     "relatedTerms": ["input", "output", "context"],
     "example": "{{user.email}} - a variable that contains the current user's email address.",
     "article": {
+      "marketerUseCases": [
+        "Personalizing email campaigns with {{first_name}}, {{company}}, and {{industry}} variables",
+        "Creating dynamic ad copy that inserts {{product_name}} and {{price}} from a product feed",
+        "Building landing pages that customize headlines based on {{utm_campaign}} parameters"
+      ],
       "keyConcepts": [
         {
           "title": "Variable Syntax",
@@ -481,6 +524,7 @@
     "id": "input",
     "term": "Input",
     "definition": "Data provided to a workflow or action at the start of execution. Inputs define the interface for your workflow—what information is required or optional for it to run successfully.",
+    "metaphor": "Inputs are like the order form at a restaurant—they specify exactly what information the kitchen (your workflow) needs to prepare your meal. Missing required fields? The order can't be processed.",
     "category": "Data & Variables",
     "relatedTerms": ["variable", "output"],
     "example": "A workflow input schema requiring 'company_name' and 'industry' fields.",
@@ -517,6 +561,7 @@
     "id": "output",
     "term": "Output",
     "definition": "The result produced by a workflow or action after execution. Outputs can be returned to the caller, passed to subsequent actions, or stored for later use.",
+    "metaphor": "Outputs are like the finished product coming off an assembly line—they're what you get after all the processing is done. The quality of the output depends on the inputs and how well you designed the process.",
     "category": "Data & Variables",
     "relatedTerms": ["variable", "input"],
     "example": "A JSON object containing enriched company data returned at the end of a workflow.",
@@ -552,10 +597,16 @@
     "id": "context",
     "term": "Context",
     "definition": "Background information provided to AI models to improve response quality. Context helps models understand the situation, produce relevant outputs, and maintain consistency across interactions.",
+    "metaphor": "Context is like briefing a new team member before a client meeting—the more relevant background you share (who the client is, what they care about, past conversations), the more effective their contribution will be.",
     "category": "AI & Models",
     "relatedTerms": ["prompt", "rag", "knowledge-base"],
     "example": "Including company brand guidelines as context when generating marketing copy.",
     "article": {
+      "marketerUseCases": [
+        "Including brand voice guidelines so AI-generated content sounds consistently on-brand",
+        "Providing customer persona details to tailor messaging for specific audience segments",
+        "Adding previous email thread context for AI to draft relevant, coherent follow-ups"
+      ],
       "keyConcepts": [
         {
           "title": "Static Context",
@@ -600,10 +651,16 @@
     "id": "integration",
     "term": "Integration",
     "definition": "A connection between AirOps and an external service or platform. Integrations enable workflows to read from and write to tools like CRMs, databases, communication platforms, and thousands of other applications.",
+    "metaphor": "An integration is like a universal translator that lets two people who speak different languages have a conversation. It handles all the translation (data formatting, authentication) so your workflow and external apps can work together seamlessly.",
     "category": "Integrations",
     "relatedTerms": ["api", "webhook", "connector"],
     "example": "A Salesforce integration that allows workflows to create and update leads.",
     "article": {
+      "marketerUseCases": [
+        "Syncing leads from Facebook Lead Ads directly into HubSpot with AI-powered enrichment",
+        "Automatically posting AI-generated content to social platforms on a schedule",
+        "Pulling campaign performance data from Google Ads, Meta, and LinkedIn into a unified reporting workflow"
+      ],
       "keyConcepts": [
         {
           "title": "Authentication",
@@ -662,10 +719,16 @@
     "id": "api",
     "term": "API",
     "definition": "Application Programming Interface - a standardized way for software systems to communicate. APIs enable workflows to be triggered programmatically and allow workflows to interact with any service that exposes an API.",
+    "metaphor": "An API is like a restaurant menu with a waiter—you don't go into the kitchen yourself. Instead, you tell the waiter (API) what you want from the menu (available endpoints), and they bring back exactly what you ordered.",
     "category": "Integrations",
     "relatedTerms": ["integration", "webhook", "endpoint"],
     "example": "Calling the AirOps API to execute a workflow programmatically from your application.",
     "article": {
+      "marketerUseCases": [
+        "Triggering personalized email generation from your website when a user completes a specific action",
+        "Building a custom content generation tool in your CMS that calls AirOps workflows",
+        "Creating a Slack bot that runs AI workflows when team members request content"
+      ],
       "keyConcepts": [
         {
           "title": "REST APIs",
@@ -706,10 +769,16 @@
     "id": "webhook",
     "term": "Webhook",
     "definition": "An HTTP callback that sends data to a specified URL when an event occurs. Webhooks enable real-time communication between systems, allowing external services to trigger workflows or notify your applications of changes.",
+    "metaphor": "A webhook is like signing up for text alerts from your bank—instead of constantly checking your balance, the bank texts you automatically when something important happens. You get notified in real-time without asking.",
     "category": "Integrations",
     "relatedTerms": ["trigger", "api", "integration"],
     "example": "A Stripe webhook that triggers a customer onboarding workflow when a payment succeeds.",
     "article": {
+      "marketerUseCases": [
+        "Triggering a welcome email sequence the instant someone subscribes via a form",
+        "Kicking off a lead scoring workflow when a new contact is added to your CRM",
+        "Automatically generating a case study draft when a deal closes in Salesforce"
+      ],
       "keyConcepts": [
         {
           "title": "Event-Driven",
@@ -760,10 +829,16 @@
     "id": "knowledge-base",
     "term": "Knowledge Base",
     "definition": "A collection of documents, data, or information that AI models can reference when generating responses. Knowledge bases enable AI to provide accurate, up-to-date, and domain-specific answers grounded in your content.",
+    "metaphor": "A knowledge base is like giving an AI access to your company's filing cabinet—instead of making things up, it can look up the actual facts, policies, and information before answering questions.",
     "category": "AI & Models",
     "relatedTerms": ["rag", "context", "embedding"],
     "example": "A knowledge base containing product documentation that the AI references when answering customer questions.",
     "article": {
+      "marketerUseCases": [
+        "Building a knowledge base of past campaigns, results, and learnings for AI to reference when planning new campaigns",
+        "Creating a product information repository so AI can accurately answer customer questions in chatbots",
+        "Storing brand guidelines, messaging frameworks, and approved copy for consistent AI-generated content"
+      ],
       "keyConcepts": [
         {
           "title": "Document Ingestion",
@@ -818,10 +893,16 @@
     "id": "rag",
     "term": "RAG",
     "definition": "Retrieval-Augmented Generation - a technique that enhances AI responses by first retrieving relevant information from a knowledge base, then using that information as context to generate more accurate, grounded outputs.",
+    "metaphor": "RAG is like an open-book exam—instead of relying only on memory (training data), the AI can look up relevant reference materials before answering. This leads to more accurate, verifiable responses.",
     "category": "AI & Models",
     "relatedTerms": ["knowledge-base", "embedding", "context"],
     "example": "Using RAG to answer support questions by retrieving relevant help articles before generating a response.",
     "article": {
+      "marketerUseCases": [
+        "Building a chatbot that answers product questions using your actual documentation, not generic responses",
+        "Creating a content assistant that references your best-performing past content when generating new pieces",
+        "Developing an internal tool that answers questions about campaign performance using your actual data"
+      ],
       "keyConcepts": [
         {
           "title": "Retrieve",
@@ -876,10 +957,16 @@
     "id": "embedding",
     "term": "Embedding",
     "definition": "A numerical vector representation of text that captures its semantic meaning. Embeddings enable similarity search, clustering, and other operations where understanding meaning (not just keywords) matters.",
+    "metaphor": "An embedding is like a GPS coordinate for meaning—it places every piece of text on a map where similar ideas are close together. 'Happy' and 'joyful' end up near each other, even though they share no letters.",
     "category": "AI & Models",
     "relatedTerms": ["rag", "knowledge-base", "vector"],
     "example": "Converting product descriptions into embeddings to enable semantic search functionality.",
     "article": {
+      "marketerUseCases": [
+        "Finding all past content related to a topic, even when different words were used",
+        "Identifying similar customer segments based on behavior descriptions",
+        "Matching incoming leads to the most relevant case studies automatically"
+      ],
       "keyConcepts": [
         {
           "title": "Vector Representation",
@@ -934,10 +1021,16 @@
     "id": "tool",
     "term": "Tool",
     "definition": "A capability that AI agents can use to perform specific tasks beyond text generation—searching the web, running code, accessing databases, calling APIs, or interacting with external systems.",
+    "metaphor": "Tools are like the apps on a smartphone—the phone (AI) is smart on its own, but tools let it do specific things like take photos, check the weather, or send money. Each tool extends what's possible.",
     "category": "Core Concepts",
     "relatedTerms": ["agent", "action", "function-calling"],
     "example": "A web search tool that an agent uses to find current information about a topic.",
     "article": {
+      "marketerUseCases": [
+        "Web search tool to research competitors and industry trends in real-time",
+        "CRM tool to look up customer data and history during content personalization",
+        "Analytics tool to pull performance metrics when generating campaign reports"
+      ],
       "keyConcepts": [
         {
           "title": "Tool Definition",
@@ -982,6 +1075,7 @@
     "id": "function-calling",
     "term": "Function Calling",
     "definition": "The ability of AI models to recognize when to use external tools or functions and format the appropriate calls with correct parameters. This enables structured, reliable interactions between AI and external systems.",
+    "metaphor": "Function calling is like teaching someone to use a vending machine—they learn which buttons to press (function names), what information to enter (parameters), and what to expect back (return values). It makes AI-tool interaction predictable and reliable.",
     "category": "AI & Models",
     "relatedTerms": ["tool", "agent", "api"],
     "example": "The AI deciding to call a weather API function when asked about current weather conditions.",
@@ -1026,10 +1120,16 @@
     "id": "batch-processing",
     "term": "Batch Processing",
     "definition": "Running a workflow multiple times with different inputs, typically to process large datasets efficiently. Batch processing enables scaling AI operations across hundreds or thousands of items systematically.",
+    "metaphor": "Batch processing is like a laundromat doing industrial loads—instead of washing one shirt at a time, you process hundreds of items through the same machines efficiently. Same process, massive scale.",
     "category": "Workflows & Actions",
     "relatedTerms": ["workflow", "input", "loop"],
     "example": "Processing 1000 product listings through a description enhancement workflow overnight.",
     "article": {
+      "marketerUseCases": [
+        "Generating personalized email subject lines for a 50,000-contact list",
+        "Creating unique product descriptions for an entire e-commerce catalog",
+        "Translating all marketing materials into 10 languages simultaneously"
+      ],
       "keyConcepts": [
         {
           "title": "Input Dataset",
@@ -1080,10 +1180,16 @@
     "id": "mcp",
     "term": "MCP",
     "definition": "Model Context Protocol - an open standard that enables AI models to securely connect to external data sources and tools through a unified interface. MCP provides a standardized way for AI applications to access context from various systems.",
+    "metaphor": "MCP is like a universal power adapter for AI—just as one adapter lets you plug your devices into any outlet worldwide, MCP lets AI connect to any compatible data source or tool with one standard interface.",
     "category": "Integrations",
     "relatedTerms": ["integration", "tool", "context", "api"],
     "example": "Using MCP to connect an AI agent to Slack, allowing it to read messages and respond in channels.",
     "article": {
+      "marketerUseCases": [
+        "Connecting AI to your Google Drive to reference past campaign briefs and assets",
+        "Enabling AI to read and respond in Slack channels for real-time collaboration",
+        "Giving AI access to your analytics platforms to pull performance data on demand"
+      ],
       "keyConcepts": [
         {
           "title": "Standardized Protocol",

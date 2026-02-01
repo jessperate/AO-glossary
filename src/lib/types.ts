@@ -7,10 +7,12 @@ export interface GlossaryTerm {
   id: string
   term: string
   definition: string
+  metaphor?: string
   category: Category
   relatedTerms: string[]
   example?: string
   article?: {
+    marketerUseCases?: string[]
     keyConcepts?: {
       title: string
       description: string
