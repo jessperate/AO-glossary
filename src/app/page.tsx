@@ -1,78 +1,57 @@
-'use client'
-
-import { useState, useMemo } from 'react'
-import Fuse from 'fuse.js'
+import Link from 'next/link'
 import glossaryData from '../../data/glossary.json'
-import { GlossaryTerm, Category, CATEGORIES } from '@/lib/types'
-import { SearchBar } from '@/components/SearchBar'
-import { CategoryFilter } from '@/components/CategoryFilter'
-import { GlossaryList } from '@/components/GlossaryList'
+import { GlossaryTerm, CATEGORIES } from '@/lib/types'
 
 const terms = glossaryData as GlossaryTerm[]
 
 export default function Home() {
-  const [searchQuery, setSearchQuery] = useState('')
-  const [selectedCategory, setSelectedCategory] = useState<Category | null>(
-    null
-  )
-
-  const fuse = useMemo(
-    () =>
-      new Fuse(terms, {
-        keys: [
-          { name: 'term', weight: 2 },
-          { name: 'definition', weight: 1 },
-          { name: 'example', weight: 0.5 },
-        ],
-        threshold: 0.3,
-        includeScore: true,
-      }),
-    []
-  )
-
-  const filteredTerms = useMemo(() => {
-    let result = terms
-
-    if (searchQuery.trim()) {
-      result = fuse.search(searchQuery).map((r) => r.item)
-    }
-
-    if (selectedCategory) {
-      result = result.filter((term) => term.category === selectedCategory)
-    }
-
-    if (!searchQuery.trim() && !selectedCategory) {
-      result = [...terms].sort((a, b) => a.term.localeCompare(b.term))
-    }
-
-    return result
-  }, [searchQuery, selectedCategory, fuse])
+  const termsByCategory = CATEGORIES.map((category) => ({
+    category,
+    terms: terms.filter((t) => t.category === category).sort((a, b) => a.term.localeCompare(b.term)),
+  }))
 
   return (
-    <div className="space-y-6">
-      <div className="sticky top-0 z-10 bg-[var(--background)] pb-4 pt-2 -mx-4 px-4 border-b border-[var(--border)]">
-        <div className="space-y-4">
-          <SearchBar value={searchQuery} onChange={setSearchQuery} />
-
-          <div className="space-y-2">
-            <label className="text-sm font-medium text-[var(--muted-foreground)]">
-              Filter by category
-            </label>
-            <CategoryFilter
-              categories={CATEGORIES}
-              selected={selectedCategory}
-              onSelect={setSelectedCategory}
-            />
-          </div>
-        </div>
+    <div className="max-w-3xl">
+      <div className="mb-12">
+        <h1 className="text-4xl font-bold mb-4">AirOps Glossary</h1>
+        <p className="text-xl text-[var(--muted-foreground)]">
+          Your guide to understanding AirOps terminology, AI concepts, and workflow automation.
+        </p>
       </div>
 
-      <div className="text-sm text-[var(--muted-foreground)]">
-        {filteredTerms.length} {filteredTerms.length === 1 ? 'term' : 'terms'}{' '}
-        found
+      <div className="space-y-8">
+        {termsByCategory.map(({ category, terms: categoryTerms }) => (
+          <section key={category}>
+            <h2 className="text-lg font-semibold mb-3 text-[var(--primary)]">
+              {category}
+            </h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+              {categoryTerms.map((term) => (
+                <Link
+                  key={term.id}
+                  href={`./glossary/${term.id}`}
+                  className="px-3 py-2 text-sm bg-[var(--muted)] text-[var(--foreground)] rounded-md hover:bg-[var(--border)] transition-colors"
+                >
+                  {term.term}
+                </Link>
+              ))}
+            </div>
+          </section>
+        ))}
       </div>
 
-      <GlossaryList terms={filteredTerms} />
+      <div className="mt-12 p-6 bg-[var(--muted)] rounded-lg">
+        <h2 className="text-lg font-semibold mb-2">Missing a term?</h2>
+        <p className="text-[var(--muted-foreground)] mb-4">
+          Help us improve the glossary by suggesting new terms.
+        </p>
+        <Link
+          href="./contribute"
+          className="inline-block px-4 py-2 bg-[var(--primary)] text-black font-medium rounded-md hover:opacity-90 transition-opacity"
+        >
+          Suggest a Term
+        </Link>
+      </div>
     </div>
   )
 }

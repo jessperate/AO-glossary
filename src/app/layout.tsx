@@ -1,5 +1,10 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import glossaryData from '../../data/glossary.json'
+import { GlossaryTerm } from '@/lib/types'
+import { Sidebar } from '@/components/Sidebar'
+
+const terms = glossaryData as GlossaryTerm[]
 
 export const metadata: Metadata = {
   title: 'AirOps Glossary',
@@ -14,8 +19,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen antialiased">
-        <header className="border-b border-[var(--border)] bg-[var(--background)]">
-          <div className="mx-auto max-w-4xl px-4 py-4 flex items-center gap-2">
+        <header className="border-b border-[var(--border)] bg-[var(--background)] sticky top-0 z-20">
+          <div className="px-6 py-4 flex items-center gap-2">
             <a href="./" className="flex items-center gap-2">
               <img
                 src="./logo-airops.svg"
@@ -28,17 +33,10 @@ export default function RootLayout({
             </a>
           </div>
         </header>
-        <main className="mx-auto max-w-4xl px-4 py-8">{children}</main>
-        <footer className="border-t border-[var(--border)] mt-16">
-          <div className="mx-auto max-w-4xl px-4 py-6 text-center text-sm text-[var(--muted-foreground)]">
-            <a
-              href="./contribute"
-              className="text-[var(--primary)] hover:underline"
-            >
-              Suggest a new term
-            </a>
-          </div>
-        </footer>
+        <div className="flex">
+          <Sidebar terms={terms} />
+          <main className="flex-1 p-8 overflow-auto">{children}</main>
+        </div>
       </body>
     </html>
   )
