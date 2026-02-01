@@ -158,5 +158,13 @@
     "category": "Workflows & Actions",
     "relatedTerms": ["workflow", "input", "loop"],
     "example": "Processing 1000 product listings through a description enhancement workflow overnight."
+  },
+  {
+    "id": "mcp",
+    "term": "MCP",
+    "definition": "Model Context Protocol - an open standard that enables AI models to securely connect to external data sources and tools. MCP provides a universal way for AI applications to access context from various systems like databases, APIs, and file systems.",
+    "category": "Integrations",
+    "relatedTerms": ["integration", "tool", "context", "api"],
+    "example": "Using MCP to connect an AI agent to Slack, allowing it to read messages and respond in channels."
   }
 ]
