@@ -27,7 +27,7 @@ export default function RootLayout({
               <img
                 src={`${process.env.NODE_ENV === 'production' ? '/AO-glossary' : ''}/logo-airops.svg`}
                 alt="AirOps"
-                className="h-6 dark:invert"
+                className="h-6"
               />
               <span className="text-xl font-bold text-[var(--foreground)]">
                 Glossary
