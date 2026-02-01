@@ -1239,5 +1239,764 @@
         }
       ]
     }
+  },
+  {
+    "id": "aeo",
+    "term": "AEO",
+    "definition": "Answer Engine Optimization - the practice of optimizing content so AI-powered search engines (like ChatGPT, Perplexity, Google AI Overviews) cite and recommend your brand when answering user queries. AEO focuses on creating authoritative, well-structured content that AI models recognize as trustworthy sources.",
+    "metaphor": "If traditional SEO is about being the top result on a library catalog, AEO is about being the book the librarian actually recommends and quotes when someone asks a question. You want AI to know you're the authority.",
+    "category": "Core Concepts",
+    "relatedTerms": ["ai-overviews", "content-engineering", "brand-kit", "knowledge-base"],
+    "example": "A SaaS company optimizing their product pages so AI assistants cite them when users ask 'What's the best tool for X?'",
+    "article": {
+      "marketerUseCases": [
+        "Optimizing landing pages so AI assistants recommend your product when users research solutions",
+        "Creating comprehensive FAQ content that AI can easily extract and cite",
+        "Building authoritative thought leadership content that AI models recognize as expert sources",
+        "Structuring product comparisons so AI accurately represents your competitive advantages"
+      ],
+      "keyConcepts": [
+        {
+          "title": "AI Citations",
+          "description": "When AI assistants answer questions, they often cite sources. AEO aims to make your content a preferred citation for relevant queries."
+        },
+        {
+          "title": "Answer-First Content",
+          "description": "Structure content to directly answer questions upfront, making it easy for AI to extract and present your information."
+        },
+        {
+          "title": "Entity Authority",
+          "description": "Build your brand's authority as a recognized entity in your domain so AI models associate you with expertise."
+        },
+        {
+          "title": "Structured Data",
+          "description": "Use schema markup and clear formatting to help AI understand and accurately represent your content."
+        }
+      ],
+      "benefits": [
+        "Capture traffic from AI-powered search experiences before competitors",
+        "Build brand visibility in the growing AI assistant ecosystem",
+        "Establish thought leadership that AI recognizes and amplifies",
+        "Future-proof your content strategy as AI search grows"
+      ],
+      "comparison": {
+        "term": "SEO",
+        "description": "SEO optimizes for search engine rankings and click-through rates, while AEO optimizes for AI citations and recommendations. SEO focuses on keywords and links; AEO focuses on answer quality, authority, and structure."
+      },
+      "tools": [
+        {
+          "name": "AirOps AEO Platform",
+          "description": "Monitor AI citations, track brand visibility, and optimize content for answer engines"
+        },
+        {
+          "name": "Perplexity",
+          "description": "AI search engine to test how your content appears in AI answers"
+        },
+        {
+          "name": "ChatGPT Search",
+          "description": "OpenAI's AI-powered search to monitor brand mentions"
+        }
+      ],
+      "challenges": [
+        {
+          "challenge": "Measuring AI visibility",
+          "solution": "Use AEO monitoring tools to track when and how AI assistants cite your brand"
+        },
+        {
+          "challenge": "Content isn't being cited",
+          "solution": "Improve content structure, add clear answers at the top, strengthen domain authority, and use proper schema markup"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is AEO replacing SEO?",
+          "answer": "No, AEO complements SEO. Traditional search still drives significant traffic, but AI search is growing. Smart marketers optimize for both."
+        },
+        {
+          "question": "How do I track if AI is citing my content?",
+          "answer": "Use AEO monitoring tools like AirOps that track AI citations, or manually test queries in ChatGPT, Perplexity, and Google AI Overviews."
+        },
+        {
+          "question": "What types of content work best for AEO?",
+          "answer": "Authoritative, well-structured content that directly answers questions: FAQs, how-to guides, product comparisons, and expert analysis."
+        }
+      ]
+    }
+  },
+  {
+    "id": "ai-overviews",
+    "term": "AI Overviews",
+    "definition": "AI-generated summaries that appear at the top of search results, synthesizing information from multiple sources to answer queries directly. Google's AI Overviews and similar features are changing how users find and consume information, making AEO increasingly important.",
+    "metaphor": "AI Overviews are like a knowledgeable friend who reads all the search results for you and gives you a summary. Instead of 10 blue links, you get one synthesized answer—and your goal is to be one of the sources your friend trusts.",
+    "category": "Core Concepts",
+    "relatedTerms": ["aeo", "content-engineering", "rag"],
+    "example": "When you search 'best CRM for startups,' Google shows an AI Overview summarizing features from multiple review sites.",
+    "article": {
+      "marketerUseCases": [
+        "Optimizing product pages to be featured in AI Overviews for buying-intent queries",
+        "Creating comparison content that AI synthesizes when users evaluate options",
+        "Building FAQ content structured for AI extraction in overview results",
+        "Monitoring when competitors appear in AI Overviews and adjusting strategy"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Zero-Click Results",
+          "description": "AI Overviews often answer queries without users clicking through, changing how content drives traffic."
+        },
+        {
+          "title": "Source Attribution",
+          "description": "AI Overviews cite sources, giving brands visibility even when users don't click through."
+        },
+        {
+          "title": "Multi-Source Synthesis",
+          "description": "AI combines information from multiple pages, so being partially cited is common."
+        },
+        {
+          "title": "Query Intent Matching",
+          "description": "AI Overviews appear for informational queries; understanding when they trigger helps target optimization."
+        }
+      ],
+      "benefits": [
+        "Brand visibility at the very top of search results",
+        "Authority signals from being cited by AI",
+        "Opportunity to influence AI's synthesized answer",
+        "Early mover advantage in AI-first search"
+      ],
+      "comparison": {
+        "term": "Featured Snippets",
+        "description": "Featured snippets extract content from a single source, while AI Overviews synthesize from multiple sources. AI Overviews are more conversational and comprehensive."
+      },
+      "faq": [
+        {
+          "question": "Do AI Overviews hurt organic traffic?",
+          "answer": "They can reduce clicks for some queries, but being cited builds brand authority. Optimize to be the source AI trusts and cites."
+        },
+        {
+          "question": "How do I get featured in AI Overviews?",
+          "answer": "Create comprehensive, authoritative content that directly answers queries. Use clear structure, accurate information, and build domain authority."
+        }
+      ]
+    }
+  },
+  {
+    "id": "brand-kit",
+    "term": "Brand Kit",
+    "definition": "A collection of brand guidelines, voice and tone rules, messaging frameworks, and style preferences that AI uses to generate on-brand content. Brand kits ensure consistency across all AI-generated outputs, maintaining your brand identity at scale.",
+    "metaphor": "A Brand Kit is like a detailed style guide you'd give to a new copywriter on their first day—it tells them how your brand sounds, what words to use (and avoid), and what makes your voice unique. AI uses it the same way.",
+    "category": "AI & Models",
+    "relatedTerms": ["context", "prompt", "knowledge-base"],
+    "example": "A Brand Kit that specifies 'Use active voice, avoid jargon, maintain a friendly-professional tone, and never use exclamation points.'",
+    "article": {
+      "marketerUseCases": [
+        "Ensuring all AI-generated social posts match your brand's distinctive voice",
+        "Maintaining consistency when multiple team members use AI for content creation",
+        "Scaling content production without diluting brand identity",
+        "Training AI to use approved terminology and avoid competitor names"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Voice and Tone",
+          "description": "Define how your brand sounds—formal vs casual, witty vs straightforward, technical vs accessible."
+        },
+        {
+          "title": "Terminology Guidelines",
+          "description": "Specify preferred words, phrases to avoid, competitor mentions policy, and industry-specific terms."
+        },
+        {
+          "title": "Messaging Pillars",
+          "description": "Core messages and value propositions that should be reinforced in content."
+        },
+        {
+          "title": "Style Rules",
+          "description": "Formatting preferences, punctuation rules, capitalization conventions, and structural patterns."
+        }
+      ],
+      "benefits": [
+        "Consistent brand voice across all AI-generated content",
+        "Scale content creation without losing brand identity",
+        "Reduce editing time by getting on-brand content from the first draft",
+        "Empower team members to create quality content without deep brand training"
+      ],
+      "tools": [
+        {
+          "name": "AirOps Brand Kit",
+          "description": "Create and apply brand guidelines across all AI workflows"
+        }
+      ],
+      "challenges": [
+        {
+          "challenge": "AI outputs feel generic",
+          "solution": "Add more specific examples to your Brand Kit showing ideal vs poor outputs; include unique phrases and patterns"
+        },
+        {
+          "challenge": "Inconsistent application",
+          "solution": "Integrate Brand Kit into all content workflows; make it the default context for content generation"
+        }
+      ],
+      "faq": [
+        {
+          "question": "How detailed should a Brand Kit be?",
+          "answer": "Include enough detail to capture your brand's uniqueness. Voice/tone, do's and don'ts, examples, and messaging pillars are essential. Add more as you identify gaps."
+        },
+        {
+          "question": "Can I have multiple Brand Kits?",
+          "answer": "Yes, for different audiences, products, or content types. A B2B technical blog might need different guidelines than social media content."
+        }
+      ]
+    }
+  },
+  {
+    "id": "airops-studio",
+    "term": "AirOps Studio",
+    "definition": "AirOps' visual workflow builder where users create, test, and deploy AI-powered workflows without writing code. Studio provides a drag-and-drop interface for connecting AI actions, integrations, and logic into automated processes.",
+    "metaphor": "AirOps Studio is like a recording studio for automation—you're the producer, arranging different tracks (AI actions, data sources, logic) into a finished song (workflow). No instruments required, just drag, drop, and create.",
+    "category": "Core Concepts",
+    "relatedTerms": ["workflow", "action", "airops-grid"],
+    "example": "Building a lead enrichment workflow in Studio by connecting a CRM trigger to AI research actions and email outputs.",
+    "article": {
+      "marketerUseCases": [
+        "Building a content generation workflow that creates blog drafts from briefs",
+        "Creating an automated lead scoring system that combines AI analysis with CRM updates",
+        "Designing a social media workflow that repurposes content across platforms",
+        "Setting up competitive monitoring that alerts you to market changes"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Visual Canvas",
+          "description": "Drag-and-drop interface where you visually connect actions, see data flow, and design workflow logic."
+        },
+        {
+          "title": "Action Library",
+          "description": "Pre-built AI actions and integrations you can add to workflows without configuration complexity."
+        },
+        {
+          "title": "Testing & Preview",
+          "description": "Test workflows with sample data before deploying, seeing outputs at each step."
+        },
+        {
+          "title": "Version Control",
+          "description": "Track changes, revert to previous versions, and manage workflow iterations."
+        }
+      ],
+      "benefits": [
+        "Build sophisticated AI workflows without coding",
+        "Visual debugging makes troubleshooting intuitive",
+        "Rapid prototyping—test ideas in minutes, not days",
+        "Collaborate with team members who can understand visual flows"
+      ],
+      "comparison": {
+        "term": "Code-Based Automation",
+        "description": "Studio offers visual, no-code workflow building, while code-based tools require programming. Studio is faster to start; code offers more customization for complex logic."
+      },
+      "faq": [
+        {
+          "question": "Do I need technical skills to use Studio?",
+          "answer": "No coding required. If you can use drag-and-drop interfaces and understand basic logic (if/then), you can build workflows."
+        },
+        {
+          "question": "Can I add custom code if needed?",
+          "answer": "Yes, Studio supports code blocks for advanced customization while keeping the visual interface for most operations."
+        }
+      ]
+    }
+  },
+  {
+    "id": "airops-grid",
+    "term": "AirOps Grid",
+    "definition": "A spreadsheet-like interface for running AI workflows at scale, where each row represents an input and columns show workflow outputs. Grid makes batch processing intuitive, combining the familiarity of spreadsheets with the power of AI automation.",
+    "metaphor": "AirOps Grid is like a supercharged Excel where every row can trigger an AI workflow. Paste 1,000 product names in column A, and watch columns B, C, and D fill with AI-generated descriptions, SEO titles, and meta tags—automatically.",
+    "category": "Core Concepts",
+    "relatedTerms": ["batch-processing", "workflow", "airops-studio"],
+    "example": "Loading 500 blog titles into Grid and generating full outlines, meta descriptions, and social snippets for each.",
+    "article": {
+      "marketerUseCases": [
+        "Generating hundreds of product descriptions by pasting SKUs into Grid",
+        "Creating personalized email variants for different customer segments",
+        "Producing localized content by running translations across a content library",
+        "Building out SEO meta data for an entire site's pages in one batch"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Spreadsheet Interface",
+          "description": "Familiar rows-and-columns format where inputs go in and AI outputs appear alongside."
+        },
+        {
+          "title": "Workflow Columns",
+          "description": "Each column can represent a different workflow or action applied to the row's input data."
+        },
+        {
+          "title": "Batch Execution",
+          "description": "Process all rows in parallel or sequentially, with progress tracking and error handling."
+        },
+        {
+          "title": "Export & Integration",
+          "description": "Export results to CSV, sync to databases, or push to connected applications."
+        }
+      ],
+      "benefits": [
+        "Process thousands of items without workflow complexity",
+        "Intuitive interface anyone familiar with spreadsheets can use",
+        "See inputs and outputs side-by-side for easy quality review",
+        "Perfect for one-off batch jobs and recurring bulk operations"
+      ],
+      "comparison": {
+        "term": "AirOps Studio",
+        "description": "Studio is for building complex, event-driven workflows with branching logic. Grid is for running simpler workflows at scale with spreadsheet-style bulk input."
+      },
+      "faq": [
+        {
+          "question": "How many rows can I process in Grid?",
+          "answer": "Grid handles thousands of rows. For very large datasets, process in batches or use scheduled runs to manage API limits."
+        },
+        {
+          "question": "Can I use my Studio workflows in Grid?",
+          "answer": "Yes, workflows built in Studio can be connected to Grid columns, combining visual workflow building with spreadsheet-scale processing."
+        }
+      ]
+    }
+  },
+  {
+    "id": "content-engineering",
+    "term": "Content Engineering",
+    "definition": "The systematic approach to creating, structuring, and optimizing content at scale using AI workflows. Content engineering treats content creation as a repeatable process with defined inputs, transformations, and quality controls—not just one-off creative work.",
+    "metaphor": "Content engineering is like building a content factory—instead of hand-crafting each piece, you design the production line (workflows), define quality standards, and scale output while maintaining consistency. Creative input goes in, polished content comes out.",
+    "category": "Core Concepts",
+    "relatedTerms": ["workflow", "batch-processing", "brand-kit", "aeo"],
+    "example": "A content engineering system that turns product data into SEO-optimized descriptions, social posts, and email copy automatically.",
+    "article": {
+      "marketerUseCases": [
+        "Scaling blog production from 4 posts/month to 40 without proportional team growth",
+        "Creating programmatic SEO pages for thousands of location or product variations",
+        "Building content refresh workflows that update old posts with current information",
+        "Generating localized content across markets from a single source of truth"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Content Templates",
+          "description": "Reusable structures that define how AI should format and present different content types."
+        },
+        {
+          "title": "Quality Frameworks",
+          "description": "Automated checks for brand voice, factual accuracy, SEO requirements, and style compliance."
+        },
+        {
+          "title": "Content Pipelines",
+          "description": "End-to-end workflows from research through creation, review, and publishing."
+        },
+        {
+          "title": "Feedback Loops",
+          "description": "Performance data flows back to improve templates, prompts, and quality criteria."
+        }
+      ],
+      "benefits": [
+        "Scale content output without proportional cost increases",
+        "Maintain quality and consistency across large content volumes",
+        "Free creative teams from repetitive content tasks",
+        "Enable data-driven content optimization with systematic approaches"
+      ],
+      "comparison": {
+        "term": "Traditional Content Creation",
+        "description": "Traditional content creation is manual and linear—one piece at a time. Content engineering is systematic and parallel—building processes that produce content at scale."
+      },
+      "challenges": [
+        {
+          "challenge": "Content feels robotic",
+          "solution": "Invest in Brand Kit refinement, add human review stages, and continuously improve prompts based on feedback"
+        },
+        {
+          "challenge": "Quality varies across outputs",
+          "solution": "Implement quality scoring, automated checks, and sample-based human review processes"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Does content engineering replace writers?",
+          "answer": "No, it elevates them. Writers focus on strategy, voice development, and high-value creative work while AI handles repetitive production."
+        },
+        {
+          "question": "What content types work best for engineering approaches?",
+          "answer": "Product descriptions, SEO content, email variations, social posts, and structured content like FAQs. Thought leadership and brand storytelling still benefit from human creativity."
+        }
+      ]
+    }
+  },
+  {
+    "id": "ai-visibility-index",
+    "term": "AI Visibility Index",
+    "definition": "A metric measuring how often and prominently your brand appears in AI-generated answers across platforms like ChatGPT, Perplexity, and Google AI Overviews. The AI Visibility Index tracks your brand's presence in the AI answer ecosystem.",
+    "metaphor": "The AI Visibility Index is like a share-of-voice metric for the AI era—instead of measuring how often you appear in ads or search results, it measures how often AI recommends, cites, or mentions your brand when answering relevant questions.",
+    "category": "Core Concepts",
+    "relatedTerms": ["aeo", "ai-overviews", "brand-kit"],
+    "example": "Tracking that your brand is cited in 23% of AI responses for 'best project management software' queries across major AI platforms.",
+    "article": {
+      "marketerUseCases": [
+        "Benchmarking your AI visibility against competitors for key product queries",
+        "Tracking how content optimization efforts improve AI citation rates over time",
+        "Identifying gaps where competitors appear but your brand doesn't",
+        "Reporting AI visibility metrics alongside traditional SEO and brand metrics"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Citation Tracking",
+          "description": "Monitor when AI assistants cite your content, link to your pages, or mention your brand."
+        },
+        {
+          "title": "Query Coverage",
+          "description": "Measure what percentage of relevant queries result in AI mentioning your brand."
+        },
+        {
+          "title": "Platform Breakdown",
+          "description": "Track visibility separately across ChatGPT, Perplexity, Google AI Overviews, and other AI platforms."
+        },
+        {
+          "title": "Sentiment Analysis",
+          "description": "Understand not just if AI mentions you, but how—positive recommendation vs neutral mention vs negative context."
+        }
+      ],
+      "benefits": [
+        "Quantify your brand's presence in AI-driven discovery",
+        "Track ROI of AEO efforts with concrete metrics",
+        "Identify competitive gaps and opportunities",
+        "Anticipate traffic shifts as AI search grows"
+      ],
+      "tools": [
+        {
+          "name": "AirOps AEO Dashboard",
+          "description": "Track AI Visibility Index across platforms and queries"
+        }
+      ],
+      "faq": [
+        {
+          "question": "How is AI Visibility Index calculated?",
+          "answer": "It typically measures citation frequency, prominence of mentions, and coverage across target queries, weighted by query importance and platform reach."
+        },
+        {
+          "question": "What's a good AI Visibility Index score?",
+          "answer": "This varies by industry and query competitiveness. Focus on trending upward and outperforming competitors rather than absolute numbers."
+        }
+      ]
+    }
+  },
+  {
+    "id": "persona",
+    "term": "Persona",
+    "definition": "A detailed profile representing a target audience segment, used to customize AI outputs for specific audiences. Personas include demographics, pain points, goals, and communication preferences that help AI generate more relevant, targeted content.",
+    "metaphor": "A persona is like a character sheet for your ideal customer—just as an actor studies their character's background, motivations, and speech patterns, AI uses personas to understand who it's writing for and how to connect with them.",
+    "category": "AI & Models",
+    "relatedTerms": ["context", "brand-kit", "prompt"],
+    "example": "A 'Marketing Manager Maya' persona: Mid-level marketer at a B2B SaaS company, struggles with proving ROI, values efficiency, prefers data-driven arguments.",
+    "article": {
+      "marketerUseCases": [
+        "Generating landing page copy tailored to different buyer personas",
+        "Creating email sequences that speak to specific audience pain points",
+        "Producing blog content that resonates with your primary reader segments",
+        "Personalizing ad copy for different customer segments at scale"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Demographics",
+          "description": "Basic characteristics like role, industry, company size, and career level that shape communication needs."
+        },
+        {
+          "title": "Pain Points",
+          "description": "Challenges and frustrations the persona faces that your product or content can address."
+        },
+        {
+          "title": "Goals and Motivations",
+          "description": "What the persona is trying to achieve and what drives their decisions."
+        },
+        {
+          "title": "Communication Preferences",
+          "description": "How they prefer to receive information—technical vs accessible, detailed vs high-level, formal vs casual."
+        }
+      ],
+      "benefits": [
+        "Generate content that resonates with specific audience segments",
+        "Scale personalization across channels and content types",
+        "Maintain consistency in how you speak to each audience",
+        "Improve conversion by addressing specific needs and pain points"
+      ],
+      "faq": [
+        {
+          "question": "How many personas should I create?",
+          "answer": "Start with 2-4 primary personas covering your main audience segments. Add more as needed, but each should be distinct enough to warrant different messaging."
+        },
+        {
+          "question": "How detailed should personas be for AI?",
+          "answer": "Include enough detail for AI to understand the person—role, challenges, goals, and communication style. Too vague leads to generic content; overly detailed can be overwhelming."
+        }
+      ]
+    }
+  },
+  {
+    "id": "topic",
+    "term": "Topic",
+    "definition": "A subject area or theme used to organize and categorize content within AirOps workflows. Topics help structure knowledge bases, target content generation, and maintain thematic consistency across AI outputs.",
+    "metaphor": "Topics are like folders in a filing cabinet—they organize related information together so you (and AI) can quickly find and work with relevant content. A well-organized topic structure makes everything more findable and usable.",
+    "category": "Data & Variables",
+    "relatedTerms": ["knowledge-base", "context", "content-engineering"],
+    "example": "Organizing a knowledge base into topics like 'Product Features,' 'Pricing,' 'Use Cases,' and 'Integrations' for targeted AI retrieval.",
+    "article": {
+      "marketerUseCases": [
+        "Organizing content briefs by campaign topic for consistent messaging",
+        "Structuring knowledge bases so AI retrieves topic-relevant context",
+        "Tagging generated content by topic for easier organization and retrieval",
+        "Creating topic-specific content workflows with targeted prompts and guidelines"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Topic Hierarchy",
+          "description": "Organize topics in parent-child relationships for granular organization (Marketing > Content Marketing > Blog Strategy)."
+        },
+        {
+          "title": "Topic-Based Retrieval",
+          "description": "Filter knowledge base searches by topic to get more relevant context for AI."
+        },
+        {
+          "title": "Cross-Topic Linking",
+          "description": "Connect related topics to help AI understand relationships between subject areas."
+        }
+      ],
+      "benefits": [
+        "Better AI outputs with topic-focused context retrieval",
+        "Organized knowledge base that scales with your content",
+        "Consistent content categorization across workflows",
+        "Easier content auditing and gap analysis"
+      ],
+      "faq": [
+        {
+          "question": "How should I structure topics?",
+          "answer": "Mirror your content strategy or site structure. Start broad, then add sub-topics as needed. Avoid too many levels—3 is usually sufficient."
+        }
+      ]
+    }
+  },
+  {
+    "id": "fine-tuning",
+    "term": "Fine-Tuning",
+    "definition": "The process of training an AI model on domain-specific data to improve its performance for particular tasks. Fine-tuning adjusts model weights to better handle your specific use cases, terminology, and output requirements.",
+    "metaphor": "Fine-tuning is like specialized training for a skilled generalist—a doctor who does additional residency in cardiology becomes a heart specialist. The base knowledge remains, but they're now expert in your specific domain.",
+    "category": "AI & Models",
+    "relatedTerms": ["model", "rag", "context", "prompt"],
+    "example": "Fine-tuning a model on your company's past marketing copy to generate content that matches your established style.",
+    "article": {
+      "marketerUseCases": [
+        "Training a model on past high-performing content to replicate successful patterns",
+        "Creating a fine-tuned model that natively understands your industry's terminology",
+        "Building models that generate content in your exact brand voice without extensive prompting",
+        "Developing specialized models for specific content types like product descriptions or email copy"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Training Data",
+          "description": "Examples of inputs and desired outputs used to teach the model your preferences and patterns."
+        },
+        {
+          "title": "Base Model",
+          "description": "The pre-trained model you start with, which provides general language capabilities."
+        },
+        {
+          "title": "Epochs",
+          "description": "How many times the model sees the training data; more epochs can improve learning but risk overfitting."
+        },
+        {
+          "title": "Evaluation",
+          "description": "Testing the fine-tuned model to ensure it improved on your specific tasks without degrading general capabilities."
+        }
+      ],
+      "benefits": [
+        "Model natively understands your domain without extensive prompting",
+        "More consistent outputs aligned with your preferences",
+        "Potentially faster and cheaper than long prompts with examples",
+        "Encode organizational knowledge into the model itself"
+      ],
+      "comparison": {
+        "term": "RAG",
+        "description": "Fine-tuning changes the model permanently through training, while RAG provides context at runtime. Fine-tuning is better for consistent behavioral changes; RAG is better for factual knowledge that changes."
+      },
+      "challenges": [
+        {
+          "challenge": "Limited training data",
+          "solution": "Augment with synthetic data, focus on high-quality examples, or use few-shot fine-tuning techniques"
+        },
+        {
+          "challenge": "Model forgets general capabilities",
+          "solution": "Use careful training parameters, include diverse examples, and evaluate across multiple task types"
+        }
+      ],
+      "faq": [
+        {
+          "question": "When should I fine-tune vs use RAG?",
+          "answer": "Fine-tune for style, format, and behavioral changes. Use RAG for factual information that might change. Many production systems use both together."
+        },
+        {
+          "question": "How much data do I need to fine-tune?",
+          "answer": "It varies by task—sometimes 50-100 high-quality examples suffice, other times thousands are needed. Start small and evaluate results."
+        }
+      ]
+    }
+  },
+  {
+    "id": "hallucination",
+    "term": "Hallucination",
+    "definition": "When an AI model generates information that sounds plausible but is factually incorrect or made up. Hallucinations occur because AI models generate statistically likely text, not verified facts—making grounding techniques like RAG essential for accuracy.",
+    "metaphor": "Hallucination is like a confident student who doesn't know the answer but writes something anyway because blank answers get zero points. The response sounds reasonable but isn't actually true. AI does this because it's trained to always produce fluent output.",
+    "category": "AI & Models",
+    "relatedTerms": ["rag", "knowledge-base", "context", "model"],
+    "example": "An AI claiming a product has a feature it doesn't have, or citing a study that doesn't exist.",
+    "article": {
+      "marketerUseCases": [
+        "Understanding why fact-checking AI-generated content is essential before publishing",
+        "Implementing RAG systems to ground AI in verified product information",
+        "Setting up review workflows that catch hallucinations before they reach customers",
+        "Training teams to recognize and correct common hallucination patterns"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Causes",
+          "description": "AI generates likely-sounding text based on patterns, not truth. It can't distinguish between reliable knowledge and plausible-sounding fabrication."
+        },
+        {
+          "title": "Common Types",
+          "description": "Fake citations, invented statistics, incorrect product details, made-up quotes, and false historical claims."
+        },
+        {
+          "title": "Detection",
+          "description": "Verify facts against trusted sources, look for overly specific unsourced claims, and implement automated fact-checking."
+        },
+        {
+          "title": "Reduction",
+          "description": "Use RAG to ground outputs in verified data, lower temperature settings, add explicit instructions to acknowledge uncertainty."
+        }
+      ],
+      "benefits": [
+        "Understanding hallucinations helps build more reliable AI systems",
+        "Awareness leads to better review processes and quality control",
+        "Grounding techniques dramatically improve accuracy",
+        "Proper handling maintains customer trust"
+      ],
+      "challenges": [
+        {
+          "challenge": "Hallucinations sound confident",
+          "solution": "Don't trust AI confidence; verify all factual claims, especially statistics, quotes, and product details"
+        },
+        {
+          "challenge": "High-volume content makes review hard",
+          "solution": "Implement automated fact-checking, use RAG for critical facts, and prioritize review of high-stakes content"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Can hallucinations be eliminated?",
+          "answer": "Not completely with current technology. They can be dramatically reduced through RAG, careful prompting, and verification workflows, but human review remains important."
+        },
+        {
+          "question": "Are some models better at avoiding hallucinations?",
+          "answer": "Yes, newer models and those trained with techniques like RLHF tend to hallucinate less. But all current models can hallucinate, especially about specific facts."
+        }
+      ]
+    }
+  },
+  {
+    "id": "temperature",
+    "term": "Temperature",
+    "definition": "A parameter that controls the randomness of AI model outputs. Lower temperatures (0-0.3) produce more focused, deterministic responses, while higher temperatures (0.7-1.0) generate more creative, varied outputs.",
+    "metaphor": "Temperature is like the 'wildness dial' on a creative brainstormer. Turn it down for a by-the-book editor who gives you the safest answer. Turn it up for a free-thinking creative who surprises you but might go off-script.",
+    "category": "AI & Models",
+    "relatedTerms": ["model", "prompt", "completion"],
+    "example": "Using temperature 0.2 for factual FAQ answers but temperature 0.8 for brainstorming creative campaign concepts.",
+    "article": {
+      "marketerUseCases": [
+        "Setting low temperature for customer support responses that need consistency",
+        "Using high temperature for brainstorming sessions and creative ideation",
+        "Adjusting temperature by content type—low for product specs, higher for social content",
+        "Testing different temperatures to find the right balance for each use case"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Determinism",
+          "description": "At temperature 0, the model always picks the most likely next word. Higher values introduce randomness in word selection."
+        },
+        {
+          "title": "Creativity Trade-off",
+          "description": "Higher temperature means more creative/unexpected outputs but also higher risk of errors or off-topic content."
+        },
+        {
+          "title": "Task Matching",
+          "description": "Match temperature to task requirements—factual tasks need low temperature, creative tasks benefit from higher."
+        },
+        {
+          "title": "Typical Ranges",
+          "description": "0-0.3 for factual/consistent, 0.4-0.6 for balanced, 0.7-1.0 for creative. Above 1.0 often becomes too random."
+        }
+      ],
+      "benefits": [
+        "Control the consistency vs creativity trade-off",
+        "Get reproducible outputs for factual content",
+        "Generate varied options for creative brainstorming",
+        "Fine-tune output style per use case"
+      ],
+      "faq": [
+        {
+          "question": "What temperature should I use?",
+          "answer": "Start with 0.7 for general use. Lower to 0.2-0.3 for factual content, raise to 0.8-1.0 for creative brainstorming. Test and adjust based on results."
+        },
+        {
+          "question": "Why do I get different outputs with the same prompt?",
+          "answer": "If temperature is above 0, the model introduces randomness. Set temperature to 0 for consistent outputs, or embrace variation for creative tasks."
+        }
+      ]
+    }
+  },
+  {
+    "id": "token",
+    "term": "Token",
+    "definition": "The basic unit AI models use to process text—roughly 4 characters or 0.75 words in English. Tokens matter because they determine model context limits, processing speed, and API costs for AI operations.",
+    "metaphor": "Tokens are like the currency of AI—every word you send costs tokens, and every word you receive costs tokens. Understanding your token budget helps you get the most value from AI while managing costs.",
+    "category": "AI & Models",
+    "relatedTerms": ["context", "model", "completion", "prompt"],
+    "example": "A 1,000-word article uses roughly 1,300 tokens. If your model has a 4,000 token context, that leaves room for a 700-word prompt.",
+    "article": {
+      "marketerUseCases": [
+        "Estimating costs before running large batch content generation",
+        "Optimizing prompts to include essential context within token limits",
+        "Choosing models based on context window size for long-form content",
+        "Designing workflows that efficiently use tokens across multiple steps"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Tokenization",
+          "description": "How text is split into tokens varies by model—common words might be one token, rare words split into multiple."
+        },
+        {
+          "title": "Context Window",
+          "description": "The maximum tokens a model can process at once (input + output combined). Ranges from 4K to 128K+ tokens."
+        },
+        {
+          "title": "Input vs Output Tokens",
+          "description": "Both count toward limits and costs. Long prompts leave less room for responses; some APIs price them differently."
+        },
+        {
+          "title": "Cost Calculation",
+          "description": "API pricing is typically per 1,000 tokens. Estimate costs by counting tokens in your typical inputs and outputs."
+        }
+      ],
+      "benefits": [
+        "Accurate cost forecasting for AI operations",
+        "Efficient prompt design within context limits",
+        "Informed model selection for different content lengths",
+        "Optimized workflows that maximize value per token"
+      ],
+      "faq": [
+        {
+          "question": "How do I count tokens?",
+          "answer": "Use tokenizer tools from model providers (OpenAI's tiktoken, etc.), or estimate: 1 token ≈ 4 characters or 0.75 words in English."
+        },
+        {
+          "question": "What happens if I exceed the context window?",
+          "answer": "The API will return an error. You'll need to shorten your input, summarize context, or use a model with a larger context window."
+        }
+      ]
+    }
   }
 ]
