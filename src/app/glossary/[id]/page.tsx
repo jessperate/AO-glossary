@@ -62,7 +62,7 @@ export default async function TermPage({ params }: { params: Promise<{ id: strin
             {relatedTerms.map((related) => (
               <Link
                 key={related.id}
-                href={`./${related.id}`}
+                href={`/glossary/${related.id}`}
                 className="px-3 py-1.5 text-sm bg-[var(--muted)] text-[var(--foreground)] rounded-md hover:bg-[var(--border)] transition-colors"
               >
                 {related.term}
@@ -81,7 +81,7 @@ export default async function TermPage({ params }: { params: Promise<{ id: strin
             .map((t) => (
               <Link
                 key={t.id}
-                href={`./${t.id}`}
+                href={`/glossary/${t.id}`}
                 className="px-3 py-2 text-sm bg-[var(--muted)] text-[var(--foreground)] rounded-md hover:bg-[var(--border)] transition-colors truncate"
               >
                 {t.term}

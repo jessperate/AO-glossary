@@ -29,7 +29,7 @@ export default function Home() {
               {categoryTerms.map((term) => (
                 <Link
                   key={term.id}
-                  href={`./glossary/${term.id}`}
+                  href={`/glossary/${term.id}`}
                   className="px-3 py-2 text-sm bg-[var(--muted)] text-[var(--foreground)] rounded-md hover:bg-[var(--border)] transition-colors"
                 >
                   {term.term}
@@ -46,7 +46,7 @@ export default function Home() {
           Help us improve the glossary by suggesting new terms.
         </p>
         <Link
-          href="./contribute"
+          href="/contribute"
           className="inline-block px-4 py-2 bg-[var(--primary)] text-black font-medium rounded-md hover:opacity-90 transition-opacity"
         >
           Suggest a Term
