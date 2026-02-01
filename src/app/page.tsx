@@ -49,20 +49,23 @@ export default function Home() {
   }, [searchQuery, selectedCategory, fuse])
 
   return (
-    <div className="space-y-8">
-      <div className="text-center space-y-2">
-        <p className="text-[var(--muted-foreground)]">
-          Search and explore AirOps terminology
-        </p>
+    <div className="space-y-6">
+      <div className="sticky top-0 z-10 bg-[var(--background)] pb-4 pt-2 -mx-4 px-4 border-b border-[var(--border)]">
+        <div className="space-y-4">
+          <SearchBar value={searchQuery} onChange={setSearchQuery} />
+
+          <div className="space-y-2">
+            <label className="text-sm font-medium text-[var(--muted-foreground)]">
+              Filter by category
+            </label>
+            <CategoryFilter
+              categories={CATEGORIES}
+              selected={selectedCategory}
+              onSelect={setSelectedCategory}
+            />
+          </div>
+        </div>
       </div>
-
-      <SearchBar value={searchQuery} onChange={setSearchQuery} />
-
-      <CategoryFilter
-        categories={CATEGORIES}
-        selected={selectedCategory}
-        onSelect={setSelectedCategory}
-      />
 
       <div className="text-sm text-[var(--muted-foreground)]">
         {filteredTerms.length} {filteredTerms.length === 1 ? 'term' : 'terms'}{' '}
