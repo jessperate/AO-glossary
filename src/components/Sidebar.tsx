@@ -76,7 +76,7 @@ export function Sidebar({ terms }: SidebarProps) {
         fixed inset-y-0 left-0 z-40 h-full
         transform transition-transform duration-300 ease-in-out
         ${isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
-        overflow-hidden flex flex-col
+        flex flex-col
       `}>
         {/* Mobile header */}
         <div className="lg:hidden p-4 border-b border-[var(--border)] flex items-center justify-between">
