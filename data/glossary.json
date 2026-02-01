@@ -3932,5 +3932,65 @@
         }
       ]
     }
+  },
+  {
+    "id": "ai-slop",
+    "term": "AI Slop",
+    "definition": "Low-quality, generic AI-generated content that lacks originality, depth, or genuine value. AI slop is characterized by superficial coverage, repetitive phrasing, obvious AI patterns, and content that adds nothing new to what already exists. It's the junk food of content—fills space but provides no nutrition.",
+    "metaphor": "AI slop is like a buffet where every dish tastes the same—technically it's food, but it's bland, forgettable, and you leave unsatisfied. It's what happens when you optimize for volume over value.",
+    "category": "AI & Models",
+    "relatedTerms": ["information-gain", "eeat", "content-engineering", "brand-kit", "hallucination"],
+    "example": "A 2,000-word blog post that says nothing the top 10 Google results don't already say, filled with phrases like 'In today's digital landscape' and 'It's important to note that.'",
+    "article": {
+      "marketerUseCases": [
+        "Using Brand Kits to ensure AI content matches your unique voice instead of generic AI patterns",
+        "Implementing human review workflows to catch and improve low-quality outputs",
+        "Adding information gain by including original data, expert insights, and first-hand experience",
+        "Setting quality standards and using AirOps workflows to enforce them consistently"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Generic Patterns",
+          "description": "Overused phrases, predictable structures, and content that reads like every other AI output. 'In conclusion,' 'It's worth noting,' 'Let's dive in.'"
+        },
+        {
+          "title": "Lack of Information Gain",
+          "description": "Content that rehashes existing SERP results without adding new insights, data, or perspectives."
+        },
+        {
+          "title": "Missing Voice",
+          "description": "Content with no distinctive personality, brand voice, or point of view—could have been written by anyone for anyone."
+        },
+        {
+          "title": "Surface-Level Coverage",
+          "description": "Broad overviews that never go deep, missing the nuance and expertise that builds trust."
+        }
+      ],
+      "benefits": [
+        "Understanding AI slop helps you avoid creating it",
+        "Quality content stands out more as AI slop floods the internet",
+        "Search engines and AI are getting better at detecting and demoting low-quality content"
+      ],
+      "challenges": [
+        {
+          "challenge": "AI naturally produces generic content",
+          "solution": "Use detailed Brand Kits, provide specific context, add human editing, and include original research or insights"
+        },
+        {
+          "challenge": "Pressure to produce volume",
+          "solution": "Focus on information gain per piece rather than pure volume. One great article beats ten forgettable ones."
+        }
+      ],
+      "faq": [
+        {
+          "question": "How do I avoid creating AI slop?",
+          "answer": "Add what AI can't: original data, expert interviews, first-hand experience, strong opinions, and unique insights. Use Brand Kits for voice, human review for quality, and always ask 'what does this add that doesn't already exist?'"
+        },
+        {
+          "question": "Can search engines detect AI slop?",
+          "answer": "Increasingly yes. Google's helpful content system targets low-value content regardless of how it's created. The issue isn't AI—it's quality. High-quality AI content can rank; low-quality AI slop gets filtered out."
+        }
+      ]
+    }
   }
 ]
