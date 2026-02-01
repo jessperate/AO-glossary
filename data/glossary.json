@@ -2,169 +2,1136 @@
   {
     "id": "agent",
     "term": "Agent",
-    "definition": "An AI-powered autonomous workflow that can make decisions and take actions based on context and goals. Agents in AirOps can process complex tasks by breaking them down into steps and using various tools.",
+    "definition": "An AI-powered autonomous workflow that can make decisions and take actions based on context and goals. Unlike traditional automation that follows rigid rules, agents dynamically adapt their behavior, breaking down complex tasks into steps and using various tools to achieve objectives.",
     "category": "Core Concepts",
     "relatedTerms": ["workflow", "action", "tool"],
-    "example": "A content research agent that gathers information from multiple sources and synthesizes it into a report."
+    "example": "A content research agent that gathers information from multiple sources and synthesizes it into a report.",
+    "article": {
+      "keyConcepts": [
+        {
+          "title": "Autonomy",
+          "description": "Agents operate independently, making decisions without constant human oversight. They evaluate situations and choose appropriate actions based on their goals."
+        },
+        {
+          "title": "Goal-Oriented Behavior",
+          "description": "Rather than following a fixed script, agents work toward defined objectives, adapting their approach as needed to achieve the desired outcome."
+        },
+        {
+          "title": "Tool Usage",
+          "description": "Agents can leverage multiple tools—APIs, databases, web searches—to gather information and take actions in the real world."
+        },
+        {
+          "title": "Context Awareness",
+          "description": "Agents maintain awareness of their environment and previous actions, allowing them to make informed decisions throughout a task."
+        }
+      ],
+      "benefits": [
+        "Handle complex, multi-step tasks that would be tedious or impossible with traditional automation",
+        "Adapt to unexpected situations without requiring manual intervention",
+        "Scale expertise by encoding domain knowledge into reusable agent workflows",
+        "Reduce manual work by delegating research, analysis, and routine decisions"
+      ],
+      "comparison": {
+        "term": "Traditional Automation",
+        "description": "While traditional automation follows predetermined rules and breaks when encountering unexpected inputs, agents use AI reasoning to handle novel situations. Automation is ideal for repetitive, predictable tasks; agents excel at tasks requiring judgment, research, or adaptation."
+      },
+      "tools": [
+        {
+          "name": "AirOps Agents",
+          "description": "Build and deploy AI agents with access to tools, knowledge bases, and integrations"
+        },
+        {
+          "name": "LangChain",
+          "description": "Framework for developing applications powered by language model agents"
+        },
+        {
+          "name": "AutoGPT",
+          "description": "Open-source autonomous AI agent experiment"
+        }
+      ],
+      "challenges": [
+        {
+          "challenge": "Unpredictable behavior",
+          "solution": "Implement guardrails, set clear boundaries on agent actions, and use human-in-the-loop approval for sensitive operations"
+        },
+        {
+          "challenge": "Debugging complexity",
+          "solution": "Use detailed logging and tracing to understand agent decision paths; break complex agents into smaller, testable components"
+        },
+        {
+          "challenge": "Cost management",
+          "solution": "Set token limits, implement caching for repeated queries, and monitor usage closely during development"
+        }
+      ],
+      "faq": [
+        {
+          "question": "How is an agent different from a chatbot?",
+          "answer": "Chatbots typically respond to individual queries, while agents can execute multi-step tasks, use tools, and maintain context across an entire workflow to achieve a goal."
+        },
+        {
+          "question": "Do agents require technical expertise to build?",
+          "answer": "Platforms like AirOps provide no-code interfaces for building agents, though complex agents may benefit from technical customization."
+        },
+        {
+          "question": "Are agents reliable enough for production use?",
+          "answer": "With proper guardrails, testing, and monitoring, agents can be production-ready. Start with lower-stakes tasks and gradually expand scope as you build confidence."
+        }
+      ]
+    }
   },
   {
     "id": "workflow",
     "term": "Workflow",
-    "definition": "A sequence of connected steps that automate a process. Workflows in AirOps can include AI actions, data transformations, conditional logic, and integrations with external services.",
+    "definition": "A sequence of connected steps that automate a process. Workflows in AirOps can include AI actions, data transformations, conditional logic, and integrations with external services, enabling complex automation without code.",
     "category": "Workflows & Actions",
     "relatedTerms": ["agent", "action", "trigger"],
-    "example": "A lead enrichment workflow that takes a company name and returns detailed firmographic data."
+    "example": "A lead enrichment workflow that takes a company name and returns detailed firmographic data.",
+    "article": {
+      "keyConcepts": [
+        {
+          "title": "Sequential Execution",
+          "description": "Workflows execute steps in a defined order, with each step's output potentially feeding into the next step as input."
+        },
+        {
+          "title": "Conditional Logic",
+          "description": "Branch workflows based on conditions—route data differently based on values, handle errors gracefully, or skip steps when not needed."
+        },
+        {
+          "title": "Data Transformation",
+          "description": "Transform data between steps using built-in functions, custom code, or AI-powered transformations."
+        },
+        {
+          "title": "Error Handling",
+          "description": "Define how workflows respond to failures—retry, skip, alert, or route to alternative paths."
+        }
+      ],
+      "benefits": [
+        "Eliminate repetitive manual tasks that consume team time",
+        "Ensure consistency by standardizing processes across the organization",
+        "Scale operations without proportionally increasing headcount",
+        "Connect disparate systems into unified, automated processes"
+      ],
+      "comparison": {
+        "term": "Agent",
+        "description": "Workflows follow a predetermined path with defined steps, while agents can dynamically decide their next action. Use workflows for predictable, repeatable processes; use agents when tasks require reasoning or adaptation."
+      },
+      "tools": [
+        {
+          "name": "AirOps Workflows",
+          "description": "Visual workflow builder with AI actions and 100+ integrations"
+        },
+        {
+          "name": "Zapier",
+          "description": "Popular no-code automation platform for connecting apps"
+        },
+        {
+          "name": "n8n",
+          "description": "Open-source workflow automation tool with self-hosting options"
+        }
+      ],
+      "challenges": [
+        {
+          "challenge": "Workflow complexity grows over time",
+          "solution": "Break large workflows into smaller, reusable sub-workflows; document the purpose of each step"
+        },
+        {
+          "challenge": "Handling edge cases",
+          "solution": "Implement comprehensive error handling and logging; test with diverse real-world data"
+        },
+        {
+          "challenge": "Maintaining data quality",
+          "solution": "Add validation steps to check data quality; implement alerts for anomalies"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Can workflows include AI-powered steps?",
+          "answer": "Yes, AirOps workflows can include AI actions like text generation, classification, extraction, and summarization alongside traditional automation steps."
+        },
+        {
+          "question": "How do I trigger a workflow?",
+          "answer": "Workflows can be triggered manually, via API, on a schedule, through webhooks, or in response to events in connected applications."
+        },
+        {
+          "question": "What happens if a workflow step fails?",
+          "answer": "You can configure error handling per step—retry automatically, skip and continue, halt execution, or route to an error-handling branch."
+        }
+      ]
+    }
   },
   {
     "id": "action",
     "term": "Action",
-    "definition": "A single step within a workflow that performs a specific task. Actions can be AI-powered (like text generation) or utility-based (like data transformation or API calls).",
+    "definition": "A single step within a workflow that performs a specific task. Actions can be AI-powered (like text generation, classification, or extraction) or utility-based (like data transformation, API calls, or conditional logic).",
     "category": "Workflows & Actions",
     "relatedTerms": ["workflow", "tool"],
-    "example": "A 'Generate Text' action that creates product descriptions based on input specifications."
+    "example": "A 'Generate Text' action that creates product descriptions based on input specifications.",
+    "article": {
+      "keyConcepts": [
+        {
+          "title": "Input/Output",
+          "description": "Every action accepts inputs (from previous steps or workflow inputs) and produces outputs that can be used by subsequent actions."
+        },
+        {
+          "title": "Configuration",
+          "description": "Actions are configured with parameters that control their behavior—prompts for AI actions, field mappings for integrations, or conditions for logic."
+        },
+        {
+          "title": "AI Actions",
+          "description": "Leverage language models to generate text, extract structured data, classify content, summarize documents, or answer questions."
+        },
+        {
+          "title": "Utility Actions",
+          "description": "Perform operations like filtering data, transforming formats, making HTTP requests, or adding conditional branches."
+        }
+      ],
+      "benefits": [
+        "Modular design allows mixing and matching actions to build any workflow",
+        "Pre-built actions reduce development time for common operations",
+        "AI actions bring intelligence to automation without ML expertise",
+        "Reusable actions ensure consistency across workflows"
+      ],
+      "comparison": {
+        "term": "Function",
+        "description": "Actions are similar to functions in programming—they take inputs, perform operations, and return outputs. However, actions are configured visually and can be AI-powered without writing code."
+      },
+      "challenges": [
+        {
+          "challenge": "Action output doesn't match expectations",
+          "solution": "Use preview/test features to validate action output with real data before deploying"
+        },
+        {
+          "challenge": "AI action inconsistency",
+          "solution": "Refine prompts, add examples, increase specificity, or use structured output formats like JSON"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Can I create custom actions?",
+          "answer": "Yes, you can create custom actions using code blocks or by wrapping API calls, then reuse them across workflows."
+        },
+        {
+          "question": "How do I choose the right AI model for an action?",
+          "answer": "Consider the task complexity—simpler tasks work well with faster, cheaper models, while complex reasoning may require more capable models."
+        }
+      ]
+    }
   },
   {
     "id": "trigger",
     "term": "Trigger",
-    "definition": "An event that initiates a workflow execution. Triggers can be manual (API call, button click) or automated (schedule, webhook, data change).",
+    "definition": "An event that initiates a workflow execution. Triggers can be manual (API call, button click) or automated (schedule, webhook, data change), allowing workflows to run in response to real-world events.",
     "category": "Workflows & Actions",
     "relatedTerms": ["workflow", "webhook"],
-    "example": "A webhook trigger that runs a workflow whenever a new form submission is received."
+    "example": "A webhook trigger that runs a workflow whenever a new form submission is received.",
+    "article": {
+      "keyConcepts": [
+        {
+          "title": "Event-Driven Execution",
+          "description": "Triggers allow workflows to respond automatically to events—a new lead in your CRM, an email received, or a file uploaded."
+        },
+        {
+          "title": "Scheduled Triggers",
+          "description": "Run workflows on a schedule—hourly, daily, weekly, or using cron expressions for complex schedules."
+        },
+        {
+          "title": "Webhook Triggers",
+          "description": "Receive HTTP requests from external systems to start workflow execution with the request data as input."
+        },
+        {
+          "title": "Manual Triggers",
+          "description": "Start workflows on-demand via API calls, UI buttons, or form submissions for human-initiated processes."
+        }
+      ],
+      "benefits": [
+        "React to events in real-time without manual intervention",
+        "Connect external systems to your workflows via webhooks",
+        "Schedule recurring tasks to run automatically",
+        "Enable both automated and human-initiated workflow execution"
+      ],
+      "comparison": {
+        "term": "Polling",
+        "description": "Triggers respond to events immediately, while polling periodically checks for changes. Triggers are more efficient and provide faster response times for event-driven workflows."
+      },
+      "faq": [
+        {
+          "question": "Can a workflow have multiple triggers?",
+          "answer": "Yes, a single workflow can be triggered by multiple events—for example, both a webhook and a schedule, or multiple different webhooks."
+        },
+        {
+          "question": "How do I test webhook triggers?",
+          "answer": "Use tools like ngrok for local testing, or the platform's built-in test features to simulate webhook payloads."
+        }
+      ]
+    }
   },
   {
     "id": "prompt",
     "term": "Prompt",
-    "definition": "The input text or instructions given to an AI model to generate a response. In AirOps, prompts can include variables, context, and formatting instructions.",
+    "definition": "The input text or instructions given to an AI model to generate a response. Effective prompts clearly communicate the desired task, context, and output format, enabling AI models to produce accurate, useful results.",
     "category": "AI & Models",
     "relatedTerms": ["model", "completion", "variable"],
-    "example": "Write a professional email to {{contact_name}} about {{product_name}} highlighting its key benefits."
+    "example": "Write a professional email to {{contact_name}} about {{product_name}} highlighting its key benefits.",
+    "article": {
+      "keyConcepts": [
+        {
+          "title": "Instructions",
+          "description": "Clear directives that tell the model what task to perform—generate, summarize, classify, extract, or transform."
+        },
+        {
+          "title": "Context",
+          "description": "Background information that helps the model understand the situation—who the audience is, what tone to use, relevant constraints."
+        },
+        {
+          "title": "Examples",
+          "description": "Sample inputs and outputs that demonstrate the desired behavior, helping the model understand patterns and format expectations."
+        },
+        {
+          "title": "Variables",
+          "description": "Dynamic placeholders (like {{name}}) that get replaced with actual data at runtime, enabling personalized, data-driven outputs."
+        }
+      ],
+      "benefits": [
+        "Well-crafted prompts dramatically improve output quality and consistency",
+        "Variables enable personalization at scale without manual customization",
+        "Examples reduce ambiguity and help the model match your expectations",
+        "Iterative prompt refinement is faster than traditional programming"
+      ],
+      "comparison": {
+        "term": "Code",
+        "description": "While code requires precise syntax and explicit logic, prompts use natural language to describe desired outcomes. Prompts are more flexible but less deterministic than code."
+      },
+      "challenges": [
+        {
+          "challenge": "Inconsistent outputs",
+          "solution": "Add specific constraints, provide examples, use structured output formats, or lower the temperature parameter"
+        },
+        {
+          "challenge": "Prompt too long",
+          "solution": "Focus on essential information, use concise language, and consider breaking complex tasks into multiple prompts"
+        },
+        {
+          "challenge": "Model doesn't follow instructions",
+          "solution": "Rephrase instructions more explicitly, add emphasis to key requirements, or try different prompt structures"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What's the difference between a system prompt and a user prompt?",
+          "answer": "System prompts set the model's behavior and context persistently, while user prompts are the specific requests or inputs for each interaction."
+        },
+        {
+          "question": "How long should a prompt be?",
+          "answer": "As long as needed to be clear, but no longer. Include essential context and instructions; remove unnecessary words. Longer isn't always better."
+        }
+      ]
+    }
   },
   {
     "id": "model",
     "term": "Model",
-    "definition": "The AI language model used to process prompts and generate responses. AirOps supports various models from providers like OpenAI, Anthropic, and others.",
+    "definition": "The AI language model used to process prompts and generate responses. Different models have varying capabilities, speeds, and costs—choosing the right model for each task optimizes both quality and efficiency.",
     "category": "AI & Models",
     "relatedTerms": ["prompt", "completion"],
-    "example": "Using GPT-4 for complex reasoning tasks or Claude for nuanced content generation."
+    "example": "Using GPT-4 for complex reasoning tasks or Claude for nuanced content generation.",
+    "article": {
+      "keyConcepts": [
+        {
+          "title": "Model Capabilities",
+          "description": "Models vary in their abilities—some excel at reasoning, others at following instructions, coding, or maintaining long context."
+        },
+        {
+          "title": "Context Window",
+          "description": "The maximum amount of text a model can process at once, measured in tokens. Larger windows enable working with longer documents."
+        },
+        {
+          "title": "Latency vs Quality",
+          "description": "More capable models typically take longer and cost more. Match model selection to task requirements."
+        },
+        {
+          "title": "Model Providers",
+          "description": "Major providers include OpenAI (GPT-4, GPT-3.5), Anthropic (Claude), Google (Gemini), and open-source options (Llama, Mistral)."
+        }
+      ],
+      "benefits": [
+        "Access state-of-the-art AI capabilities without building models yourself",
+        "Choose models optimized for specific tasks—coding, writing, analysis",
+        "Scale usage up or down based on demand with pay-per-use pricing",
+        "Switch between models easily to optimize cost and performance"
+      ],
+      "comparison": {
+        "term": "Traditional Software",
+        "description": "Traditional software follows explicit rules programmed by developers, while AI models learn patterns from data and can handle tasks they weren't explicitly programmed for."
+      },
+      "tools": [
+        {
+          "name": "OpenAI API",
+          "description": "Access to GPT-4, GPT-3.5, and other OpenAI models"
+        },
+        {
+          "name": "Anthropic API",
+          "description": "Access to Claude models known for safety and instruction-following"
+        },
+        {
+          "name": "AirOps",
+          "description": "Unified platform supporting multiple model providers"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Which model should I use?",
+          "answer": "Start with a capable model like GPT-4 or Claude to establish quality, then test smaller/faster models to see if they meet your needs at lower cost."
+        },
+        {
+          "question": "Are open-source models good enough?",
+          "answer": "For many tasks, yes. Open-source models like Llama and Mistral have improved significantly and can be more cost-effective for high-volume use cases."
+        }
+      ]
+    }
   },
   {
     "id": "completion",
     "term": "Completion",
-    "definition": "The output generated by an AI model in response to a prompt. Completions can be text, structured data, or other formats depending on the model and configuration.",
+    "definition": "The output generated by an AI model in response to a prompt. Completions can be free-form text, structured data (like JSON), code, or other formats depending on the model and prompt configuration.",
     "category": "AI & Models",
     "relatedTerms": ["prompt", "model"],
-    "example": "The generated product description returned after sending a prompt to the AI model."
+    "example": "The generated product description returned after sending a prompt to the AI model.",
+    "article": {
+      "keyConcepts": [
+        {
+          "title": "Output Format",
+          "description": "Completions can be plain text, structured JSON, code, or custom formats specified in the prompt."
+        },
+        {
+          "title": "Temperature",
+          "description": "A parameter controlling randomness—lower values produce more consistent outputs, higher values more creative/varied results."
+        },
+        {
+          "title": "Tokens",
+          "description": "Completions are measured in tokens (roughly 4 characters each). Both input and output tokens count toward usage and cost."
+        },
+        {
+          "title": "Streaming",
+          "description": "Receive completion tokens as they're generated rather than waiting for the full response, enabling real-time display."
+        }
+      ],
+      "benefits": [
+        "Generate human-quality text for any purpose at scale",
+        "Structured outputs enable reliable integration with other systems",
+        "Streaming provides responsive user experiences",
+        "Control creativity vs consistency with temperature settings"
+      ],
+      "faq": [
+        {
+          "question": "Why do I sometimes get different outputs for the same prompt?",
+          "answer": "AI models have inherent randomness controlled by temperature. For consistent outputs, use temperature 0 or implement output validation."
+        },
+        {
+          "question": "How do I get structured JSON output?",
+          "answer": "Specify the desired JSON schema in your prompt, use function calling features, or use a platform that enforces structured outputs."
+        }
+      ]
+    }
   },
   {
     "id": "variable",
     "term": "Variable",
-    "definition": "A dynamic placeholder in workflows that stores and passes data between actions. Variables can hold text, numbers, arrays, objects, or other data types.",
+    "definition": "A dynamic placeholder in workflows that stores and passes data between actions. Variables enable workflows to work with dynamic data rather than hardcoded values, making them reusable and adaptable.",
     "category": "Data & Variables",
     "relatedTerms": ["input", "output", "context"],
-    "example": "{{user.email}} - a variable that contains the current user's email address."
+    "example": "{{user.email}} - a variable that contains the current user's email address.",
+    "article": {
+      "keyConcepts": [
+        {
+          "title": "Variable Syntax",
+          "description": "Variables are typically referenced using double curly braces: {{variable_name}}. This syntax is replaced with actual values at runtime."
+        },
+        {
+          "title": "Scope",
+          "description": "Variables can be scoped to a single action, available throughout a workflow, or global across multiple workflows."
+        },
+        {
+          "title": "Data Types",
+          "description": "Variables can hold text, numbers, booleans, arrays, objects, or other data types depending on the platform."
+        },
+        {
+          "title": "Nested Access",
+          "description": "Access nested properties using dot notation: {{user.address.city}} to get the city from a user object."
+        }
+      ],
+      "benefits": [
+        "Build reusable workflows that work with any input data",
+        "Pass data seamlessly between workflow steps",
+        "Personalize outputs by inserting dynamic values into prompts",
+        "Reference the same data in multiple places without duplication"
+      ],
+      "faq": [
+        {
+          "question": "What happens if a variable is undefined?",
+          "answer": "Behavior varies by platform—some show empty strings, others show the raw variable syntax, and some throw errors. Always handle potential missing values."
+        },
+        {
+          "question": "Can I transform variables inline?",
+          "answer": "Many platforms support filters or functions to transform variables: {{name | uppercase}} or {{date | format('YYYY-MM-DD')}}."
+        }
+      ]
+    }
   },
   {
     "id": "input",
     "term": "Input",
-    "definition": "Data provided to a workflow or action at the start of execution. Inputs define what information the workflow needs to run.",
+    "definition": "Data provided to a workflow or action at the start of execution. Inputs define the interface for your workflow—what information is required or optional for it to run successfully.",
     "category": "Data & Variables",
     "relatedTerms": ["variable", "output"],
-    "example": "A workflow input schema requiring 'company_name' and 'industry' fields."
+    "example": "A workflow input schema requiring 'company_name' and 'industry' fields.",
+    "article": {
+      "keyConcepts": [
+        {
+          "title": "Input Schema",
+          "description": "Define the structure of expected inputs—field names, data types, required vs optional, and validation rules."
+        },
+        {
+          "title": "Default Values",
+          "description": "Specify fallback values for optional inputs that aren't provided."
+        },
+        {
+          "title": "Validation",
+          "description": "Validate inputs meet requirements before workflow execution to catch errors early."
+        }
+      ],
+      "benefits": [
+        "Clear input contracts make workflows easier to use and integrate",
+        "Validation prevents errors from bad data before they propagate",
+        "Documentation auto-generated from input schemas",
+        "Type safety helps catch issues during development"
+      ],
+      "faq": [
+        {
+          "question": "Should I make inputs required or optional?",
+          "answer": "Make inputs required if the workflow can't function without them. Use optional inputs with sensible defaults for customization options."
+        }
+      ]
+    }
   },
   {
     "id": "output",
     "term": "Output",
-    "definition": "The result produced by a workflow or action after execution. Outputs can be returned to the caller or passed to subsequent actions.",
+    "definition": "The result produced by a workflow or action after execution. Outputs can be returned to the caller, passed to subsequent actions, or stored for later use.",
     "category": "Data & Variables",
     "relatedTerms": ["variable", "input"],
-    "example": "A JSON object containing enriched company data returned at the end of a workflow."
+    "example": "A JSON object containing enriched company data returned at the end of a workflow.",
+    "article": {
+      "keyConcepts": [
+        {
+          "title": "Output Schema",
+          "description": "Define the structure of outputs so consumers know what to expect—field names, types, and descriptions."
+        },
+        {
+          "title": "Action Outputs",
+          "description": "Each action produces outputs that can be referenced by subsequent actions using variables."
+        },
+        {
+          "title": "Workflow Outputs",
+          "description": "The final output returned to the workflow caller, often assembled from multiple action outputs."
+        }
+      ],
+      "benefits": [
+        "Predictable output structure enables reliable integrations",
+        "Chain action outputs to build complex data transformations",
+        "Return exactly the data consumers need, no more, no less"
+      ],
+      "faq": [
+        {
+          "question": "How do I access outputs from earlier actions?",
+          "answer": "Reference them using variables with the action name: {{action_name.output_field}} or similar syntax depending on your platform."
+        }
+      ]
+    }
   },
   {
     "id": "context",
     "term": "Context",
-    "definition": "Background information provided to AI models to improve response quality. Context can include previous conversation history, relevant documents, or domain-specific knowledge.",
+    "definition": "Background information provided to AI models to improve response quality. Context helps models understand the situation, produce relevant outputs, and maintain consistency across interactions.",
     "category": "AI & Models",
     "relatedTerms": ["prompt", "rag", "knowledge-base"],
-    "example": "Including company brand guidelines as context when generating marketing copy."
+    "example": "Including company brand guidelines as context when generating marketing copy.",
+    "article": {
+      "keyConcepts": [
+        {
+          "title": "Static Context",
+          "description": "Persistent information included with every request—company info, style guidelines, domain knowledge."
+        },
+        {
+          "title": "Dynamic Context",
+          "description": "Information retrieved at runtime based on the specific request—relevant documents, user history, current data."
+        },
+        {
+          "title": "Conversation History",
+          "description": "Previous messages in a conversation that help the model maintain coherence and reference earlier points."
+        },
+        {
+          "title": "Retrieved Context",
+          "description": "Documents or data fetched from knowledge bases or databases to ground responses in specific information."
+        }
+      ],
+      "benefits": [
+        "Ground AI responses in accurate, specific information",
+        "Maintain consistency with brand voice and guidelines",
+        "Enable AI to reference information beyond its training data",
+        "Produce more relevant, targeted outputs"
+      ],
+      "comparison": {
+        "term": "Fine-Tuning",
+        "description": "Context is provided at runtime and can change per request, while fine-tuning permanently modifies model weights. Context is more flexible; fine-tuning can be more efficient for consistent, specialized behavior."
+      },
+      "faq": [
+        {
+          "question": "How much context should I provide?",
+          "answer": "Enough to be helpful, but not so much that it overwhelms the model or exceeds context limits. Prioritize the most relevant information."
+        },
+        {
+          "question": "Does more context always help?",
+          "answer": "Not necessarily. Irrelevant context can confuse models. Focus on quality and relevance over quantity."
+        }
+      ]
+    }
   },
   {
     "id": "integration",
     "term": "Integration",
-    "definition": "A connection between AirOps and an external service or platform. Integrations enable workflows to read from and write to tools like CRMs, databases, and communication platforms.",
+    "definition": "A connection between AirOps and an external service or platform. Integrations enable workflows to read from and write to tools like CRMs, databases, communication platforms, and thousands of other applications.",
     "category": "Integrations",
     "relatedTerms": ["api", "webhook", "connector"],
-    "example": "A Salesforce integration that allows workflows to create and update leads."
+    "example": "A Salesforce integration that allows workflows to create and update leads.",
+    "article": {
+      "keyConcepts": [
+        {
+          "title": "Authentication",
+          "description": "Integrations handle authentication (OAuth, API keys) so workflows can securely access external services."
+        },
+        {
+          "title": "Pre-built Connectors",
+          "description": "Ready-to-use integrations for popular services—configure and use without building API calls from scratch."
+        },
+        {
+          "title": "Data Mapping",
+          "description": "Map fields between your workflow and the external service to ensure data flows correctly."
+        },
+        {
+          "title": "Bi-directional Sync",
+          "description": "Read data from services and write data back, enabling full two-way workflows."
+        }
+      ],
+      "benefits": [
+        "Connect to your existing tools without building custom integrations",
+        "Automate processes that span multiple applications",
+        "Keep data synchronized across systems automatically",
+        "Access real-time data from external sources in workflows"
+      ],
+      "tools": [
+        {
+          "name": "Salesforce",
+          "description": "CRM integration for managing leads, contacts, and opportunities"
+        },
+        {
+          "name": "HubSpot",
+          "description": "Marketing and sales platform integration"
+        },
+        {
+          "name": "Slack",
+          "description": "Team communication and notifications"
+        },
+        {
+          "name": "Google Sheets",
+          "description": "Spreadsheet data source and destination"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What if there's no pre-built integration for my tool?",
+          "answer": "Use HTTP/API actions to connect to any service with an API, or request the integration from the platform provider."
+        },
+        {
+          "question": "How are credentials stored?",
+          "answer": "Reputable platforms encrypt credentials and never expose them in workflows. Credentials are stored securely and used only for authenticated requests."
+        }
+      ]
+    }
   },
   {
     "id": "api",
     "term": "API",
-    "definition": "Application Programming Interface - a way for different software systems to communicate. AirOps workflows can be triggered via API and can make API calls to external services.",
+    "definition": "Application Programming Interface - a standardized way for software systems to communicate. APIs enable workflows to be triggered programmatically and allow workflows to interact with any service that exposes an API.",
     "category": "Integrations",
     "relatedTerms": ["integration", "webhook", "endpoint"],
-    "example": "Calling the AirOps API to execute a workflow programmatically from your application."
+    "example": "Calling the AirOps API to execute a workflow programmatically from your application.",
+    "article": {
+      "keyConcepts": [
+        {
+          "title": "REST APIs",
+          "description": "The most common API style, using HTTP methods (GET, POST, PUT, DELETE) to perform operations on resources."
+        },
+        {
+          "title": "Authentication",
+          "description": "APIs typically require authentication—API keys, OAuth tokens, or other credentials to verify access rights."
+        },
+        {
+          "title": "Request/Response",
+          "description": "APIs follow a request-response pattern: send a request with parameters, receive a response with data or confirmation."
+        },
+        {
+          "title": "Rate Limits",
+          "description": "APIs often limit how many requests you can make in a time period to prevent abuse and ensure fair usage."
+        }
+      ],
+      "benefits": [
+        "Integrate AI workflows into any application or system",
+        "Automate interactions with thousands of external services",
+        "Build custom integrations when pre-built options don't exist",
+        "Enable real-time, programmatic workflow execution"
+      ],
+      "faq": [
+        {
+          "question": "Do I need to know how to code to use APIs?",
+          "answer": "Not necessarily. Platforms like AirOps provide visual interfaces for API interactions. However, understanding API basics helps troubleshoot issues."
+        },
+        {
+          "question": "What's the difference between an API and a webhook?",
+          "answer": "APIs are called when you want to get or send data (pull). Webhooks are called by external services when events occur (push)."
+        }
+      ]
+    }
   },
   {
     "id": "webhook",
     "term": "Webhook",
-    "definition": "An HTTP callback that sends data to a specified URL when an event occurs. Webhooks can trigger AirOps workflows or receive data from workflow executions.",
+    "definition": "An HTTP callback that sends data to a specified URL when an event occurs. Webhooks enable real-time communication between systems, allowing external services to trigger workflows or notify your applications of changes.",
     "category": "Integrations",
     "relatedTerms": ["trigger", "api", "integration"],
-    "example": "A Stripe webhook that triggers a customer onboarding workflow when a payment succeeds."
+    "example": "A Stripe webhook that triggers a customer onboarding workflow when a payment succeeds.",
+    "article": {
+      "keyConcepts": [
+        {
+          "title": "Event-Driven",
+          "description": "Webhooks fire when specific events occur—form submissions, payments, status changes—enabling real-time reactions."
+        },
+        {
+          "title": "Payload",
+          "description": "Webhooks send a payload (usually JSON) containing details about the event that triggered them."
+        },
+        {
+          "title": "Endpoint URL",
+          "description": "You provide a URL where webhook data should be sent; this URL must be accessible from the internet."
+        },
+        {
+          "title": "Verification",
+          "description": "Webhooks often include signatures or secrets to verify the request came from the expected source."
+        }
+      ],
+      "benefits": [
+        "React to events instantly without polling or manual triggers",
+        "Receive rich event data directly from the source system",
+        "Build real-time integrations that keep systems in sync",
+        "Reduce API calls by receiving push notifications instead of polling"
+      ],
+      "challenges": [
+        {
+          "challenge": "Webhook delivery failures",
+          "solution": "Implement retry logic, log failed deliveries, and set up monitoring for webhook health"
+        },
+        {
+          "challenge": "Security concerns",
+          "solution": "Validate webhook signatures, use HTTPS endpoints, and verify payload structure before processing"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What happens if my endpoint is down when a webhook fires?",
+          "answer": "Most webhook providers retry failed deliveries several times. Check if your provider offers a webhook log to replay missed events."
+        },
+        {
+          "question": "How do I test webhooks during development?",
+          "answer": "Use tools like ngrok to expose your local server, or use the provider's test/simulation features to send sample payloads."
+        }
+      ]
+    }
   },
   {
     "id": "knowledge-base",
     "term": "Knowledge Base",
-    "definition": "A collection of documents, data, or information that AI models can reference when generating responses. Knowledge bases enable domain-specific and up-to-date AI outputs.",
+    "definition": "A collection of documents, data, or information that AI models can reference when generating responses. Knowledge bases enable AI to provide accurate, up-to-date, and domain-specific answers grounded in your content.",
     "category": "AI & Models",
     "relatedTerms": ["rag", "context", "embedding"],
-    "example": "A knowledge base containing product documentation that the AI references when answering customer questions."
+    "example": "A knowledge base containing product documentation that the AI references when answering customer questions.",
+    "article": {
+      "keyConcepts": [
+        {
+          "title": "Document Ingestion",
+          "description": "Upload documents (PDFs, web pages, docs) to the knowledge base where they're processed for retrieval."
+        },
+        {
+          "title": "Chunking",
+          "description": "Documents are split into smaller chunks for efficient retrieval and to fit within model context limits."
+        },
+        {
+          "title": "Embeddings",
+          "description": "Text chunks are converted to numerical vectors (embeddings) that capture semantic meaning for similarity search."
+        },
+        {
+          "title": "Retrieval",
+          "description": "When a query comes in, the most relevant chunks are retrieved and provided as context to the AI model."
+        }
+      ],
+      "benefits": [
+        "Ground AI responses in accurate, verified information",
+        "Keep AI knowledge current without retraining models",
+        "Provide domain-specific expertise on your products, policies, or processes",
+        "Reduce AI hallucinations by giving the model reliable sources"
+      ],
+      "comparison": {
+        "term": "Model Training",
+        "description": "Knowledge bases provide information at query time via retrieval, while training bakes knowledge into model weights. Knowledge bases are easier to update and don't require ML expertise."
+      },
+      "challenges": [
+        {
+          "challenge": "Irrelevant retrieval results",
+          "solution": "Improve chunking strategy, add metadata filtering, tune retrieval parameters, or improve document quality"
+        },
+        {
+          "challenge": "Keeping content current",
+          "solution": "Set up automated sync from source systems, implement refresh schedules, version your knowledge base"
+        }
+      ],
+      "faq": [
+        {
+          "question": "What file types can I add to a knowledge base?",
+          "answer": "Common types include PDFs, Word docs, text files, HTML pages, and markdown. Some platforms also support images, spreadsheets, and more."
+        },
+        {
+          "question": "How much content can a knowledge base hold?",
+          "answer": "This varies by platform and plan. Most enterprise solutions can handle millions of documents with proper indexing."
+        }
+      ]
+    }
   },
   {
     "id": "rag",
     "term": "RAG",
-    "definition": "Retrieval-Augmented Generation - a technique that enhances AI responses by first retrieving relevant information from a knowledge base, then using that information to generate more accurate and contextual outputs.",
+    "definition": "Retrieval-Augmented Generation - a technique that enhances AI responses by first retrieving relevant information from a knowledge base, then using that information as context to generate more accurate, grounded outputs.",
     "category": "AI & Models",
     "relatedTerms": ["knowledge-base", "embedding", "context"],
-    "example": "Using RAG to answer support questions by retrieving relevant help articles before generating a response."
+    "example": "Using RAG to answer support questions by retrieving relevant help articles before generating a response.",
+    "article": {
+      "keyConcepts": [
+        {
+          "title": "Retrieve",
+          "description": "Convert the query to an embedding and find the most semantically similar documents in the knowledge base."
+        },
+        {
+          "title": "Augment",
+          "description": "Add the retrieved documents to the prompt as context, giving the model specific information to reference."
+        },
+        {
+          "title": "Generate",
+          "description": "The model generates a response grounded in the retrieved context rather than relying solely on training data."
+        },
+        {
+          "title": "Citation",
+          "description": "Include references to source documents so users can verify information and explore further."
+        }
+      ],
+      "benefits": [
+        "Dramatically reduce AI hallucinations with grounded responses",
+        "Keep AI current without expensive model retraining",
+        "Provide verifiable answers with source citations",
+        "Work with proprietary data the model was never trained on"
+      ],
+      "comparison": {
+        "term": "Fine-Tuning",
+        "description": "RAG retrieves context at query time from external sources, while fine-tuning modifies model weights. RAG is more flexible for changing data; fine-tuning is better for consistent behavioral changes."
+      },
+      "challenges": [
+        {
+          "challenge": "Retrieved context doesn't answer the question",
+          "solution": "Improve document chunking, add semantic search tuning, implement query expansion, or filter by metadata"
+        },
+        {
+          "challenge": "Too much or irrelevant context",
+          "solution": "Limit retrieved chunks, implement reranking, or use the model to filter relevant passages"
+        }
+      ],
+      "faq": [
+        {
+          "question": "When should I use RAG vs fine-tuning?",
+          "answer": "Use RAG for factual/knowledge tasks with changing data. Use fine-tuning to change model behavior, style, or format consistently."
+        },
+        {
+          "question": "Does RAG work with any AI model?",
+          "answer": "Yes, RAG is a technique that works with any text-generation model. The retrieved context is simply added to the prompt."
+        }
+      ]
+    }
   },
   {
     "id": "embedding",
     "term": "Embedding",
-    "definition": "A numerical representation of text that captures its semantic meaning. Embeddings enable similarity search and are fundamental to knowledge base retrieval in RAG systems.",
+    "definition": "A numerical vector representation of text that captures its semantic meaning. Embeddings enable similarity search, clustering, and other operations where understanding meaning (not just keywords) matters.",
     "category": "AI & Models",
     "relatedTerms": ["rag", "knowledge-base", "vector"],
-    "example": "Converting product descriptions into embeddings to enable semantic search functionality."
+    "example": "Converting product descriptions into embeddings to enable semantic search functionality.",
+    "article": {
+      "keyConcepts": [
+        {
+          "title": "Vector Representation",
+          "description": "Embeddings convert text to lists of numbers (vectors) where similar meanings result in similar vectors."
+        },
+        {
+          "title": "Semantic Similarity",
+          "description": "Compare embeddings using distance metrics (cosine similarity) to find conceptually related content."
+        },
+        {
+          "title": "Embedding Models",
+          "description": "Specialized models (like OpenAI's text-embedding-ada-002) generate embeddings optimized for search and retrieval."
+        },
+        {
+          "title": "Vector Databases",
+          "description": "Specialized databases (Pinecone, Weaviate, etc.) store and efficiently search millions of embedding vectors."
+        }
+      ],
+      "benefits": [
+        "Find relevant content based on meaning, not just keyword matching",
+        "Enable semantic search across large document collections",
+        "Power recommendation systems based on content similarity",
+        "Foundation for RAG and knowledge base retrieval"
+      ],
+      "tools": [
+        {
+          "name": "OpenAI Embeddings",
+          "description": "High-quality embedding models via API"
+        },
+        {
+          "name": "Pinecone",
+          "description": "Managed vector database for embedding storage and search"
+        },
+        {
+          "name": "Weaviate",
+          "description": "Open-source vector database with built-in ML"
+        }
+      ],
+      "faq": [
+        {
+          "question": "How are embeddings different from keywords?",
+          "answer": "Keywords match exact terms, while embeddings capture meaning. 'Car' and 'automobile' have different keywords but similar embeddings."
+        },
+        {
+          "question": "Do I need to regenerate embeddings when I update documents?",
+          "answer": "Yes, if document content changes, regenerate embeddings to reflect the new content accurately."
+        }
+      ]
+    }
   },
   {
     "id": "tool",
     "term": "Tool",
-    "definition": "A capability that agents can use to perform specific tasks like searching the web, running code, or accessing databases. Tools extend what AI agents can accomplish.",
+    "definition": "A capability that AI agents can use to perform specific tasks beyond text generation—searching the web, running code, accessing databases, calling APIs, or interacting with external systems.",
     "category": "Core Concepts",
     "relatedTerms": ["agent", "action", "function-calling"],
-    "example": "A web search tool that an agent uses to find current information about a topic."
+    "example": "A web search tool that an agent uses to find current information about a topic.",
+    "article": {
+      "keyConcepts": [
+        {
+          "title": "Tool Definition",
+          "description": "Tools are defined with a name, description, and parameters so the AI understands when and how to use them."
+        },
+        {
+          "title": "Tool Selection",
+          "description": "AI agents decide which tools to use based on the task at hand, selecting appropriate tools from those available."
+        },
+        {
+          "title": "Tool Execution",
+          "description": "When the AI chooses to use a tool, the system executes it and returns results for the AI to process."
+        },
+        {
+          "title": "Built-in vs Custom",
+          "description": "Platforms provide built-in tools (web search, code execution) and allow creating custom tools for specific needs."
+        }
+      ],
+      "benefits": [
+        "Extend AI capabilities beyond text generation to real-world actions",
+        "Access real-time information not in the model's training data",
+        "Integrate AI with existing systems and databases",
+        "Enable agents to complete complex, multi-step tasks"
+      ],
+      "comparison": {
+        "term": "Plugin",
+        "description": "Tools and plugins are similar concepts—both extend AI capabilities. 'Tool' is the more common term in agent frameworks; 'plugin' is used in some consumer AI products."
+      },
+      "faq": [
+        {
+          "question": "Can AI misuse tools?",
+          "answer": "AI might use tools incorrectly or excessively. Implement rate limits, validation, and approval workflows for sensitive tools."
+        },
+        {
+          "question": "How do I create custom tools?",
+          "answer": "Define the tool's function, parameters, and return format. Most platforms provide interfaces to register custom tools with your agents."
+        }
+      ]
+    }
   },
   {
     "id": "function-calling",
     "term": "Function Calling",
-    "definition": "The ability of AI models to recognize when to use external tools or functions and format the appropriate calls. This enables structured interactions between AI and external systems.",
+    "definition": "The ability of AI models to recognize when to use external tools or functions and format the appropriate calls with correct parameters. This enables structured, reliable interactions between AI and external systems.",
     "category": "AI & Models",
     "relatedTerms": ["tool", "agent", "api"],
-    "example": "The AI deciding to call a weather API function when asked about current weather conditions."
+    "example": "The AI deciding to call a weather API function when asked about current weather conditions.",
+    "article": {
+      "keyConcepts": [
+        {
+          "title": "Function Definitions",
+          "description": "Provide the model with descriptions of available functions—name, purpose, parameters, and types."
+        },
+        {
+          "title": "Parameter Extraction",
+          "description": "The model extracts required parameters from natural language and formats them correctly for the function."
+        },
+        {
+          "title": "Structured Output",
+          "description": "Function calls output structured data (JSON) rather than free text, enabling reliable parsing and execution."
+        },
+        {
+          "title": "Multi-step Calling",
+          "description": "Models can chain multiple function calls, using outputs from one call as inputs to another."
+        }
+      ],
+      "benefits": [
+        "Reliable, structured interactions between AI and external systems",
+        "Natural language interfaces to APIs and databases",
+        "Reduced prompt engineering for tool use",
+        "Type-safe parameter passing with validation"
+      ],
+      "faq": [
+        {
+          "question": "Is function calling the same as tool use?",
+          "answer": "They're closely related. Function calling is the model capability; tools are the functions made available. Function calling enables tool use."
+        },
+        {
+          "question": "Do all AI models support function calling?",
+          "answer": "Not all. OpenAI GPT-4, Claude, and some other models have native function calling. Others require prompt-based approaches."
+        }
+      ]
+    }
   },
   {
     "id": "batch-processing",
     "term": "Batch Processing",
-    "definition": "Running a workflow multiple times with different inputs, typically to process large datasets efficiently. Batch processing enables scaling AI operations across many items.",
+    "definition": "Running a workflow multiple times with different inputs, typically to process large datasets efficiently. Batch processing enables scaling AI operations across hundreds or thousands of items systematically.",
     "category": "Workflows & Actions",
     "relatedTerms": ["workflow", "input", "loop"],
-    "example": "Processing 1000 product listings through a description enhancement workflow overnight."
+    "example": "Processing 1000 product listings through a description enhancement workflow overnight.",
+    "article": {
+      "keyConcepts": [
+        {
+          "title": "Input Dataset",
+          "description": "Provide a collection of items (CSV, database query, API response) to process through the workflow."
+        },
+        {
+          "title": "Parallel Execution",
+          "description": "Run multiple items simultaneously to complete large batches faster, within rate limits."
+        },
+        {
+          "title": "Error Handling",
+          "description": "Handle individual item failures without stopping the entire batch; retry failed items or log for review."
+        },
+        {
+          "title": "Progress Tracking",
+          "description": "Monitor batch progress, see completed/pending/failed items, and estimate completion time."
+        }
+      ],
+      "benefits": [
+        "Scale AI operations to thousands of items without manual intervention",
+        "Process large datasets overnight or during off-peak hours",
+        "Consistent application of AI workflows across all items",
+        "Efficient resource utilization with parallel processing"
+      ],
+      "challenges": [
+        {
+          "challenge": "Rate limits",
+          "solution": "Implement throttling, use queuing systems, or schedule batches during lower-usage periods"
+        },
+        {
+          "challenge": "Partial failures",
+          "solution": "Design for individual item failures, implement retry logic, and provide clear failure reports"
+        }
+      ],
+      "faq": [
+        {
+          "question": "How large a batch can I process?",
+          "answer": "This depends on your platform limits and API rate limits. Start with smaller batches to validate, then scale up."
+        },
+        {
+          "question": "Can I pause and resume a batch?",
+          "answer": "Many platforms support pause/resume. If not, design batches with checkpointing so you can restart from where you left off."
+        }
+      ]
+    }
   },
   {
     "id": "mcp",
     "term": "MCP",
-    "definition": "Model Context Protocol - an open standard that enables AI models to securely connect to external data sources and tools. MCP provides a universal way for AI applications to access context from various systems like databases, APIs, and file systems.",
+    "definition": "Model Context Protocol - an open standard that enables AI models to securely connect to external data sources and tools through a unified interface. MCP provides a standardized way for AI applications to access context from various systems.",
     "category": "Integrations",
     "relatedTerms": ["integration", "tool", "context", "api"],
-    "example": "Using MCP to connect an AI agent to Slack, allowing it to read messages and respond in channels."
+    "example": "Using MCP to connect an AI agent to Slack, allowing it to read messages and respond in channels.",
+    "article": {
+      "keyConcepts": [
+        {
+          "title": "Standardized Protocol",
+          "description": "MCP defines a common interface for AI-tool interactions, so tools built for MCP work with any MCP-compatible AI system."
+        },
+        {
+          "title": "Server/Client Model",
+          "description": "MCP servers expose capabilities (tools, resources), while MCP clients (AI applications) connect and use them."
+        },
+        {
+          "title": "Resource Access",
+          "description": "MCP enables AI to read from data sources—files, databases, APIs—in a controlled, secure manner."
+        },
+        {
+          "title": "Tool Execution",
+          "description": "AI can invoke tools through MCP to take actions—send messages, create records, execute code."
+        }
+      ],
+      "benefits": [
+        "Write tools once, use them with any MCP-compatible AI application",
+        "Standardized security model for AI-tool interactions",
+        "Growing ecosystem of pre-built MCP servers for popular services",
+        "Clear separation between AI capabilities and tool implementations"
+      ],
+      "comparison": {
+        "term": "Custom Integrations",
+        "description": "Custom integrations are built for specific AI platforms, while MCP tools work across any MCP-compatible system. MCP reduces duplication and enables a shared ecosystem."
+      },
+      "tools": [
+        {
+          "name": "MCP Servers",
+          "description": "Pre-built servers for Slack, GitHub, Google Drive, databases, and more"
+        },
+        {
+          "name": "Claude Desktop",
+          "description": "MCP-compatible AI client that can connect to MCP servers"
+        }
+      ],
+      "faq": [
+        {
+          "question": "Is MCP specific to one AI provider?",
+          "answer": "No, MCP is an open standard. While developed by Anthropic, it's designed to work with any AI system that implements the protocol."
+        },
+        {
+          "question": "How is MCP different from function calling?",
+          "answer": "Function calling is a model capability for structured tool use. MCP is a protocol for discovering and connecting to tools. They're complementary—MCP tools can be exposed via function calling."
+        }
+      ]
+    }
   }
 ]
