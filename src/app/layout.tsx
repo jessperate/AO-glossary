@@ -15,9 +15,16 @@ export default function RootLayout({
     <html lang="en">
       <body className="min-h-screen antialiased">
         <header className="border-b border-[var(--border)] bg-[var(--background)]">
-          <div className="mx-auto max-w-4xl px-4 py-4">
-            <a href="./" className="text-xl font-bold text-[var(--primary)]">
-              AirOps Glossary
+          <div className="mx-auto max-w-4xl px-4 py-4 flex items-center gap-2">
+            <a href="./" className="flex items-center gap-2">
+              <img
+                src="./logo-airops.svg"
+                alt="AirOps"
+                className="h-6 dark:invert"
+              />
+              <span className="text-xl font-bold text-[var(--foreground)]">
+                Glossary
+              </span>
             </a>
           </div>
         </header>
