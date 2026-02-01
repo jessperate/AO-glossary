@@ -17,7 +17,7 @@ export function CategoryFilter({
     <div className="flex flex-wrap gap-2">
       <button
         onClick={() => onSelect(null)}
-        className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
+        className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors font-[family-name:var(--font-mono)] ${
           selected === null
             ? 'bg-[var(--primary)] text-black'
             : 'bg-[var(--muted)] text-[var(--foreground)] hover:bg-[var(--border)]'
@@ -29,7 +29,7 @@ export function CategoryFilter({
         <button
           key={category}
           onClick={() => onSelect(category === selected ? null : category)}
-          className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
+          className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors font-[family-name:var(--font-mono)] ${
             selected === category
               ? 'bg-[var(--primary)] text-black'
               : 'bg-[var(--muted)] text-[var(--foreground)] hover:bg-[var(--border)]'
