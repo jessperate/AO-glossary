@@ -26,7 +26,7 @@ export default function Home() {
       <div className="mb-6 sm:mb-8">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl mb-3 sm:mb-4 font-[family-name:var(--font-serif)]">Glossary</h1>
         <p className="text-base sm:text-lg text-[var(--muted-foreground)]">
-          A comprehensive glossary of all things AirOps, AI, and workflow automation.
+          New to content engineering? Been in SEO for a decade? Either way, this glossary has your back. Clear definitions, zero jargon about jargon.
         </p>
       </div>
 
