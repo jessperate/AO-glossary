@@ -2789,5 +2789,1144 @@
         }
       ]
     }
+  },
+  {
+    "id": "keyword-cannibalization",
+    "term": "Keyword Cannibalization",
+    "definition": "When multiple pages on your site compete for the same keyword, splitting ranking potential and confusing search engines about which page to show. This internal competition often results in neither page ranking as well as a single, consolidated page would.",
+    "metaphor": "Keyword cannibalization is like sending two of your own runners to compete in the same race—they end up tripping over each other instead of one strong runner winning. Your pages compete against themselves instead of competitors.",
+    "category": "Core Concepts",
+    "relatedTerms": ["content-pruning", "internal-linking", "serp"],
+    "example": "Having both '/blog/best-crm-software' and '/guides/top-crm-tools' targeting the same 'best CRM' keyword.",
+    "article": {
+      "marketerUseCases": [
+        "Auditing your site to identify pages competing for the same keywords",
+        "Deciding whether to merge, redirect, or differentiate competing pages",
+        "Planning content strategy to avoid creating cannibalization from the start"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Detection",
+          "description": "Use tools to find pages ranking for the same keywords or search your own site for target terms to spot overlap."
+        },
+        {
+          "title": "Consolidation",
+          "description": "Merge competing pages into one comprehensive resource and redirect the others."
+        },
+        {
+          "title": "Differentiation",
+          "description": "Adjust targeting so each page focuses on a distinct keyword or intent."
+        }
+      ],
+      "benefits": [
+        "Stronger rankings when search engines have one clear page to rank",
+        "Better user experience with consolidated, comprehensive content",
+        "More efficient use of your crawl budget"
+      ],
+      "faq": [
+        {
+          "question": "How do I fix keyword cannibalization?",
+          "answer": "Either consolidate pages into one (301 redirect the others), or differentiate them to target distinct keywords/intents."
+        }
+      ]
+    }
+  },
+  {
+    "id": "search-intent",
+    "term": "Search Intent",
+    "definition": "The underlying goal or purpose behind a user's search query. Understanding search intent—whether informational, navigational, transactional, or commercial—helps you create content that actually satisfies what users are looking for.",
+    "metaphor": "Search intent is like reading between the lines of a question. When someone asks 'How's the weather?', they might want to know if they need an umbrella, not a meteorology lesson. Understanding the real need behind the words is everything.",
+    "category": "Core Concepts",
+    "relatedTerms": ["serp", "organic-traffic", "ctr"],
+    "example": "'Best CRM software' has commercial intent (comparing options), while 'What is a CRM' has informational intent (learning).",
+    "article": {
+      "marketerUseCases": [
+        "Matching content format to intent—listicles for comparisons, guides for how-tos",
+        "Analyzing SERP results to understand what Google thinks the intent is",
+        "Creating content that satisfies intent to improve rankings and engagement"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Informational",
+          "description": "User wants to learn something. Create educational content, guides, and explainers."
+        },
+        {
+          "title": "Navigational",
+          "description": "User wants to find a specific site or page. Ensure your brand pages are optimized."
+        },
+        {
+          "title": "Transactional",
+          "description": "User wants to buy or take action. Create product pages, pricing, and clear CTAs."
+        },
+        {
+          "title": "Commercial",
+          "description": "User is researching before buying. Create comparisons, reviews, and buying guides."
+        }
+      ],
+      "benefits": [
+        "Higher rankings by matching what users actually want",
+        "Better engagement metrics when content satisfies intent",
+        "More conversions by meeting users at the right stage"
+      ],
+      "faq": [
+        {
+          "question": "How do I determine search intent?",
+          "answer": "Look at the current SERP results—Google is showing you what it thinks users want. Also consider the query words: 'how to' = informational, 'buy' = transactional, 'best' = commercial."
+        }
+      ]
+    }
+  },
+  {
+    "id": "serp",
+    "term": "SERP",
+    "definition": "Search Engine Results Page—the page displayed by search engines in response to a query. Modern SERPs include organic results, paid ads, featured snippets, knowledge panels, AI overviews, and other features that determine visibility.",
+    "metaphor": "The SERP is like the storefront window of the internet—it's where users decide whether to come into your store or walk past. Position 1 is eye level, position 10 is the bottom shelf nobody looks at.",
+    "category": "Core Concepts",
+    "relatedTerms": ["organic-traffic", "ctr", "ai-overviews", "search-intent"],
+    "example": "Searching 'best project management software' shows a SERP with ads, a featured snippet, 'People also ask,' and organic results.",
+    "article": {
+      "marketerUseCases": [
+        "Analyzing SERP features to understand what content formats win for your keywords",
+        "Optimizing for featured snippets and other SERP features beyond just organic rankings",
+        "Tracking SERP changes over time to spot algorithm shifts"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Organic Results",
+          "description": "Traditional blue links earned through SEO, not paid placement."
+        },
+        {
+          "title": "SERP Features",
+          "description": "Special results like featured snippets, knowledge panels, image packs, and video carousels."
+        },
+        {
+          "title": "AI Overviews",
+          "description": "AI-generated summaries appearing at the top of results for many queries."
+        },
+        {
+          "title": "Paid Results",
+          "description": "Ads appearing at the top and bottom of SERPs, marked as sponsored."
+        }
+      ],
+      "benefits": [
+        "Understanding SERPs helps you target the right content formats",
+        "SERP features can drive traffic even without #1 rankings",
+        "Monitoring SERPs reveals algorithm and user behavior changes"
+      ],
+      "faq": [
+        {
+          "question": "Is position 1 still the goal?",
+          "answer": "Not always. With featured snippets, AI overviews, and other features, 'position zero' or SERP feature placement can be more valuable than traditional #1 ranking."
+        }
+      ]
+    }
+  },
+  {
+    "id": "domain-authority",
+    "term": "Domain Authority",
+    "definition": "A score predicting how well a website will rank in search results, based on factors like backlink quality, site age, and overall trustworthiness. While not a direct Google ranking factor, it's a useful proxy for site credibility.",
+    "metaphor": "Domain authority is like a credit score for websites—it's a number that summarizes how trustworthy and established your site appears to be. Higher scores open more doors (rankings), but it takes time to build.",
+    "category": "Core Concepts",
+    "relatedTerms": ["topical-authority", "internal-linking", "organic-traffic"],
+    "example": "A new blog might have DA 15, while established sites like Wikipedia have DA 95+.",
+    "article": {
+      "marketerUseCases": [
+        "Benchmarking your site's authority against competitors",
+        "Prioritizing link building to improve overall site credibility",
+        "Evaluating potential link partners based on their domain authority"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Backlink Profile",
+          "description": "The quality and quantity of sites linking to you is the primary DA driver."
+        },
+        {
+          "title": "Score Range",
+          "description": "DA is scored 1-100. New sites start low; increasing from 30 to 40 is easier than 70 to 80."
+        },
+        {
+          "title": "Relative Metric",
+          "description": "DA is best used for comparisons, not absolute judgments. Compare against your competitors."
+        }
+      ],
+      "benefits": [
+        "Quick way to assess site credibility and competitive position",
+        "Helps prioritize link building and partnership efforts",
+        "Useful for tracking site growth over time"
+      ],
+      "faq": [
+        {
+          "question": "Is Domain Authority a Google ranking factor?",
+          "answer": "No, DA is a third-party metric (created by Moz). Google doesn't use it directly, but DA correlates with factors Google does care about."
+        }
+      ]
+    }
+  },
+  {
+    "id": "topical-authority",
+    "term": "Topical Authority",
+    "definition": "The perceived expertise and credibility a website has on a specific subject area. Search engines recognize topical authority when a site consistently publishes comprehensive, high-quality content on related topics, making it more likely to rank for queries in that space.",
+    "metaphor": "Topical authority is like being known as 'the expert' in your field. If you write one article about gardening, you're a dabbler. If you have 50 interconnected articles covering every aspect of gardening, you're the go-to resource.",
+    "category": "Core Concepts",
+    "relatedTerms": ["content-cluster", "pillar-page", "domain-authority"],
+    "example": "A site with 100+ articles on email marketing, all interlinked, has strong topical authority for email marketing queries.",
+    "article": {
+      "marketerUseCases": [
+        "Building content clusters to establish authority in key topic areas",
+        "Identifying topic gaps where you need more depth to compete",
+        "Prioritizing topics where you can realistically build authority"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Depth Over Breadth",
+          "description": "Better to dominate one topic thoroughly than cover many topics superficially."
+        },
+        {
+          "title": "Content Clusters",
+          "description": "Groups of related content that demonstrate comprehensive topic coverage."
+        },
+        {
+          "title": "Internal Linking",
+          "description": "Connecting related content signals topic relationships to search engines."
+        }
+      ],
+      "benefits": [
+        "Easier rankings for related keywords once authority is established",
+        "New content in your topic area ranks faster",
+        "Protection against competitors—authority takes time to build"
+      ],
+      "faq": [
+        {
+          "question": "How long does it take to build topical authority?",
+          "answer": "Months to years, depending on competition. Focus on consistent publishing, comprehensive coverage, and quality over shortcuts."
+        }
+      ]
+    }
+  },
+  {
+    "id": "crawl-budget",
+    "term": "Crawl Budget",
+    "definition": "The number of pages search engines will crawl and index on your site within a given timeframe. Large sites need to manage crawl budget carefully to ensure important pages get crawled while unimportant pages don't waste resources.",
+    "metaphor": "Crawl budget is like having a limited number of inspectors who can visit your factory. You want them checking the important production lines, not wandering through empty storage rooms or looking at the same machines twice.",
+    "category": "Core Concepts",
+    "relatedTerms": ["index-noindex", "canonical-url", "content-pruning"],
+    "example": "A site with millions of pages might find that Google only crawls 100,000 pages per day, so prioritization matters.",
+    "article": {
+      "marketerUseCases": [
+        "Ensuring important pages get crawled by removing or noindexing low-value pages",
+        "Using robots.txt and noindex to guide crawlers away from duplicate or thin content",
+        "Monitoring crawl stats in Search Console to spot issues"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Crawl Rate",
+          "description": "How frequently search engines visit your site, influenced by site speed and server capacity."
+        },
+        {
+          "title": "Crawl Demand",
+          "description": "How much search engines want to crawl based on popularity and freshness."
+        },
+        {
+          "title": "Wasted Crawl",
+          "description": "Budget spent on low-value pages like filters, pagination, or duplicate content."
+        }
+      ],
+      "benefits": [
+        "Important content gets discovered and indexed faster",
+        "Reduces server load from unnecessary crawling",
+        "New content gets indexed more quickly"
+      ],
+      "faq": [
+        {
+          "question": "Should small sites worry about crawl budget?",
+          "answer": "Usually not. Crawl budget mainly matters for large sites (100K+ pages) or sites with complex URL structures."
+        }
+      ]
+    }
+  },
+  {
+    "id": "content-cluster",
+    "term": "Content Cluster",
+    "definition": "A content strategy organizing related articles around a central pillar page, with internal links connecting them. Clusters signal topical authority to search engines and create a better user experience by thoroughly covering a subject.",
+    "metaphor": "A content cluster is like a solar system—the pillar page is the sun, and supporting articles are planets orbiting around it. All connected, all reinforcing the central theme, creating something bigger than individual pieces.",
+    "category": "Core Concepts",
+    "relatedTerms": ["pillar-page", "topical-authority", "internal-linking"],
+    "example": "A pillar page on 'Content Marketing' linked to clusters on 'Blog Strategy,' 'Content Distribution,' 'Content Metrics,' etc.",
+    "article": {
+      "marketerUseCases": [
+        "Planning content strategy around clusters instead of random one-off posts",
+        "Identifying cluster opportunities based on keyword research and gaps",
+        "Building internal linking structures that boost the entire cluster"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Pillar Page",
+          "description": "The comprehensive hub page covering the broad topic at a high level."
+        },
+        {
+          "title": "Cluster Content",
+          "description": "Supporting articles that dive deep into specific subtopics."
+        },
+        {
+          "title": "Internal Links",
+          "description": "Bidirectional links between pillar and cluster content reinforcing relationships."
+        }
+      ],
+      "benefits": [
+        "Builds topical authority through comprehensive coverage",
+        "Improves user experience with logical content organization",
+        "Distributes ranking power through internal linking"
+      ],
+      "faq": [
+        {
+          "question": "How many cluster pages should support a pillar?",
+          "answer": "Typically 5-20+ depending on topic breadth. Focus on covering the topic thoroughly rather than hitting a number."
+        }
+      ]
+    }
+  },
+  {
+    "id": "pillar-page",
+    "term": "Pillar Page",
+    "definition": "A comprehensive, cornerstone piece of content covering a broad topic in depth, serving as the hub for a content cluster. Pillar pages target competitive head terms while linking out to more specific cluster content.",
+    "metaphor": "A pillar page is like a textbook chapter overview—it covers all the key concepts at a high level and points you to detailed sections for each subtopic. It's the starting point that holds everything together.",
+    "category": "Core Concepts",
+    "relatedTerms": ["content-cluster", "topical-authority", "internal-linking", "evergreen-content"],
+    "example": "A 5,000-word 'Complete Guide to Email Marketing' pillar linking to articles on subject lines, automation, deliverability, etc.",
+    "article": {
+      "marketerUseCases": [
+        "Creating comprehensive guides on your most important topics",
+        "Building link-worthy resources that attract backlinks",
+        "Establishing pages that can rank for competitive head terms"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Comprehensive Coverage",
+          "description": "Cover all aspects of the topic at a high level—don't leave obvious gaps."
+        },
+        {
+          "title": "Strategic Linking",
+          "description": "Link to every cluster article and update links as new content is published."
+        },
+        {
+          "title": "Regular Updates",
+          "description": "Keep pillar content fresh and comprehensive as the topic evolves."
+        }
+      ],
+      "benefits": [
+        "Target competitive keywords with authoritative content",
+        "Attract backlinks to a single strong resource",
+        "Serve as entry point that guides users through your content"
+      ],
+      "faq": [
+        {
+          "question": "How long should a pillar page be?",
+          "answer": "Long enough to comprehensively cover the topic—typically 2,000-10,000+ words. Focus on thoroughness, not word count."
+        }
+      ]
+    }
+  },
+  {
+    "id": "internal-linking",
+    "term": "Internal Linking",
+    "definition": "The practice of strategically connecting pages within your own website through hyperlinks. Internal links distribute ranking power, help search engines understand site structure, and guide users to related content.",
+    "metaphor": "Internal linking is like building roads between cities in your content kingdom. Well-connected cities (pages) thrive, while isolated pages become ghost towns. The roads also tell visitors and search engines what's important.",
+    "category": "Core Concepts",
+    "relatedTerms": ["content-cluster", "pillar-page", "topical-authority"],
+    "example": "A blog post about 'email subject lines' linking to your pillar page on 'email marketing' and related posts on 'open rates.'",
+    "article": {
+      "marketerUseCases": [
+        "Boosting important pages by linking to them from high-traffic content",
+        "Connecting cluster content to pillar pages for topical authority",
+        "Improving user engagement by surfacing relevant content"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Anchor Text",
+          "description": "The clickable text of links should be descriptive and relevant to the target page."
+        },
+        {
+          "title": "Link Equity",
+          "description": "Internal links pass ranking power from one page to another on your site."
+        },
+        {
+          "title": "Site Architecture",
+          "description": "Internal links define how pages relate and which are most important."
+        }
+      ],
+      "benefits": [
+        "Improves rankings for target pages through link equity",
+        "Helps search engines discover and understand your content",
+        "Increases page views and time on site"
+      ],
+      "faq": [
+        {
+          "question": "How many internal links per page?",
+          "answer": "No strict limit, but links should be genuinely helpful. 3-10 contextual links per 1,000 words is a reasonable guideline."
+        }
+      ]
+    }
+  },
+  {
+    "id": "content-pruning",
+    "term": "Content Pruning",
+    "definition": "The process of auditing your content library and removing, consolidating, or improving underperforming pages. Pruning eliminates thin, outdated, or duplicate content that may be hurting your site's overall quality signals.",
+    "metaphor": "Content pruning is like tending a garden—you remove dead plants and weeds so the healthy ones can flourish. Cutting away underperforming content lets your good content shine brighter.",
+    "category": "Core Concepts",
+    "relatedTerms": ["content-refresh", "keyword-cannibalization", "crawl-budget"],
+    "example": "Deleting 50 old blog posts with zero traffic and consolidating 10 similar articles into one comprehensive guide.",
+    "article": {
+      "marketerUseCases": [
+        "Auditing content to identify pages hurting overall site quality",
+        "Consolidating thin content into comprehensive resources",
+        "Removing outdated content that no longer serves users"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Content Audit",
+          "description": "Analyze all content for traffic, engagement, relevance, and quality."
+        },
+        {
+          "title": "Decision Framework",
+          "description": "For each page: keep, update, consolidate, or remove."
+        },
+        {
+          "title": "Proper Removal",
+          "description": "Use 301 redirects when consolidating; 410 or 404 for true removal."
+        }
+      ],
+      "benefits": [
+        "Improves overall site quality signals to search engines",
+        "Eliminates keyword cannibalization from overlapping content",
+        "Focuses crawl budget on content that matters"
+      ],
+      "faq": [
+        {
+          "question": "Won't deleting content hurt my traffic?",
+          "answer": "If pages have zero traffic, there's nothing to lose. Consolidating thin content into strong pages often increases overall traffic."
+        }
+      ]
+    }
+  },
+  {
+    "id": "evergreen-content",
+    "term": "Evergreen Content",
+    "definition": "Content that remains relevant and valuable over time, not tied to trends, news, or specific dates. Evergreen content continues driving traffic months or years after publication with minimal updates.",
+    "metaphor": "Evergreen content is like planting an oak tree instead of annual flowers. It takes longer to grow, but once established, it keeps providing value year after year without replanting.",
+    "category": "Core Concepts",
+    "relatedTerms": ["pillar-page", "content-refresh", "organic-traffic"],
+    "example": "'How to Write a Business Plan' is evergreen; '2024 Marketing Trends' is not.",
+    "article": {
+      "marketerUseCases": [
+        "Building a content foundation that drives consistent long-term traffic",
+        "Creating resources that attract backlinks over time",
+        "Balancing content mix between evergreen and timely pieces"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Timeless Topics",
+          "description": "Focus on fundamental questions and problems that don't change year to year."
+        },
+        {
+          "title": "Avoid Dates",
+          "description": "Remove or minimize date references that make content feel outdated."
+        },
+        {
+          "title": "Periodic Updates",
+          "description": "Even evergreen content benefits from occasional refreshes to stay current."
+        }
+      ],
+      "benefits": [
+        "Compounds traffic over time instead of spiking and fading",
+        "More efficient content investment with longer payback period",
+        "Attracts backlinks continuously as a lasting resource"
+      ],
+      "faq": [
+        {
+          "question": "Should all content be evergreen?",
+          "answer": "No. Timely content (news, trends) can drive short-term traffic and engagement. A healthy mix includes both evergreen foundations and timely pieces."
+        }
+      ]
+    }
+  },
+  {
+    "id": "organic-traffic",
+    "term": "Organic Traffic",
+    "definition": "Website visitors who arrive through unpaid search engine results, as opposed to paid ads, social media, or direct visits. Organic traffic is a key measure of SEO success and content marketing effectiveness.",
+    "metaphor": "Organic traffic is like customers who find your store because it's on Main Street with great signage—they came looking for what you offer, not because you paid for an ad. They're often more valuable because the intent is real.",
+    "category": "Core Concepts",
+    "relatedTerms": ["serp", "ctr", "search-intent"],
+    "example": "A blog post ranking #3 for 'how to start a podcast' driving 5,000 monthly organic visits.",
+    "article": {
+      "marketerUseCases": [
+        "Measuring SEO success through organic traffic growth",
+        "Identifying high-performing content driving the most organic visits",
+        "Comparing organic traffic value to paid acquisition costs"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Source Attribution",
+          "description": "Traffic from Google, Bing, and other search engines (not including paid ads)."
+        },
+        {
+          "title": "Quality Signals",
+          "description": "Organic visitors often have higher intent than other traffic sources."
+        },
+        {
+          "title": "Compound Growth",
+          "description": "Good SEO content continues driving traffic long after publication."
+        }
+      ],
+      "benefits": [
+        "Lower cost per acquisition than paid channels over time",
+        "Higher trust from users who found you through search",
+        "Sustainable traffic that doesn't disappear when spend stops"
+      ],
+      "faq": [
+        {
+          "question": "How long does it take to get organic traffic?",
+          "answer": "New content typically takes 3-6 months to gain traction in search, sometimes longer for competitive terms. Consistency over time compounds results."
+        }
+      ]
+    }
+  },
+  {
+    "id": "ctr",
+    "term": "Click-Through Rate (CTR)",
+    "definition": "The percentage of people who click on your link after seeing it, calculated as clicks divided by impressions. In SEO, CTR measures how compelling your title and meta description are in search results.",
+    "metaphor": "CTR is like your storefront's curb appeal. Lots of people might walk by (impressions), but CTR measures how many actually come inside. A great title is like an irresistible window display.",
+    "category": "Core Concepts",
+    "relatedTerms": ["serp", "organic-traffic", "conversion-rate"],
+    "example": "A page with 10,000 impressions and 500 clicks has a 5% CTR.",
+    "article": {
+      "marketerUseCases": [
+        "Optimizing title tags and meta descriptions to improve CTR",
+        "Identifying pages with high impressions but low CTR as optimization opportunities",
+        "A/B testing titles to find what resonates with searchers"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Title Tag Impact",
+          "description": "The most important factor—compelling titles dramatically increase CTR."
+        },
+        {
+          "title": "Meta Description",
+          "description": "The snippet below your title that previews content and encourages clicks."
+        },
+        {
+          "title": "SERP Position",
+          "description": "CTR varies significantly by position—#1 gets ~30% CTR, #10 gets ~2%."
+        }
+      ],
+      "benefits": [
+        "Higher CTR means more traffic from the same rankings",
+        "Strong CTR may be a positive ranking signal",
+        "Reveals how well you're matching searcher expectations"
+      ],
+      "faq": [
+        {
+          "question": "What's a good CTR?",
+          "answer": "It depends on position. For #1, 20-30%+ is good. For lower positions, compare to averages for that rank. Improving your CTR relative to position is what matters."
+        }
+      ]
+    }
+  },
+  {
+    "id": "bounce-rate",
+    "term": "Bounce Rate",
+    "definition": "The percentage of visitors who leave your site after viewing only one page, without taking any further action. While high bounce rates can indicate poor content or UX, context matters—some pages naturally have high bounce rates.",
+    "metaphor": "Bounce rate is like measuring how many people walk into your store, glance around, and immediately leave. Sometimes they found exactly what they needed (good bounce). Sometimes they were disappointed (bad bounce).",
+    "category": "Core Concepts",
+    "relatedTerms": ["dwell-time", "ctr", "conversion-rate"],
+    "example": "A blog post with 70% bounce rate might be fine if readers got their answer. A product page with 70% bounce rate is concerning.",
+    "article": {
+      "marketerUseCases": [
+        "Identifying pages with concerning bounce rates for optimization",
+        "Comparing bounce rates across page types to set appropriate benchmarks",
+        "Improving page engagement to reduce bounces"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Context Matters",
+          "description": "Blog posts naturally have higher bounce rates than multi-step flows."
+        },
+        {
+          "title": "Exit vs Bounce",
+          "description": "Bounces are single-page sessions; exits can happen after multiple page views."
+        },
+        {
+          "title": "Engagement Signals",
+          "description": "Combine bounce rate with time on page and scroll depth for fuller picture."
+        }
+      ],
+      "benefits": [
+        "Identifies potential content or UX problems",
+        "Helps prioritize pages for optimization",
+        "One signal among many for content quality"
+      ],
+      "faq": [
+        {
+          "question": "Is high bounce rate always bad?",
+          "answer": "No. If someone searches a question, reads your answer, and leaves satisfied, that's a successful visit even though it's a 'bounce.' Context and intent matter."
+        }
+      ]
+    }
+  },
+  {
+    "id": "dwell-time",
+    "term": "Dwell Time",
+    "definition": "The amount of time a user spends on your page after clicking from search results before returning to the SERP. Dwell time signals whether your content satisfied the searcher's query.",
+    "metaphor": "Dwell time is like how long a customer browses in your store before leaving. A quick exit suggests they didn't find what they wanted. Lingering suggests they found something interesting.",
+    "category": "Core Concepts",
+    "relatedTerms": ["bounce-rate", "search-intent", "ctr"],
+    "example": "A user clicks your result, spends 5 minutes reading, then closes the tab (good dwell time) vs clicking back to search in 10 seconds (bad).",
+    "article": {
+      "marketerUseCases": [
+        "Creating engaging content that keeps readers on page",
+        "Matching content depth to search intent to improve satisfaction",
+        "Using formatting and multimedia to increase time on page"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Search Satisfaction",
+          "description": "Long dwell time suggests your content answered the query well."
+        },
+        {
+          "title": "Pogo-Sticking",
+          "description": "Quick returns to search results signal poor content-query match."
+        },
+        {
+          "title": "Content Engagement",
+          "description": "Format, readability, and multimedia affect how long users stay."
+        }
+      ],
+      "benefits": [
+        "Indicates content quality and relevance to search engines",
+        "Longer engagement often correlates with better rankings",
+        "Identifies content that fails to satisfy user intent"
+      ],
+      "faq": [
+        {
+          "question": "Is dwell time a ranking factor?",
+          "answer": "Google hasn't confirmed it directly, but user satisfaction signals likely influence rankings. Content that satisfies users tends to rank better."
+        }
+      ]
+    }
+  },
+  {
+    "id": "conversion-rate",
+    "term": "Conversion Rate",
+    "definition": "The percentage of visitors who complete a desired action, such as making a purchase, signing up for a newsletter, or filling out a form. Conversion rate measures how effectively your content or page drives business outcomes.",
+    "metaphor": "Conversion rate is like your sales close rate—of everyone who walks in the door, how many actually buy? Traffic means nothing if visitors don't take the actions that matter to your business.",
+    "category": "Core Concepts",
+    "relatedTerms": ["ctr", "organic-traffic", "bounce-rate"],
+    "example": "A landing page with 1,000 visitors and 50 signups has a 5% conversion rate.",
+    "article": {
+      "marketerUseCases": [
+        "Measuring content effectiveness at driving business outcomes",
+        "A/B testing pages to improve conversion rates",
+        "Identifying high-traffic pages with low conversions for optimization"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Macro vs Micro Conversions",
+          "description": "Track both big goals (purchases) and smaller steps (email signups, downloads)."
+        },
+        {
+          "title": "Conversion Funnel",
+          "description": "Map the journey from awareness to conversion and optimize each stage."
+        },
+        {
+          "title": "Segmentation",
+          "description": "Analyze conversion rates by traffic source, device, and audience segment."
+        }
+      ],
+      "benefits": [
+        "Directly ties content to business outcomes",
+        "Identifies optimization opportunities with highest impact",
+        "Enables ROI calculation for content investments"
+      ],
+      "faq": [
+        {
+          "question": "What's a good conversion rate?",
+          "answer": "Varies wildly by industry and conversion type. E-commerce averages 2-3%, B2B lead gen might be 5-15%. Compare against your own benchmarks and improve over time."
+        }
+      ]
+    }
+  },
+  {
+    "id": "schema-markup",
+    "term": "Schema Markup",
+    "definition": "Structured data code added to web pages that helps search engines understand your content and display rich results. Schema markup can enable enhanced SERP features like star ratings, FAQs, and product information.",
+    "metaphor": "Schema markup is like adding labels and categories to items in a warehouse. The warehouse (search engine) can find and display your items much more effectively when everything is clearly marked and organized.",
+    "category": "Integrations",
+    "relatedTerms": ["serp", "ctr", "canonical-url"],
+    "example": "Adding FAQ schema to a page so questions appear directly in search results, or product schema to show prices and ratings.",
+    "article": {
+      "marketerUseCases": [
+        "Adding FAQ schema to improve SERP presence with expandable questions",
+        "Implementing product schema to show ratings and prices in search",
+        "Using article schema to enhance blog post appearance in results"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Schema Types",
+          "description": "Different schemas for articles, products, FAQs, reviews, events, and more."
+        },
+        {
+          "title": "JSON-LD Format",
+          "description": "The recommended format for adding schema markup to pages."
+        },
+        {
+          "title": "Rich Results",
+          "description": "Enhanced SERP features enabled by schema—stars, prices, FAQs, etc."
+        }
+      ],
+      "benefits": [
+        "Enhanced SERP appearance with rich results",
+        "Higher click-through rates from more informative listings",
+        "Helps search engines understand and categorize your content"
+      ],
+      "faq": [
+        {
+          "question": "Does schema markup improve rankings?",
+          "answer": "Not directly, but rich results can significantly improve CTR, which indirectly benefits performance. Schema also helps search engines understand your content better."
+        }
+      ]
+    }
+  },
+  {
+    "id": "canonical-url",
+    "term": "Canonical URL",
+    "definition": "The 'official' version of a page when multiple URLs contain similar or identical content. The canonical tag tells search engines which URL to index and rank, preventing duplicate content issues.",
+    "metaphor": "A canonical URL is like designating an official spokesperson. When the same message exists in multiple places, you point to the one authoritative source so everyone knows where to look.",
+    "category": "Integrations",
+    "relatedTerms": ["301-redirect", "index-noindex", "keyword-cannibalization"],
+    "example": "Setting the canonical of '/products/shoes?color=red' to '/products/shoes' to consolidate ranking power.",
+    "article": {
+      "marketerUseCases": [
+        "Consolidating duplicate pages from URL parameters or tracking codes",
+        "Managing syndicated content that appears on multiple sites",
+        "Handling pagination and filtered pages properly"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Self-Referencing",
+          "description": "Every page should have a canonical tag, even if pointing to itself."
+        },
+        {
+          "title": "Cross-Domain",
+          "description": "Canonicals can point to different domains for syndicated content."
+        },
+        {
+          "title": "Signal, Not Directive",
+          "description": "Canonicals are hints to search engines, not strict commands."
+        }
+      ],
+      "benefits": [
+        "Prevents duplicate content issues from splitting ranking power",
+        "Consolidates link equity to preferred URLs",
+        "Manages complex URL structures cleanly"
+      ],
+      "faq": [
+        {
+          "question": "Canonical vs 301 redirect?",
+          "answer": "Use 301 redirects when users should be sent to a different URL. Use canonicals when both URLs should remain accessible but one is preferred for indexing."
+        }
+      ]
+    }
+  },
+  {
+    "id": "301-redirect",
+    "term": "301 Redirect",
+    "definition": "A permanent redirect that sends users and search engines from one URL to another, transferring most of the original page's ranking power. 301 redirects are essential for maintaining SEO value when URLs change.",
+    "metaphor": "A 301 redirect is like a permanent forwarding address at the post office. All mail (links, traffic, authority) sent to the old address gets delivered to the new one, and everyone learns to use the new address.",
+    "category": "Integrations",
+    "relatedTerms": ["canonical-url", "index-noindex", "content-pruning"],
+    "example": "Redirecting '/old-blog-post' to '/new-comprehensive-guide' when consolidating content.",
+    "article": {
+      "marketerUseCases": [
+        "Preserving SEO value when migrating to new URL structures",
+        "Consolidating multiple thin pages into comprehensive resources",
+        "Maintaining traffic after rebranding or domain changes"
+      ],
+      "keyConcepts": [
+        {
+          "title": "301 vs 302",
+          "description": "301 is permanent (transfers link equity); 302 is temporary (doesn't)."
+        },
+        {
+          "title": "Redirect Chains",
+          "description": "Avoid multiple redirects in sequence—go directly to final destination."
+        },
+        {
+          "title": "Link Equity Transfer",
+          "description": "301s pass most (not all) ranking power to the destination URL."
+        }
+      ],
+      "benefits": [
+        "Preserves ranking power when URLs change",
+        "Prevents 404 errors for bookmarked or linked pages",
+        "Enables clean site restructuring without losing SEO value"
+      ],
+      "faq": [
+        {
+          "question": "How long should I keep 301 redirects?",
+          "answer": "Ideally forever, but at minimum 1 year. Search engines and users may still try old URLs long after changes."
+        }
+      ]
+    }
+  },
+  {
+    "id": "index-noindex",
+    "term": "Index/No-Index",
+    "definition": "Directives that tell search engines whether a page should be included in their index and appear in search results. No-index is used for pages you want accessible to users but hidden from search.",
+    "metaphor": "Index/no-index is like deciding which rooms of your house to include on the tour. Some rooms are for guests (indexed), while others—like the messy storage closet—should stay private (no-indexed).",
+    "category": "Integrations",
+    "relatedTerms": ["crawl-budget", "canonical-url", "content-pruning"],
+    "example": "No-indexing thank you pages, internal search results, or staging environments.",
+    "article": {
+      "marketerUseCases": [
+        "Hiding low-value pages like tag archives or internal search results",
+        "Keeping staging or development sites out of search",
+        "Managing which paginated pages appear in search"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Meta Robots Tag",
+          "description": "Add noindex directive in the page's HTML head section."
+        },
+        {
+          "title": "X-Robots Header",
+          "description": "HTTP header alternative for non-HTML files or site-wide rules."
+        },
+        {
+          "title": "Crawling vs Indexing",
+          "description": "No-index allows crawling but prevents indexing. Use robots.txt to block crawling entirely."
+        }
+      ],
+      "benefits": [
+        "Keeps low-value pages out of search results",
+        "Focuses crawl budget and index on quality content",
+        "Prevents thin or duplicate content from hurting site quality"
+      ],
+      "faq": [
+        {
+          "question": "Should I no-index or delete low-value pages?",
+          "answer": "If the page serves users (like a login page), no-index it. If it serves no purpose, delete or redirect it."
+        }
+      ]
+    }
+  },
+  {
+    "id": "ai-visibility",
+    "term": "AI Visibility",
+    "definition": "How often and prominently your brand appears when AI assistants answer queries related to your industry. AI visibility measures your presence in ChatGPT, Perplexity, Google AI Overviews, and other AI-powered search experiences.",
+    "metaphor": "AI visibility is like word-of-mouth reputation in the AI age. When someone asks an AI for recommendations, does it mention you? Are you the expert the AI turns to, or are you invisible?",
+    "category": "Core Concepts",
+    "relatedTerms": ["aeo", "citation-rate", "mention-rate", "ai-overviews"],
+    "example": "Tracking that your brand is mentioned in 15% of AI responses to 'best email marketing tools' queries.",
+    "article": {
+      "marketerUseCases": [
+        "Benchmarking AI visibility against competitors for key queries",
+        "Tracking AI visibility growth as an AEO success metric",
+        "Identifying queries where competitors have AI visibility but you don't"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Cross-Platform Tracking",
+          "description": "Monitor visibility across ChatGPT, Perplexity, Gemini, Claude, and AI Overviews."
+        },
+        {
+          "title": "Query Coverage",
+          "description": "What percentage of relevant queries result in AI mentioning your brand."
+        },
+        {
+          "title": "Mention Quality",
+          "description": "Not just presence, but whether mentions are positive recommendations."
+        }
+      ],
+      "benefits": [
+        "Quantifies brand presence in AI-driven discovery",
+        "Tracks ROI of AEO and content optimization efforts",
+        "Identifies competitive gaps in AI search landscape"
+      ],
+      "faq": [
+        {
+          "question": "How do I improve AI visibility?",
+          "answer": "Create authoritative, well-structured content that directly answers questions. Build topical authority and ensure AI can easily extract and cite your information."
+        }
+      ]
+    }
+  },
+  {
+    "id": "citation-rate",
+    "term": "Citation Rate",
+    "definition": "The frequency at which AI systems cite or reference your content as a source when generating answers. Citation rate measures how often AI points users to your pages for more information.",
+    "metaphor": "Citation rate is like being quoted in research papers—the more often your work is cited as a source, the more authority you have. In AI search, citations drive both credibility and traffic.",
+    "category": "Core Concepts",
+    "relatedTerms": ["ai-visibility", "mention-rate", "aeo", "citations"],
+    "example": "Your documentation is cited in 25% of AI responses about your product category, driving referral traffic.",
+    "article": {
+      "marketerUseCases": [
+        "Tracking which content gets cited most by AI systems",
+        "Optimizing content structure to increase citation likelihood",
+        "Measuring AEO success through citation growth"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Source Attribution",
+          "description": "When AI includes a link or reference to your content as supporting information."
+        },
+        {
+          "title": "Citation Triggers",
+          "description": "Authoritative, well-structured content with clear answers gets cited more."
+        },
+        {
+          "title": "Traffic Value",
+          "description": "Citations can drive direct referral traffic from AI platforms."
+        }
+      ],
+      "benefits": [
+        "Direct traffic from AI citation links",
+        "Builds brand authority through AI endorsement",
+        "Measurable metric for AEO performance"
+      ],
+      "faq": [
+        {
+          "question": "What makes content more likely to be cited?",
+          "answer": "Clear, authoritative answers to specific questions. Well-structured content with facts, data, and expertise that AI can confidently reference."
+        }
+      ]
+    }
+  },
+  {
+    "id": "mention-rate",
+    "term": "Mention Rate",
+    "definition": "How frequently AI assistants mention your brand by name when answering relevant queries, regardless of whether they cite a specific source. Mention rate captures brand visibility even when AI doesn't link to your content.",
+    "metaphor": "Mention rate is like how often people drop your name in conversation when discussing your industry. Even without a formal introduction (citation), being mentioned keeps you top of mind.",
+    "category": "Core Concepts",
+    "relatedTerms": ["ai-visibility", "citation-rate", "aeo"],
+    "example": "AI mentions 'Salesforce' in 40% of CRM-related answers, even when not citing Salesforce.com directly.",
+    "article": {
+      "marketerUseCases": [
+        "Tracking brand awareness in AI-generated content",
+        "Comparing mention share against competitors",
+        "Identifying opportunities where competitors get mentioned but you don't"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Brand Recognition",
+          "description": "AI mentions brands it 'knows' are relevant to a topic from training data."
+        },
+        {
+          "title": "Mention vs Citation",
+          "description": "Mentions reference your brand; citations link to your content. Both matter."
+        },
+        {
+          "title": "Sentiment Context",
+          "description": "Track whether mentions are positive, neutral, or in competitive comparisons."
+        }
+      ],
+      "benefits": [
+        "Measures brand awareness in AI ecosystem",
+        "Captures visibility even without direct citations",
+        "Identifies brand perception in AI responses"
+      ],
+      "faq": [
+        {
+          "question": "How do I increase mention rate?",
+          "answer": "Build overall brand authority, get coverage in sources AI trains on, create content that establishes you as a key player in your space."
+        }
+      ]
+    }
+  },
+  {
+    "id": "eeat",
+    "term": "E-E-A-T",
+    "definition": "Experience, Expertise, Authoritativeness, and Trustworthiness—Google's framework for evaluating content quality. E-E-A-T signals help search engines determine whether content comes from credible sources with real knowledge and can be trusted.",
+    "metaphor": "E-E-A-T is like checking a doctor's credentials before taking medical advice. You want someone with actual experience, real expertise, recognized authority, and a trustworthy track record—not just someone who read a few articles.",
+    "category": "Core Concepts",
+    "relatedTerms": ["topical-authority", "domain-authority", "search-intent"],
+    "example": "A health article written by a licensed physician (expertise), who actively practices (experience), published on a reputable medical site (authority), with cited sources (trust).",
+    "article": {
+      "marketerUseCases": [
+        "Adding author bios with credentials to establish expertise",
+        "Including first-hand experience and original research in content",
+        "Building author profiles and linking to authoritative sources"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Experience",
+          "description": "First-hand, real-world experience with the topic. Did you actually use the product, visit the place, or do the thing?"
+        },
+        {
+          "title": "Expertise",
+          "description": "Formal knowledge and credentials in the subject area. Qualifications that demonstrate deep understanding."
+        },
+        {
+          "title": "Authoritativeness",
+          "description": "Recognition from others as a go-to source. Backlinks, citations, and reputation in your space."
+        },
+        {
+          "title": "Trustworthiness",
+          "description": "Accuracy, transparency, and security. Honest content on a secure, reputable site."
+        }
+      ],
+      "benefits": [
+        "Higher rankings for YMYL (Your Money Your Life) topics especially",
+        "Builds sustainable competitive advantage through reputation",
+        "Creates content that genuinely serves user needs"
+      ],
+      "faq": [
+        {
+          "question": "Is E-E-A-T a ranking factor?",
+          "answer": "Not a direct algorithm factor, but Google's quality raters use E-E-A-T guidelines. Content demonstrating strong E-E-A-T signals tends to rank better."
+        },
+        {
+          "question": "How do I demonstrate E-E-A-T?",
+          "answer": "Author bios with credentials, first-hand experience in content, citations to authoritative sources, secure site (HTTPS), clear contact info, and consistent quality over time."
+        }
+      ]
+    }
+  },
+  {
+    "id": "information-gain",
+    "term": "Information Gain",
+    "definition": "The unique value or new insights your content provides beyond what already exists on the topic. Google has a patent around this concept, rewarding content that adds something new rather than just rehashing existing SERP results.",
+    "metaphor": "Information gain is like being the person at a dinner party who actually adds to the conversation instead of just repeating what everyone else said. Search engines notice when you bring something new to the table.",
+    "category": "Core Concepts",
+    "relatedTerms": ["eeat", "topical-authority", "evergreen-content"],
+    "example": "Instead of another generic '10 SEO tips' post, publishing original research with data from analyzing 10,000 top-ranking pages.",
+    "article": {
+      "marketerUseCases": [
+        "Conducting original research to create unique, citable content",
+        "Adding proprietary data, case studies, or expert interviews",
+        "Finding angles and insights competitors haven't covered"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Unique Insights",
+          "description": "Information, perspectives, or data that can't be found elsewhere."
+        },
+        {
+          "title": "Original Research",
+          "description": "Surveys, data analysis, experiments, or studies that create new knowledge."
+        },
+        {
+          "title": "Expert Perspectives",
+          "description": "First-hand experience, interviews, or analysis that adds depth beyond common knowledge."
+        },
+        {
+          "title": "Content Differentiation",
+          "description": "How your content differs from and improves upon existing SERP results."
+        }
+      ],
+      "benefits": [
+        "Higher rankings by providing value existing content doesn't",
+        "More backlinks from being a unique source of information",
+        "Establishes thought leadership in your space"
+      ],
+      "faq": [
+        {
+          "question": "How do I create information gain?",
+          "answer": "Research what already ranks, then ask: what's missing? Add original data, expert insights, unique angles, deeper analysis, or first-hand experience competitors lack."
+        },
+        {
+          "question": "Is Google's information gain patent actually used?",
+          "answer": "Google doesn't confirm specific patents in algorithms, but the concept aligns with rewarding quality. Content that adds value tends to perform better regardless of specific mechanisms."
+        }
+      ]
+    }
+  },
+  {
+    "id": "onsite-seo",
+    "term": "Onsite SEO",
+    "definition": "Optimization techniques applied directly on your website to improve search rankings. Onsite SEO includes content optimization, technical improvements, internal linking, and site structure—everything within your direct control.",
+    "metaphor": "Onsite SEO is like improving your actual store—better signage, organized shelves, helpful staff, and a clean layout. It's everything you do inside your own walls to make the experience better.",
+    "category": "Core Concepts",
+    "relatedTerms": ["offsite-seo", "internal-linking", "schema-markup", "search-intent"],
+    "example": "Optimizing title tags, improving page speed, adding internal links, and creating comprehensive content for target keywords.",
+    "article": {
+      "marketerUseCases": [
+        "Optimizing page titles and meta descriptions for target keywords",
+        "Improving site speed and Core Web Vitals scores",
+        "Building internal linking structures that distribute authority"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Content Optimization",
+          "description": "Creating and improving content to match search intent and target keywords."
+        },
+        {
+          "title": "Technical SEO",
+          "description": "Site speed, mobile-friendliness, crawlability, and structured data."
+        },
+        {
+          "title": "On-Page Elements",
+          "description": "Title tags, headers, meta descriptions, URLs, and image alt text."
+        },
+        {
+          "title": "Site Architecture",
+          "description": "How pages are organized and linked together internally."
+        }
+      ],
+      "benefits": [
+        "Directly within your control—no reliance on external factors",
+        "Foundation that makes offsite SEO more effective",
+        "Improves both rankings and user experience"
+      ],
+      "faq": [
+        {
+          "question": "Should I focus on onsite or offsite SEO first?",
+          "answer": "Start with onsite. No amount of backlinks will help if your content doesn't satisfy search intent or your site has technical issues."
+        }
+      ]
+    }
+  },
+  {
+    "id": "offsite-seo",
+    "term": "Offsite SEO",
+    "definition": "Optimization efforts that happen outside your website to improve search rankings, primarily through building backlinks, brand mentions, and reputation signals. Offsite SEO demonstrates external validation of your site's authority.",
+    "metaphor": "Offsite SEO is like your reputation around town. It doesn't matter how nice your store is if nobody recommends it. Getting other trusted sources to vouch for you builds credibility you can't create alone.",
+    "category": "Core Concepts",
+    "relatedTerms": ["onsite-seo", "domain-authority", "topical-authority"],
+    "example": "Earning backlinks from industry publications, getting mentioned in news articles, and building relationships that lead to citations.",
+    "article": {
+      "marketerUseCases": [
+        "Building high-quality backlinks through content promotion and outreach",
+        "Creating link-worthy content that naturally attracts references",
+        "Monitoring brand mentions and converting them to links"
+      ],
+      "keyConcepts": [
+        {
+          "title": "Backlinks",
+          "description": "Links from other websites pointing to yours—the primary offsite ranking factor."
+        },
+        {
+          "title": "Link Quality",
+          "description": "Links from relevant, authoritative sites matter more than quantity."
+        },
+        {
+          "title": "Brand Signals",
+          "description": "Mentions, searches for your brand name, and social presence."
+        },
+        {
+          "title": "Digital PR",
+          "description": "Getting coverage and links through media relations and newsworthy content."
+        }
+      ],
+      "benefits": [
+        "Builds domain authority that helps all pages rank",
+        "Creates competitive moat—backlinks are hard to replicate",
+        "Drives referral traffic beyond just SEO value"
+      ],
+      "faq": [
+        {
+          "question": "How do I build backlinks ethically?",
+          "answer": "Create genuinely valuable content worth linking to, build relationships in your industry, pursue digital PR opportunities, and earn links through expertise—not purchase or exchange."
+        }
+      ]
+    }
   }
 ]
