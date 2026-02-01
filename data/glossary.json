@@ -3842,44 +3842,46 @@
   {
     "id": "onsite-seo",
     "term": "Onsite SEO",
-    "definition": "Optimization techniques applied directly on your website to improve search rankings. Onsite SEO includes content optimization, technical improvements, internal linking, and site structure—everything within your direct control.",
+    "definition": "Optimization techniques applied directly on your website to improve search rankings. Onsite SEO includes content optimization, technical improvements, internal linking, and site structure—everything within your direct control. AirOps excels at scaling onsite SEO through AI-powered content creation, optimization, and publishing.",
     "metaphor": "Onsite SEO is like improving your actual store—better signage, organized shelves, helpful staff, and a clean layout. It's everything you do inside your own walls to make the experience better.",
     "category": "Core Concepts",
-    "relatedTerms": ["offsite-seo", "internal-linking", "schema-markup", "search-intent"],
-    "example": "Optimizing title tags, improving page speed, adding internal links, and creating comprehensive content for target keywords.",
+    "relatedTerms": ["offsite-seo", "internal-linking", "schema-markup", "search-intent", "content-engineering"],
+    "example": "Using AirOps to generate optimized meta descriptions for 500 pages, refresh outdated content at scale, and publish SEO-optimized articles directly to your CMS.",
     "article": {
       "marketerUseCases": [
-        "Optimizing page titles and meta descriptions for target keywords",
-        "Improving site speed and Core Web Vitals scores",
-        "Building internal linking structures that distribute authority"
+        "Using AirOps workflows to generate and optimize title tags and meta descriptions at scale",
+        "Building content refresh workflows that update outdated pages and publish directly to CMS",
+        "Creating comprehensive pillar pages and content clusters using AI content generation",
+        "Generating schema markup for product pages, FAQs, and articles automatically"
       ],
       "keyConcepts": [
         {
           "title": "Content Optimization",
-          "description": "Creating and improving content to match search intent and target keywords."
+          "description": "Creating and improving content to match search intent and target keywords. AirOps can optimize content at scale using Brand Kits for consistency."
         },
         {
           "title": "Technical SEO",
-          "description": "Site speed, mobile-friendliness, crawlability, and structured data."
+          "description": "Site speed, mobile-friendliness, crawlability, and structured data. AirOps can generate schema markup automatically."
         },
         {
           "title": "On-Page Elements",
-          "description": "Title tags, headers, meta descriptions, URLs, and image alt text."
+          "description": "Title tags, headers, meta descriptions, URLs, and image alt text—all generatable through AirOps workflows."
         },
         {
           "title": "Site Architecture",
-          "description": "How pages are organized and linked together internally."
+          "description": "How pages are organized and linked together internally. AirOps helps build topical authority through content clusters."
         }
       ],
       "benefits": [
-        "Directly within your control—no reliance on external factors",
-        "Foundation that makes offsite SEO more effective",
-        "Improves both rankings and user experience"
+        "Scale onsite optimization across thousands of pages with AI workflows",
+        "Maintain consistency with Brand Kits while optimizing at scale",
+        "Publish directly to CMS without manual copy-paste",
+        "Refresh content systematically using Page360 insights"
       ],
       "faq": [
         {
-          "question": "Should I focus on onsite or offsite SEO first?",
-          "answer": "Start with onsite. No amount of backlinks will help if your content doesn't satisfy search intent or your site has technical issues."
+          "question": "How does AirOps help with onsite SEO?",
+          "answer": "AirOps automates content creation, optimization, and publishing. Generate meta descriptions at scale, refresh outdated content, build content clusters, and publish directly to your CMS—all with AI workflows."
         }
       ]
     }
@@ -3887,44 +3889,46 @@
   {
     "id": "offsite-seo",
     "term": "Offsite SEO",
-    "definition": "Optimization efforts that happen outside your website to improve search rankings, primarily through building backlinks, brand mentions, and reputation signals. Offsite SEO demonstrates external validation of your site's authority.",
+    "definition": "Optimization efforts that happen outside your website to improve search rankings, primarily through building backlinks, brand mentions, and reputation signals. While AirOps focuses on content creation rather than outreach, it helps create the link-worthy content that earns backlinks naturally.",
     "metaphor": "Offsite SEO is like your reputation around town. It doesn't matter how nice your store is if nobody recommends it. Getting other trusted sources to vouch for you builds credibility you can't create alone.",
     "category": "Core Concepts",
-    "relatedTerms": ["onsite-seo", "domain-authority", "topical-authority"],
-    "example": "Earning backlinks from industry publications, getting mentioned in news articles, and building relationships that lead to citations.",
+    "relatedTerms": ["onsite-seo", "domain-authority", "topical-authority", "information-gain"],
+    "example": "Using AirOps to create original research reports, data-driven content, and comprehensive guides that naturally attract backlinks from industry publications.",
     "article": {
       "marketerUseCases": [
-        "Building high-quality backlinks through content promotion and outreach",
-        "Creating link-worthy content that naturally attracts references",
-        "Monitoring brand mentions and converting them to links"
+        "Creating link-worthy content like original research, data studies, and comprehensive guides using AirOps workflows",
+        "Generating unique, information-gain content that stands out from existing SERP results",
+        "Building thought leadership content that earns citations and mentions",
+        "Scaling content production to cover topics comprehensively and become a go-to resource"
       ],
       "keyConcepts": [
         {
           "title": "Backlinks",
-          "description": "Links from other websites pointing to yours—the primary offsite ranking factor."
+          "description": "Links from other websites pointing to yours—the primary offsite ranking factor. Earned through quality content."
         },
         {
-          "title": "Link Quality",
-          "description": "Links from relevant, authoritative sites matter more than quantity."
+          "title": "Link-Worthy Content",
+          "description": "Original research, unique data, comprehensive guides, and tools that others want to reference. AirOps helps create these at scale."
         },
         {
           "title": "Brand Signals",
-          "description": "Mentions, searches for your brand name, and social presence."
+          "description": "Mentions, searches for your brand name, and social presence. Strong content builds brand recognition."
         },
         {
           "title": "Digital PR",
-          "description": "Getting coverage and links through media relations and newsworthy content."
+          "description": "Getting coverage and links through newsworthy content. AirOps can help create the content; distribution requires outreach."
         }
       ],
       "benefits": [
-        "Builds domain authority that helps all pages rank",
-        "Creates competitive moat—backlinks are hard to replicate",
-        "Drives referral traffic beyond just SEO value"
+        "Create content worth linking to at scale",
+        "Build topical authority that attracts natural backlinks",
+        "Generate unique insights that earn citations",
+        "Establish expertise that others want to reference"
       ],
       "faq": [
         {
-          "question": "How do I build backlinks ethically?",
-          "answer": "Create genuinely valuable content worth linking to, build relationships in your industry, pursue digital PR opportunities, and earn links through expertise—not purchase or exchange."
+          "question": "Can AirOps help with link building?",
+          "answer": "AirOps helps create content that earns links—original research, comprehensive guides, and unique insights. The actual outreach and relationship-building for link acquisition happens outside the platform."
         }
       ]
     }
