@@ -24,7 +24,7 @@ export default function Home() {
     <div className="max-w-4xl">
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-5xl font-bold mb-4">Glossary</h1>
+        <h1 className="text-5xl mb-4 font-[family-name:var(--font-serif)]">Glossary</h1>
         <p className="text-lg text-[var(--muted-foreground)]">
           A comprehensive glossary of all things AirOps, AI, and workflow automation.
         </p>

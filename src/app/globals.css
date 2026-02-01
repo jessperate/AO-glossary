@@ -71,7 +71,13 @@ body {
   font-family: var(--font-sans);
 }
 
-h1, h2 {
+h1 {
+  font-family: var(--font-serif) !important;
+  font-weight: 500;
+  color: #000000;
+}
+
+h2 {
   font-family: var(--font-serif);
   font-weight: 500;
   color: #000000;

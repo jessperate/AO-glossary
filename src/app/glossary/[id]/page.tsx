@@ -43,7 +43,7 @@ export default async function TermPage({ params }: { params: Promise<{ id: strin
         <span className="inline-block px-3 py-1 text-xs font-medium bg-[var(--primary)] text-black rounded-full mb-4 font-[family-name:var(--font-mono)]">
           {term.category}
         </span>
-        <h1 className="text-4xl font-bold mb-4">What is {term.term}?</h1>
+        <h1 className="text-4xl mb-4 font-[family-name:var(--font-serif)]">What is {term.term}?</h1>
         <p className="text-xl text-[var(--muted-foreground)] leading-relaxed">
           {term.definition}
         </p>
