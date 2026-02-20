@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'Saans';
-  src: url('/AO-glossary/fonts/Saans-Regular.woff2') format('woff2'),
-       url('/AO-glossary/fonts/Saans-Regular.woff') format('woff');
+  src: url('/fonts/Saans-Regular.woff2') format('woff2'),
+       url('/fonts/Saans-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -11,8 +11,8 @@
 
 @font-face {
   font-family: 'Saans';
-  src: url('/AO-glossary/fonts/Saans-Medium.woff2') format('woff2'),
-       url('/AO-glossary/fonts/Saans-Medium.woff') format('woff');
+  src: url('/fonts/Saans-Medium.woff2') format('woff2'),
+       url('/fonts/Saans-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -20,7 +20,7 @@
 
 @font-face {
   font-family: 'Saans';
-  src: url('/AO-glossary/fonts/Saans-SemiBold.woff2') format('woff2');
+  src: url('/fonts/Saans-SemiBold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -28,7 +28,7 @@
 
 @font-face {
   font-family: 'Saans';
-  src: url('/AO-glossary/fonts/Saans-Bold.woff2') format('woff2');
+  src: url('/fonts/Saans-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -36,8 +36,8 @@
 
 @font-face {
   font-family: 'Saans Mono';
-  src: url('/AO-glossary/fonts/SaansMono-Medium.woff2') format('woff2'),
-       url('/AO-glossary/fonts/SaansMono-Medium.woff') format('woff');
+  src: url('/fonts/SaansMono-Medium.woff2') format('woff2'),
+       url('/fonts/SaansMono-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -45,7 +45,7 @@
 
 @font-face {
   font-family: 'Serrif';
-  src: url('/AO-glossary/fonts/SerrifVF.ttf') format('truetype');
+  src: url('/fonts/SerrifVF.ttf') format('truetype');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -93,4 +93,9 @@ p, li, span {
 
 .pill-text {
   font-family: var(--font-mono);
+}
+
+/* Sharp corners everywhere */
+* {
+  border-radius: 0 !important;
 }
