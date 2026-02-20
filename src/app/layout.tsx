@@ -29,7 +29,7 @@ export default function RootLayout({
             <Link href="/" className="flex items-center gap-2">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src={`${process.env.NODE_ENV === 'production' ? '/AO-glossary' : ''}/logo-airops.svg`}
+                src="/logo-airops.svg"
                 alt="AirOps"
                 className="h-5 sm:h-6"
               />
