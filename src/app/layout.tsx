@@ -4,6 +4,7 @@ import './globals.css'
 import glossaryData from '../../data/glossary.json'
 import { GlossaryTerm } from '@/lib/types'
 import { Sidebar } from '@/components/Sidebar'
+import { Footer } from '@/components/Footer'
 
 const terms = glossaryData as GlossaryTerm[]
 
@@ -23,7 +24,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script src="https://hypothes.is/embed.js" async></script>
       </head>
-      <body className="min-h-screen antialiased">
+      <body className="min-h-screen antialiased flex flex-col">
         <header className="border-b border-[var(--border)] bg-[var(--background)] sticky top-0 z-20">
           <div className="px-4 sm:px-6 py-4 flex items-center gap-2">
             <Link href="/" className="flex items-center gap-2">
@@ -39,11 +40,14 @@ export default function RootLayout({
             </Link>
           </div>
         </header>
-        <div className="flex">
+        <div className="flex flex-1">
           <Sidebar terms={terms} />
-          <main className="flex-1 p-4 sm:p-6 lg:p-8 overflow-auto min-h-[calc(100vh-73px)]">
-            {children}
-          </main>
+          <div className="flex-1 flex flex-col min-h-[calc(100vh-73px)]">
+            <main className="flex-1 p-4 sm:p-6 lg:p-8 overflow-auto">
+              {children}
+            </main>
+            <Footer />
+          </div>
         </div>
       </body>
     </html>
