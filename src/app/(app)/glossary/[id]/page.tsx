@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import glossaryData from '../../../../data/glossary.json'
+import glossaryData from '../../../../../data/glossary.json'
 import { GlossaryTerm } from '@/lib/types'
 
 const terms = glossaryData as GlossaryTerm[]

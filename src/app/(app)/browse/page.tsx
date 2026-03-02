@@ -1,24 +1,35 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import Link from 'next/link'
-import glossaryData from '../../data/glossary.json'
-import { GlossaryTerm } from '@/lib/types'
+import { useSearchParams } from 'next/navigation'
+import glossaryData from '../../../../data/glossary.json'
+import { GlossaryTerm, Category } from '@/lib/types'
 
 const terms = glossaryData as GlossaryTerm[]
 
-export default function Home() {
+export default function BrowsePage() {
+  const searchParams = useSearchParams()
   const [searchQuery, setSearchQuery] = useState('')
+  const [activeCategory, setActiveCategory] = useState<Category | null>(null)
+
+  // Pre-select category from ?category= query param on mount
+  useEffect(() => {
+    const cat = searchParams.get('category') as Category | null
+    if (cat) setActiveCategory(cat)
+  }, [searchParams])
 
   const filteredTerms = useMemo(() => {
     const sorted = [...terms].sort((a, b) => a.term.localeCompare(b.term))
-    if (!searchQuery.trim()) return sorted
-    return sorted.filter(
-      (term) =>
+    return sorted.filter((term) => {
+      const matchesSearch =
+        !searchQuery.trim() ||
         term.term.toLowerCase().includes(searchQuery.toLowerCase()) ||
         term.definition.toLowerCase().includes(searchQuery.toLowerCase())
-    )
-  }, [searchQuery])
+      const matchesCategory = !activeCategory || term.category === activeCategory
+      return matchesSearch && matchesCategory
+    })
+  }, [searchQuery, activeCategory])
 
   return (
     <div className="max-w-4xl">
